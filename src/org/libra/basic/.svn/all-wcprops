@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/8/trunk/src/org/libra/basic
+END
+BasicButton.as
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/22/trunk/src/org/libra/basic/BasicButton.as
+END
+Component.as
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/22/trunk/src/org/libra/basic/Component.as
+END
+Container.as
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/22/trunk/src/org/libra/basic/Container.as
+END
+BasicSprite.as
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/22/trunk/src/org/libra/basic/BasicSprite.as
+END
+BasicTextComponent.as
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/22/trunk/src/org/libra/basic/BasicTextComponent.as
+END

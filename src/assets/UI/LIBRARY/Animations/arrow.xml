@@ -1,0 +1,56 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Animations/arrow" itemID="515007cc-00000599" symbolType="graphic" lastModified="1364199372">
+  <timeline>
+    <DOMTimeline name="arrow">
+      <layers>
+        <DOMLayer name="Layer 1" color="#4FFF4F" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMGroup selected="true">
+                  <matrix>
+                    <Matrix tx="-18" ty="-14.85"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="17.95" y="14.7"/>
+                  </transformationPoint>
+                  <members>
+                    <DOMShape selected="true">
+                      <matrix>
+                        <Matrix tx="-18" ty="-14.85"/>
+                      </matrix>
+                      <transformationPoint>
+                        <Point x="17.95" y="14.7"/>
+                      </transformationPoint>
+                      <fills>
+                        <FillStyle index="1">
+                          <SolidColor color="#FFFFFF"/>
+                        </FillStyle>
+                      </fills>
+                      <strokes>
+                        <StrokeStyle index="1">
+                          <SolidStroke scaleMode="normal">
+                            <fill>
+                              <SolidColor color="#FFFFFF"/>
+                            </fill>
+                          </SolidStroke>
+                        </StrokeStyle>
+                      </strokes>
+                      <edges>
+                        <Edge fillStyle0="1" strokeStyle="1" edges="!236 376|484 376!484 376/400 268!400 268/362 218!362 218/321 271!321 271/236 376"/>
+                        <Edge cubics="!236 376(;236,376 484,376 484,376q236 376 484 376);"/>
+                        <Edge cubics="!484 376(;484,376 400,268 400,268q484 376 400 268);"/>
+                        <Edge cubics="!321 271(;321,271 236,376 236,376q321 271 236 376);"/>
+                        <Edge cubics="!400 268(;400,268 362,218 362,218q400 268 362 218);"/>
+                        <Edge cubics="!362 218(;362,218 321,271 321,271q362 218 321 271);"/>
+                      </edges>
+                    </DOMShape>
+                  </members>
+                </DOMGroup>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

@@ -1,0 +1,173 @@
+<DOMDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" currentTimeline="1" xflVersion="2.2" creatorInfo="Adobe Flash Professional CS6" platform="Macintosh" versionInfo="Saved by Adobe Flash Macintosh 12.0 build 481" majorVersion="12" buildNumber="481" previewMode="full" nextSceneIdentifier="2" playOptionsPlayLoop="false" playOptionsPlayPages="false" playOptionsPlayFrameActions="false" autoSaveEnabled="true" autoSaveHasPrompted="true">
+     <folders>
+          <DOMFolderItem name="Animations" itemID="515007aa-00000598" isExpanded="true"/>
+          <DOMFolderItem name="buttons" itemID="516e3a60-000002bc" isExpanded="true"/>
+     </folders>
+     <fonts>
+          <DOMFontItem name="Chinese" itemID="516fff21-000003a7" font="MicrosoftYaHei" size="0" id="1" sourceLastImported="1366294305" embedRanges="9999"/>
+     </fonts>
+     <media>
+          <DOMCompiledClipItem name="KafeButton" itemID="5146d7d3-0000007c" linkageExportForAS="true" linkageClassName="com.kevincao.kafe.components.KafeButtonComp" sourceLastImported="1300596021" sourcePlatform="macintosh" customIconID="0" actionscriptClass="com.kevincao.kafe.components.KafeButtonComp" livePreviewScmHRef="EZVLGJUMHQ.swf" livePreviewScmSourceFilename="/Users/macbookpro/Library/Application Support/Adobe/Flash CS6/en_US/Configuration/TMPEZVLFJUMHQ..swf" persistLivePreview11="true" livePreview11ScmHRef="EZVLGJUMHQ1.swf" livePreview11ScmSourceFilename="/Users/macbookpro/Library/Application Support/Adobe/Flash CS6/en_US/Configuration/TMPEZVHQJUMHQ..swf" editFrameIndex="1" requiredMinimumPlayerVersion="0" requiredMinimumASVersion="0" parametersAreLocked="true" swcPath="KafeButton.xml" rootSymbolLinkageID="com.kevincao.kafe.components.KafeButtonComp" movieRectRight="640" movieRectBottom="640" playerVersion="9" actionscriptVersion="3" hashKey="QlVLg9cDBUV9RgnoNwJSn/">
+               <parametersAsXML><![CDATA[   <property id="enabled">
+      <Inspectable name="enabled" variable="enabled" category="" verbose="1" defaultValue="true" type="Boolean"/>
+   </property>
+   <property id="href">
+      <Inspectable name="href" variable="href" category="" verbose="0" defaultValue="" type="String"/>
+   </property>
+   <property id="mirror">
+      <Inspectable name="mirror" variable="mirror" category="" verbose="0" defaultValue="false" type="Boolean"/>
+   </property>
+   <property id="selected">
+      <Inspectable name="selected" variable="selected" category="" verbose="0" defaultValue="false" type="Boolean"/>
+   </property>
+   <property id="toggle">
+      <Inspectable name="toggle" variable="toggle" category="" verbose="0" defaultValue="false" type="Boolean"/>
+   </property>
+   <property id="window">
+      <Inspectable name="window" variable="window" category="" verbose="0" defaultValue="_blank" type="String"/>
+   </property>
+]]></parametersAsXML>
+               <classProperties><![CDATA[<component id="com/kevincao/kafe/components/KafeButtonComp" class="com.kevincao.kafe.components.KafeButtonComp" livePreviewClass="com.kevincao.kafe.components.KafeButtonComp" modified="1300596021875">
+<movieBounds xmin="0" xmax="640" ymin="0" ymax="640" />
+<classDefs>
+	<classDef id="fl.livepreview.LivePreviewParent"/>
+	<classDef id="com.kevincao.kafe.events.KafeEvent"/>
+	<classDef id="com.kevincao.kafe.behaviors.display.KafeButton"/>
+	<classDef id="com.kevincao.kafe.events.AnimationEvent"/>
+	<classDef id="com.kevincao.kafe.components.IComponent"/>
+	<classDef id="com.kevincao.kafe.behaviors.display.IButton"/>
+	<classDef id="com.kevincao.kafe.behaviors.display.ISelectableButton"/>
+	<classDef id="com.kevincao.kafe.behaviors.AbstractBehavior"/>
+	<classDef id="com.kevincao.kafe.behaviors.display.MovieClipSkinBehavior"/>
+	<classDef id="com.kevincao.kafe.behaviors.display.ButtonBase"/>
+	<classDef id="com.kevincao.kafe.behaviors.IBehavior"/>
+	<classDef id="com.kevincao.kafe.components.KafeButtonComp"/>
+	<classDef id="com.kevincao.kafe.components.CompBase"/>
+	<classDef id="com.kevincao.kafe.components.ButtonBaseComp"/>
+	<classDef id="com.kevincao.kafeui.events.KUIEvent"/>
+</classDefs>
+<class id="com.kevincao.kafe.components.KafeButtonComp" >
+	<IconFile param1="KafeButton.png" />
+	<method id="toggle" returnType="Boolean" isProperty="true" permissions="readwrite">
+		<Inspectable defaultValue="false" />
+	</method>
+	<method id="selected" returnType="Boolean" isProperty="true" permissions="readwrite">
+		<Inspectable defaultValue="false" />
+	</method>
+	<method id="mirror" returnType="Boolean" isProperty="true" permissions="readwrite">
+		<Inspectable defaultValue="false" />
+	</method>
+	<method id="enabled" returnType="Boolean" isProperty="true" permissions="readwrite">
+		<Inspectable defaultValue="true" verbose="1" />
+	</method>
+	<method id="href" returnType="String" isProperty="true" permissions="readwrite">
+		<Inspectable type="String" defaultValue="" />
+	</method>
+	<method id="window" returnType="String" isProperty="true" permissions="readwrite">
+		<Inspectable type="String" defaultValue="_blank" />
+	</method>
+	<method id="behavior" returnType="IBehavior" isProperty="true" permissions="readonly">
+	</method>
+	<method id="KafeButtonComp" isConstructor="true" isProperty="false">
+	</method>
+	<method id="ButtonBaseComp" isConstructor="true" isProperty="false">
+	</method>
+	<method id="destroy" returnType="void" isProperty="false">
+	</method>
+	<method id="CompBase" isConstructor="true" isProperty="false">
+	</method>
+</class><livePreview class="com.kevincao.kafe.components.KafeButtonComp">
+<movieBounds xmin="0" xmax="640" ymin="0" ymax="640" />
+<classDefs>
+	<classDef id="com.kevincao.kafe.components.KafeButtonComp"/>
+	<classDef id="fl.livepreview.LivePreviewParent"/>
+</classDefs>
+<class id="com.kevincao.kafe.components.KafeButtonComp" >
+	<method id="KafeButtonComp" isConstructor="true" isProperty="false">
+	</method>
+</class></livePreview>
+</component>
+]]></classProperties>
+               <customIcon>
+                    <CustomIcon rowByteCount="72" colorDepth="32" width="18" height="18" frameRight="360" frameBottom="360" isTransparent="true" href="EZVLJJUMHQ.dat"/>
+               </customIcon>
+               <SwcItem name="com.kevincao.kafe.components.KafeButtonComp" version="1300596021" isTopLevel="true"/>
+          </DOMCompiledClipItem>
+     </media>
+     <symbols>
+          <Include href="Animations/playing.xml" loadImmediate="false" itemID="514fc7e5-00000521" lastModified="1364183103"/>
+          <Include href="Animations/recording.xml" loadImmediate="false" itemID="514fc30b-00000506" lastModified="1364182641"/>
+          <Include href="buttons/pBtn.xml" itemID="5170b2b6-000003ac" lastModified="1366347640"/>
+          <Include href="pasuBtn.xml" loadImmediate="false" itemID="516f6411-0000037a" lastModified="1366254609"/>
+          <Include href="playListItem.xml" itemID="516f56fa-00000325" lastModified="1367023976"/>
+          <Include href="PlayListView.xml" itemID="516b53e7-00000303" lastModified="1366295291"/>
+     </symbols>
+     <timelines>
+          <DOMTimeline name="Scene 1">
+               <layers>
+                    <DOMLayer name="Layer 1" color="#4FFF4F" current="true" isSelected="true">
+                         <frames>
+                              <DOMFrame index="0" keyMode="9728">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="playListItem" selected="true" centerPoint3DX="199" centerPoint3DY="125.5">
+                                             <matrix>
+                                                  <Matrix tx="62" ty="92"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="137" y="33.5"/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+               </layers>
+          </DOMTimeline>
+     </timelines>
+     <PrinterSettings platform="macintosh"/>
+     <publishHistory>
+          <PublishItem publishSize="7402064" publishTime="1366340345"/>
+          <PublishItem publishSize="7394938" publishTime="1366340322"/>
+          <PublishItem publishSize="7402064" publishTime="1366340300"/>
+          <PublishItem publishSize="7394938" publishTime="1366340247"/>
+          <PublishItem publishSize="7394938" publishTime="1366340179"/>
+          <PublishItem publishSize="7394938" publishTime="1366340121"/>
+          <PublishItem publishSize="7394947" publishTime="1366295755"/>
+          <PublishItem publishSize="7394938" publishTime="1366295403"/>
+          <PublishItem publishSize="7402086" publishTime="1366295369"/>
+          <PublishItem publishSize="7402990" publishTime="1366294368"/>
+          <PublishItem publishSize="10716" publishTime="1366293849"/>
+          <PublishItem publishSize="11164" publishTime="1366282251"/>
+          <PublishItem publishSize="11164" publishTime="1366282190"/>
+          <PublishItem publishSize="11185" publishTime="1366281261"/>
+          <PublishItem publishSize="11172" publishTime="1366280294"/>
+          <PublishItem publishSize="11175" publishTime="1366280226"/>
+          <PublishItem publishSize="10785" publishTime="1366274584"/>
+          <PublishItem publishSize="10523" publishTime="1366251876"/>
+          <PublishItem publishSize="7997" publishTime="1366182091"/>
+          <PublishItem publishSize="8038" publishTime="1366179148"/>
+     </publishHistory>
+     <swcCache>
+          <Swc hashKey="QlVLg9cDBUV9RgnoNwJSn/" href="HL76YLDY0Q.swc">
+               <classDefinitions>
+                    <ClassDefinition value="fl.livepreview.LivePreviewParent"/>
+                    <ClassDefinition value="com.kevincao.kafe.events.KafeEvent"/>
+                    <ClassDefinition value="com.kevincao.kafe.behaviors.display.KafeButton"/>
+                    <ClassDefinition value="com.kevincao.kafe.events.AnimationEvent"/>
+                    <ClassDefinition value="com.kevincao.kafe.components.IComponent"/>
+                    <ClassDefinition value="com.kevincao.kafe.behaviors.display.IButton"/>
+                    <ClassDefinition value="com.kevincao.kafe.behaviors.display.ISelectableButton"/>
+                    <ClassDefinition value="com.kevincao.kafe.behaviors.AbstractBehavior"/>
+                    <ClassDefinition value="com.kevincao.kafe.behaviors.display.MovieClipSkinBehavior"/>
+                    <ClassDefinition value="com.kevincao.kafe.behaviors.display.ButtonBase"/>
+                    <ClassDefinition value="com.kevincao.kafe.behaviors.IBehavior"/>
+                    <ClassDefinition value="com.kevincao.kafe.components.KafeButtonComp"/>
+                    <ClassDefinition value="com.kevincao.kafe.components.CompBase"/>
+                    <ClassDefinition value="com.kevincao.kafe.components.ButtonBaseComp"/>
+                    <ClassDefinition value="com.kevincao.kafeui.events.KUIEvent"/>
+                    <ClassDefinition value="com.kevincao.kafe.components.KafeButtonComp"/>
+                    <ClassDefinition value="fl.livepreview.LivePreviewParent"/>
+               </classDefinitions>
+          </Swc>
+     </swcCache>
+</DOMDocument>

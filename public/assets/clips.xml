@@ -1,0 +1,25 @@
+<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/">
+	<channel>
+		<item>
+			<title>Big Buck  0000001</title>
+			<author>Big Buck  0000001</author>
+			<link>http://127.0.0.1:9292/assets/abc.mp3</link>
+			<seekTime>1000</seekTime>
+			<duration>3000</duration>
+		</item>
+		<item>
+			<title>s Dream</title>
+			<author>Big Buck  0000001</author>
+			<link>http://127.0.0.1:9292/assets/abc.mp3</link>
+			<seekTime>50000</seekTime>
+			<duration>2000</duration>
+		</item>
+		<item>
+			<title>Sintel</title>
+			<author>Big Buck  0000001</author>
+			<link>http://127.0.0.1:9292/assets/abc.mp3</link>
+			<seekTime>100000</seekTime>
+			<duration>30000</duration>
+		</item>
+  </channel>
+</rss>

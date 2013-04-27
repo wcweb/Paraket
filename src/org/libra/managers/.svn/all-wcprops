@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/8/trunk/src/org/libra/managers
+END
+LibraManager.as
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/23/trunk/src/org/libra/managers/LibraManager.as
+END
+ToolTipManager.as
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/18/trunk/src/org/libra/managers/ToolTipManager.as
+END
+DragManager.as
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/11/trunk/src/org/libra/managers/DragManager.as
+END
+CursorManager.as
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/16/trunk/src/org/libra/managers/CursorManager.as
+END
+KeyBoardManager.as
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/8/trunk/src/org/libra/managers/KeyBoardManager.as
+END
