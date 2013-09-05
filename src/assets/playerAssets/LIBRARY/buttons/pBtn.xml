@@ -400,7 +400,7 @@
                   <matrix>
                     <Matrix tx="0.1" ty="3"/>
                   </matrix>
-                  <dataBindingXML><![CDATA[<component metaDataFetched='true' schemaUrl='' schemaOperation='' sceneRootLabel='Scene 1' oldCopiedComponentPath='1.24.9.5'>
+                  <dataBindingXML><![CDATA[<component metaDataFetched='true' schemaUrl='' schemaOperation='' sceneRootLabel='Scene 1' oldCopiedComponentPath='5.9.5'>
 </component>
 ]]></dataBindingXML>
                   <parametersAsXML><![CDATA[   <property id="enabled">

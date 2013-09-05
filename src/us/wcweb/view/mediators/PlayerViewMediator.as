@@ -1,5 +1,6 @@
 package us.wcweb.view.mediators {
 	import flash.events.MouseEvent;
+
 	import us.wcweb.model.events.RecordProxyEvent;
 	import us.wcweb.events.SystemEvent;
 	import us.wcweb.view.events.PlayerViewEvent;
@@ -34,14 +35,17 @@ package us.wcweb.view.mediators {
 			eventMap.mapListener(view, RecordProxyEvent.STOP_RECORD, handleStopRecord);
 			eventMap.mapListener(view, RecordProxyEvent.PLAY_CURRENT_RECORDED, handlePlayCurrentRecorded);
 			eventMap.mapListener(view, RecordProxyEvent.STOP_CURRENT_PLAY, handleStopCurrentPlay);
-			
-			eventMap.mapListener(view, SystemEvent.STAGE_CLICK, handleStageClick);
 
+			eventMap.mapListener(view, SystemEvent.POST_RECORD, handlePostRecord);
+			eventMap.mapListener(view, SystemEvent.STOP_POST, handleStopPost);
+			eventMap.mapListener(view, SystemEvent.STAGE_CLICK, handleStageClick);
 
 			eventMap.mapListener(eventDispatcher, JwplayerConnectProxyEvent.UPDATE_TIME, handleUpdateTiming);
 			eventMap.mapListener(eventDispatcher, JwplayerConnectProxyEvent.PAUSE_TIME, handlePauseTiming);
 
 			eventMap.mapListener(eventDispatcher, RecordProxyEvent.ENCORD_COMPLETE, handleEncordComplete);
+
+			eventMap.mapListener(eventDispatcher, RecordProxyEvent.RECORD_COMPLETE, handleRecordComplete);
 		}
 
 		override public function onRemove() : void {
@@ -53,11 +57,18 @@ package us.wcweb.view.mediators {
 		// ---------------------------------------
 		// DISPATCH EVENTS
 		// ---------------------------------------
-		
-		
-		private function handleStageClick(event:SystemEvent):void{
+		private function handlePostRecord(event : SystemEvent) : void {
 			dispatch(event);
 		}
+
+		private function handleStopPost(event : SystemEvent) : void {
+			dispatch(event);
+		}
+
+		private function handleStageClick(event : SystemEvent) : void {
+			dispatch(event);
+		}
+
 		private function handleStartRecord(event : RecordProxyEvent) : void {
 			dispatch(event);
 		}
@@ -82,17 +93,18 @@ package us.wcweb.view.mediators {
 		// HANDLE INCOMING SINGLES
 		// ---------------------------------------
 		private function handleUpdateTiming(event : JwplayerConnectProxyEvent) : void {
-			trace("handle timing update :" + event.data);
-			view.updateTiming(event.data);
+			view.currentPosition(event.data);
 		}
 
 		private function handlePauseTiming(event : JwplayerConnectProxyEvent) : void {
-			trace("handle timing pause :" + event.data);
-			view.stopTiming(event.data);
+			view.currentPosition(event.data);
 		}
+
 		private function handleEncordComplete(event : RecordProxyEvent) : void {
-			trace("ecorded :" + event);
-			view.showUploadBtnEncordBtn();
+		}
+
+		private function handleRecordComplete(event : RecordProxyEvent) : void {
+			/*view.showUploadBtnEncordBtn();*/
 		}
 	}
 }

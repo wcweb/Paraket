@@ -39,6 +39,7 @@ package us.wcweb.view.components.content.elements {
 			itemHeight = itemCounter = 0;
 			this.setBorderable(true);
 		}
+		
 
 		override protected function onAddToStageHandler(e : Event) : void {
 			super.onAddToStageHandler(e);

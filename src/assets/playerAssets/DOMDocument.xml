@@ -1,7 +1,10 @@
-<DOMDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" currentTimeline="1" xflVersion="2.2" creatorInfo="Adobe Flash Professional CS6" platform="Macintosh" versionInfo="Saved by Adobe Flash Macintosh 12.0 build 481" majorVersion="12" buildNumber="481" guidesSnapTo="false" guidesVisible="false" previewMode="full" nextSceneIdentifier="2" playOptionsPlayLoop="false" playOptionsPlayPages="false" playOptionsPlayFrameActions="false" autoSaveEnabled="true" autoSaveHasPrompted="true">
+<DOMDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" width="500" currentTimeline="1" xflVersion="2.2" creatorInfo="Adobe Flash Professional CS6" platform="Macintosh" versionInfo="Saved by Adobe Flash Macintosh 12.0 build 481" majorVersion="12" buildNumber="481" guidesSnapTo="false" guidesVisible="false" viewAngle3D="50.6510299754819" vanishingPoint3DX="250" previewMode="full" nextSceneIdentifier="2" playOptionsPlayLoop="false" playOptionsPlayPages="false" playOptionsPlayFrameActions="false" autoSaveEnabled="true" autoSaveHasPrompted="true">
      <folders>
           <DOMFolderItem name="Animations" itemID="515007aa-00000598" isExpanded="true"/>
           <DOMFolderItem name="buttons" itemID="5150075c-0000058c" isExpanded="true"/>
+          <DOMFolderItem name="Component Assets" itemID="51873472-000002c6"/>
+          <DOMFolderItem name="Component Assets/_private" itemID="51873472-000002cb"/>
+          <DOMFolderItem name="Component Assets/ProgressBarSkins" itemID="51873472-000002c7"/>
           <DOMFolderItem name="font" itemID="51500747-00000587" isExpanded="true"/>
      </folders>
      <fonts>
@@ -101,16 +104,24 @@
           <Include href="Animations/arrow.xml" itemIcon="1" loadImmediate="false" itemID="515007cc-00000599" lastModified="1364199372"/>
           <Include href="Animations/playing.xml" loadImmediate="false" itemID="514fc7e5-00000521" lastModified="1364183103"/>
           <Include href="Animations/recording.xml" loadImmediate="false" itemID="514fc30b-00000506" lastModified="1364182641"/>
-          <Include href="Animations/uploading.xml" loadImmediate="false" itemID="514fcca3-0000056c" lastModified="1364184232"/>
           <Include href="Animations/uploading_arrow.xml" loadImmediate="false" itemID="514fc9fd-00000542" lastModified="1364199438"/>
-          <Include href="buttons/btn.xml" itemID="5147cf8b-000002d0" lastModified="1366975314"/>
+          <Include href="buttons/btn.xml" itemID="5147cf8b-000002d0" lastModified="1367031350"/>
           <Include href="buttons/encord.xml" itemID="514fb778-000002c3" lastModified="1366975295"/>
           <Include href="buttons/pBtn.xml" itemID="5170b2b6-000003ac" lastModified="1366347640"/>
           <Include href="buttons/record_btn.xml" itemID="5147d823-000002fd" lastModified="1366975304"/>
           <Include href="buttons/saveLocalBtn.xml" itemID="51500cde-0000060a" lastModified="1366975908"/>
-          <Include href="container.xml" itemID="5147d224-000002d5" lastModified="1367025062"/>
+          <Include href="container.xml" itemID="5147d224-000002d5" lastModified="1367035572"/>
+          <Include href="currentPosition.xml" loadImmediate="false" itemID="517b3d93-00000461" lastModified="1367032212"/>
+          <Include href="Component Assets/_private/Component_avatar.xml" loadImmediate="false" itemID="51873472-000002cc" lastModified="1367815282"/>
+          <Include href="Component Assets/ProgressBarSkins/ProgressBar_barSkin.xml" loadImmediate="false" itemID="51873472-000002c9" lastModified="1367815282"/>
+          <Include href="Component Assets/ProgressBarSkins/ProgressBar_indeterminateSkin.xml" loadImmediate="false" itemID="51873472-000002ca" lastModified="1367815282"/>
+          <Include href="Component Assets/ProgressBarSkins/ProgressBar_trackSkin.xml" loadImmediate="false" itemID="51873472-000002c8" lastModified="1367815282"/>
           <Include href="playListItem.xml" itemID="516f56fa-00000325" lastModified="1367024970"/>
-          <Include href="Symbol 2.xml" loadImmediate="false" itemID="517a60af-000003b8" lastModified="1366974639"/>
+          <Include href="playTimer.xml" loadImmediate="false" itemID="517b3dbf-0000046c" lastModified="1367032205"/>
+          <Include href="progressbar copy.xml" loadImmediate="false" itemID="5187347e-00000357" lastModified="1367815282"/>
+          <Include href="ProgressBar.xml" itemID="44b2ac3f-000001bc" lastModified="1292423118"/>
+          <Include href="recordTimer.xml" loadImmediate="false" itemID="517b3dae-00000469" lastModified="1367032197"/>
+          <Include href="statusLogger.xml" loadImmediate="false" itemID="517b41bd-000004bd" lastModified="1367032411"/>
      </symbols>
      <timelines>
           <DOMTimeline name="Scene 1">
@@ -119,44 +130,12 @@
                          <frames>
                               <DOMFrame index="0" keyMode="9728">
                                    <elements>
-                                        <DOMSymbolInstance libraryItemName="container" name="cc" selected="true" centerPoint3DX="366.6" centerPoint3DY="296.3">
+                                        <DOMSymbolInstance libraryItemName="container" name="cc" selected="true" centerPoint3DX="366.6" centerPoint3DY="292.15">
                                              <matrix>
-                                                  <Matrix a="0.93951416015625" d="0.93951416015625" ty="4.15"/>
+                                                  <Matrix a="0.993453979492188" d="0.989486694335938"/>
                                              </matrix>
                                              <transformationPoint>
-                                                  <Point x="271.35" y="78.9"/>
-                                             </transformationPoint>
-                                        </DOMSymbolInstance>
-                                        <DOMSymbolInstance libraryItemName="playListItem" centerPoint3DX="135.55" centerPoint3DY="234.6">
-                                             <matrix>
-                                                  <Matrix tx="-1.3" ty="201.1"/>
-                                             </matrix>
-                                             <transformationPoint>
-                                                  <Point x="137" y="33.5"/>
-                                             </transformationPoint>
-                                        </DOMSymbolInstance>
-                                        <DOMSymbolInstance libraryItemName="playListItem" centerPoint3DX="135.55" centerPoint3DY="195.2">
-                                             <matrix>
-                                                  <Matrix tx="-1.3" ty="161.7"/>
-                                             </matrix>
-                                             <transformationPoint>
-                                                  <Point x="137" y="33.5"/>
-                                             </transformationPoint>
-                                        </DOMSymbolInstance>
-                                        <DOMSymbolInstance libraryItemName="playListItem" centerPoint3DX="135.55" centerPoint3DY="267.6">
-                                             <matrix>
-                                                  <Matrix tx="-1.3" ty="234.1"/>
-                                             </matrix>
-                                             <transformationPoint>
-                                                  <Point x="137" y="33.5"/>
-                                             </transformationPoint>
-                                        </DOMSymbolInstance>
-                                        <DOMSymbolInstance libraryItemName="playListItem" centerPoint3DX="135.55" centerPoint3DY="155.85">
-                                             <matrix>
-                                                  <Matrix tx="-1.3" ty="122.35"/>
-                                             </matrix>
-                                             <transformationPoint>
-                                                  <Point x="137" y="33.5"/>
+                                                  <Point/>
                                              </transformationPoint>
                                         </DOMSymbolInstance>
                                    </elements>
@@ -490,6 +469,11 @@
      </extendedSwatchLists>
      <PrinterSettings platform="macintosh"/>
      <publishHistory>
+          <PublishItem publishSize="7448574" publishTime="1367032420"/>
+          <PublishItem publishSize="7448512" publishTime="1367031853"/>
+          <PublishItem publishSize="7416387" publishTime="1367028362"/>
+          <PublishItem publishSize="7432735" publishTime="1367026342"/>
+          <PublishItem publishSize="7416388" publishTime="1367025917"/>
           <PublishItem publishSize="7415377" publishTime="1366975952"/>
           <PublishItem publishSize="7415382" publishTime="1366975795"/>
           <PublishItem publishSize="7415310" publishTime="1366975038"/>

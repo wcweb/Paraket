@@ -10,14 +10,17 @@ package us.wcweb.model.events {
 		// Class Properties
 		//
 		// --------------------------------------------------------------------------
+		// RECORDING
 		public static const START_RECORD : String = "start_record";
 		public static const RECORDING : String = 'recording';
-		public static const PASUE_RECORD : String = "pasue_record";
+		public static const PASUE_RECORD : String = "pasue_record";//@TODO pasue_record
 		public static const STOP_RECORD : String = "stop_record";
+		public static const RECORD_COMPLETE : String = "record_complete";
+		// ENCORDING
 		public static const START_ENCORD : String = "start_encord";
 		public static const ENCORDING : String = 'encording';
 		public static const ENCORD_ERROR : String = "encorderror";
-		public static const ENCORD_COMPLETE : String = 'encord_complete';
+		public static const ENCORD_COMPLETE : String = 'encord_complete';//@FIX
 		// PLAYING
 		public static const PLAY_CURRENT_RECORDED : String = "play_current_recorded";
 		public static const STOP_CURRENT_PLAY : String = "stop_current_play";

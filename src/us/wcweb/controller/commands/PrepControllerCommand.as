@@ -44,8 +44,9 @@ package us.wcweb.controller.commands {
 		//
 		// --------------------------------------------------------------------------
 		override public function execute() : void {
-			commandMap.mapEvent(SystemEvent.LOAD_CONTENT, LoadXMLCommand, SystemEvent, true);
 			// commandMap.mapEvent(SystemEvent.REQUEST_GEOCODING, UpdateTimingCommand, SystemEvent);
+			commandMap.mapEvent(SystemEvent.LOAD_CONTENT, LoadXMLCommand, SystemEvent, true);
+			
 			commandMap.mapEvent(SystemEvent.CLEANUP_STARTUP, CleanupStartupCommand, SystemEvent, true);
 			commandMap.mapEvent(SystemEvent.STAGE_CLICK, StageClickCommand, SystemEvent);
 			commandMap.mapEvent(PlayerProxyEvent.PLAY_ITEM, PlayClipItemCommand, PlayerProxyEvent);

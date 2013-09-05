@@ -99,7 +99,7 @@
           <Include href="Animations/recording.xml" loadImmediate="false" itemID="514fc30b-00000506" lastModified="1364182641"/>
           <Include href="buttons/pBtn.xml" itemID="5170b2b6-000003ac" lastModified="1366347640"/>
           <Include href="pasuBtn.xml" loadImmediate="false" itemID="516f6411-0000037a" lastModified="1366254609"/>
-          <Include href="playListItem.xml" itemID="516f56fa-00000325" lastModified="1367023976"/>
+          <Include href="playListItem.xml" itemID="516f56fa-00000325" lastModified="1367034356"/>
           <Include href="PlayListView.xml" itemID="516b53e7-00000303" lastModified="1366295291"/>
      </symbols>
      <timelines>
@@ -109,12 +109,12 @@
                          <frames>
                               <DOMFrame index="0" keyMode="9728">
                                    <elements>
-                                        <DOMSymbolInstance libraryItemName="playListItem" selected="true" centerPoint3DX="199" centerPoint3DY="125.5">
+                                        <DOMSymbolInstance libraryItemName="playListItem" selected="true" centerPoint3DX="134.9" centerPoint3DY="32.85">
                                              <matrix>
-                                                  <Matrix tx="62" ty="92"/>
+                                                  <Matrix a="0.985275268554688" ty="-0.65"/>
                                              </matrix>
                                              <transformationPoint>
-                                                  <Point x="137" y="33.5"/>
+                                                  <Point x="203.7" y="20.3"/>
                                              </transformationPoint>
                                         </DOMSymbolInstance>
                                    </elements>

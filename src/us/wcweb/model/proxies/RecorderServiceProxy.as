@@ -42,6 +42,8 @@ package us.wcweb.model.proxies {
 		private var sequence : ListPerformance;
 		public var audio : AudioPerformer;
 		private const DELAY_LENGTH : int = 4000;
+		private var ziped : Boolean = false;
+		private var zipedFile : ByteArray;
 		[Inject]
 		public var player : PlayerProxy;
 
@@ -80,6 +82,7 @@ package us.wcweb.model.proxies {
 		public function stop() : void {
 			recorder.stop();
 			recorder.microphone = null;
+			ziped = false;
 		}
 
 		public function onRecording(e : RecordingEvent) : void {
@@ -147,7 +150,7 @@ package us.wcweb.model.proxies {
 
 			function mp3EncodeComplete(e : Event) : void {
 				trace("mp3 encoding complete\n");
-				eventDispatcher.dispatchEvent(new Event(Event.COMPLETE));
+				eventDispatcher.dispatchEvent(new RecordProxyEvent(RecordProxyEvent.ENCORD_COMPLETE, mp3_encorder.mp3Data));
 			}
 			function mp3EncodeError(e : ErrorEvent) : void {
 				trace("mp3 encoding error :", e.text);
@@ -155,6 +158,9 @@ package us.wcweb.model.proxies {
 		}
 
 		public function mp3() : ByteArray {
+			if (ziped) {
+				return zipedFile;
+			}
 			// WRITE ID3 TAGS
 			var sba : ByteArray = mp3_encorder.mp3Data;
 			sba.position = sba.length - 128;
@@ -170,6 +176,8 @@ package us.wcweb.model.proxies {
 			sba.writeMultiByte("wcweb.us         " + String.fromCharCode(0), "iso-8859-1");
 			// comments
 			sba.writeByte(57);
+			zipedFile = sba;
+			ziped = true;
 			return sba;
 		}
 

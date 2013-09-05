@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="container" itemID="5147d224-000002d5" linkageExportForAS="true" linkageClassName="PlayerViewContainer" lastModified="1367025062" lastUniqueIdentifier="25">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="container" itemID="5147d224-000002d5" linkageExportForAS="true" linkageClassName="PlayerViewContainer" lastModified="1367035572" lastUniqueIdentifier="39">
   <timeline>
     <DOMTimeline name="container" guides='&lt;guidelines&gt;&lt;guideline direction="h"&gt;31&lt;/guideline&gt;&lt;guideline direction="h"&gt;53&lt;/guideline&gt;&lt;/guidelines&gt;'>
       <layers>
@@ -7,33 +7,35 @@
             <DOMFrame index="0" keyMode="9728">
               <elements>
                 <DOMShape isDrawingObject="true">
-                  <matrix>
-                    <Matrix a="0.86895751953125" d="1.84785461425781" tx="0.4" ty="0.4"/>
-                  </matrix>
                   <transformationPoint>
-                    <Point x="247.6" y="93.35"/>
+                    <Point x="251.65" y="202.2"/>
                   </transformationPoint>
                   <fills>
                     <FillStyle index="1">
                       <LinearGradient>
                         <matrix>
-                          <Matrix a="0.302276611328125" d="0.114181518554688" tx="247.65" ty="93.3"/>
+                          <Matrix a="0.135833740234375" b="0.38824462890625" c="-0.092803955078125" d="0.146835327148438" tx="249.95" ty="155.4"/>
                         </matrix>
-                        <GradientEntry color="#E6E7E6" ratio="0"/>
+                        <GradientEntry color="#F2EEE6" ratio="0"/>
                         <GradientEntry color="#DFE3E2" ratio="1"/>
                       </LinearGradient>
                     </FillStyle>
                   </fills>
                   <edges>
-                    <Edge fillStyle0="1" edges="!64 -4[0 -4 0 60!0 60|0 3674!0 3674[0 3737 64 3737!64 3737|9841 3737!9841 3737[9905 3737 9905 3674!9905 3674|9905 60!9905 60[9905 -4 9841 -4!9841 -4|64 -4"/>
+                    <Edge fillStyle0="1" edges="!10001 0|65 0!65 0[0 0 0 139!0 139|0 7949!0 7949[0 8085 65 8085!65 8085|10001 8085!10001 8085[10066 8085 10066 7949!10066 7949|10066 139!10066 139[10066 0 10001 0"/>
                   </edges>
                 </DOMShape>
-                <DOMShape isDrawingObject="true">
+                <DOMSymbolInstance libraryItemName="currentPosition" name="currentPosition" centerPoint3DX="178.3" centerPoint3DY="89.45">
                   <matrix>
-                    <Matrix a="0.872482299804688" d="5.87687683105469" tx="44.7" ty="-1658.35"/>
+                    <Matrix tx="12.9" ty="15.95"/>
                   </matrix>
                   <transformationPoint>
-                    <Point x="194.5" y="322.7"/>
+                    <Point x="165.4" y="73.8"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMShape isDrawingObject="true">
+                  <transformationPoint>
+                    <Point x="244.85" y="257.4"/>
                   </transformationPoint>
                   <fills>
                     <FillStyle index="1">
@@ -41,84 +43,71 @@
                     </FillStyle>
                   </fills>
                   <edges>
-                    <Edge fillStyle1="1" edges="!8849 6820|-1057 6820!-1057 6820|-1057 6089!-1057 6089|8849 6089!8849 6089|8849 6820"/>
+                    <Edge fillStyle1="1" edges="!9203 7299|601 7299!601 7299|601 3003!601 3003|9203 3003!9203 3003|9203 7299"/>
                   </edges>
                 </DOMShape>
                 <DOMRectangleObject objectWidth="41" objectHeight="0" x="640.95" y="417.95" lockFlag="true"/>
-                <DOMDynamicText name="recordTimer" width="34.8" height="13.4" includeOutlines="true" isSelectable="false">
+                <DOMGroup>
+                  <transformationPoint>
+                    <Point x="245.55" y="343.7"/>
+                  </transformationPoint>
+                  <members>
+                    <DOMShape>
+                      <transformationPoint>
+                        <Point x="245.55" y="343.7"/>
+                      </transformationPoint>
+                      <fills>
+                        <FillStyle index="1">
+                          <LinearGradient>
+                            <matrix>
+                              <Matrix a="0.116363525390625" b="0.33197021484375" c="-0.0795135498046875" d="0.12554931640625" tx="244.1" ty="152.2"/>
+                            </matrix>
+                            <GradientEntry color="#F2EEE6" ratio="0"/>
+                            <GradientEntry color="#DFE3E2" ratio="1"/>
+                          </LinearGradient>
+                        </FillStyle>
+                      </fills>
+                      <edges>
+                        <Edge fillStyle0="1" edges="!9223 7183|9223 6449!9223 6449|600 6449!600 6449|600 7183!600 7183[600 7299 657 7299!657 7299|9167 7299!9167 7299[9223 7299 9223 7183"/>
+                      </edges>
+                    </DOMShape>
+                  </members>
+                </DOMGroup>
+                <DOMSymbolInstance libraryItemName="buttons/encord" name="encordPlayBtn" centerPoint3DX="259.45" centerPoint3DY="171.15">
                   <matrix>
-                    <Matrix a="2.0703125" d="2.0703125" tx="343.7" ty="31.85"/>
-                  </matrix>
-                  <textRuns>
-                    <DOMTextRun>
-                      <characters>00:00</characters>
-                      <textAttrs>
-                        <DOMTextAttrs alignment="right" aliasText="false" bitmapSize="240" face="Arail*" fillColor="#FFFFFF"/>
-                      </textAttrs>
-                    </DOMTextRun>
-                  </textRuns>
-                </DOMDynamicText>
-                <DOMDynamicText name="stautsLabel" width="119.6" height="7.9" includeOutlines="true" isSelectable="false">
-                  <matrix>
-                    <Matrix a="2.0703125" d="2.0703125" tx="71.9" ty="320.15"/>
-                  </matrix>
-                  <textRuns>
-                    <DOMTextRun>
-                      <characters>系统正在启动.......</characters>
-                      <textAttrs>
-                        <DOMTextAttrs aliasText="false" indent="-0.4" letterSpacing="4" size="6" bitmapSize="120" face="Chinese All*" fillColor="#666666"/>
-                      </textAttrs>
-                    </DOMTextRun>
-                  </textRuns>
-                </DOMDynamicText>
-                <DOMSymbolInstance libraryItemName="buttons/encord" name="encordPlayBtn" centerPoint3DX="202.1" centerPoint3DY="161.8">
-                  <matrix>
-                    <Matrix a="1.3868408203125" d="1.3868408203125" tx="311.55" ty="71.5"/>
+                    <Matrix a="1.23602294921875" d="1.23602294921875" tx="357" ty="90.8"/>
                   </matrix>
                   <transformationPoint>
-                    <Point x="18" y="18"/>
+                    <Point x="17.95" y="17.95"/>
                   </transformationPoint>
                 </DOMSymbolInstance>
-                <DOMDynamicText name="currentPosition" width="99.05" height="40.25" includeOutlines="true" isSelectable="false">
+                <DOMSymbolInstance libraryItemName="buttons/record_btn" name="recordBtn" selected="true" centerPoint3DX="363.1" centerPoint3DY="146.1">
                   <matrix>
-                    <Matrix a="2.0703125" d="2.0703125" tx="30.2" ty="30.6"/>
-                  </matrix>
-                  <textRuns>
-                    <DOMTextRun>
-                      <characters>10:20</characters>
-                      <textAttrs>
-                        <DOMTextAttrs aliasText="false" size="36" bitmapSize="720" face="Arail*" fillColor="#666666"/>
-                      </textAttrs>
-                    </DOMTextRun>
-                  </textRuns>
-                </DOMDynamicText>
-                <DOMSymbolInstance libraryItemName="buttons/record_btn" name="recordBtn" centerPoint3DX="318.5" centerPoint3DY="133.95">
-                  <matrix>
-                    <Matrix a="1.3868408203125" d="1.3868408203125" tx="253.45" ty="71.5"/>
-                  </matrix>
-                  <transformationPoint>
-                    <Point x="18" y="18"/>
-                  </transformationPoint>
-                </DOMSymbolInstance>
-                <DOMSymbolInstance libraryItemName="buttons/btn" name="uploadBtn" centerPoint3DX="395.1" centerPoint3DY="96.3">
-                  <matrix>
-                    <Matrix a="1.3868408203125" d="1.3868408203125" tx="369.95" ty="71.5"/>
+                    <Matrix a="1.23602294921875" d="1.23602294921875" tx="305.2" ty="90.8"/>
                   </matrix>
                   <transformationPoint>
                     <Point x="18" y="17.95"/>
                   </transformationPoint>
                 </DOMSymbolInstance>
-                <DOMSymbolInstance libraryItemName="buttons/saveLocalBtn" name="saveLocalBtn" centerPoint3DX="354.45" centerPoint3DY="324.65">
+                <DOMSymbolInstance libraryItemName="buttons/btn" name="uploadBtn" centerPoint3DX="431.45" centerPoint3DY="112.85">
                   <matrix>
-                    <Matrix a="2.0703125" d="2.0703125" tx="303" ty="307.9"/>
+                    <Matrix a="1.23602294921875" d="1.23602294921875" tx="409.05" ty="90.8"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="17.95" y="17.9"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="buttons/saveLocalBtn" name="saveLocalBtn" centerPoint3DX="393.45" centerPoint3DY="343.95">
+                  <matrix>
+                    <Matrix a="2.0703125" d="2.0703125" tx="342" ty="327.2"/>
                   </matrix>
                   <transformationPoint>
                     <Point x="24.85" y="8.1"/>
                   </transformationPoint>
                 </DOMSymbolInstance>
-                <DOMSymbolInstance libraryItemName="Symbol 2" centerPoint3DX="186.9" centerPoint3DY="128.65">
+                <DOMSymbolInstance libraryItemName="progressbar copy" name="progressbar" centerPoint3DX="216.3" centerPoint3DY="147.95">
                   <matrix>
-                    <Matrix a="1.3084716796875" d="-0.191299438476562" tx="-0.05" ty="130.85"/>
+                    <Matrix a="1.3084716796875" d="-0.1912841796875" tx="29.35" ty="150.15"/>
                   </matrix>
                   <transformationPoint>
                     <Point y="23"/>
@@ -127,25 +116,30 @@
                     <Color alphaMultiplier="0.671875"/>
                   </color>
                 </DOMSymbolInstance>
-                <DOMStaticText width="48.2" height="16" autoExpand="true" isSelectable="false">
+                <DOMSymbolInstance libraryItemName="playTimer" name="playTimer" centerPoint3DX="363.05" centerPoint3DY="77.45">
                   <matrix>
-                    <Matrix tx="16.55" ty="320.75"/>
+                    <Matrix tx="322.9" ty="59.45"/>
                   </matrix>
-                  <textRuns>
-                    <DOMTextRun>
-                      <characters>状态：</characters>
-                      <textAttrs>
-                        <DOMTextAttrs aliasText="false" letterSpacing="4" bitmapSize="240" face="Chinese All*" fillColor="#666666"/>
-                      </textAttrs>
-                    </DOMTextRun>
-                    <DOMTextRun>
-                      <characters></characters>
-                      <textAttrs>
-                        <DOMTextAttrs aliasText="false" letterSpacing="4" bitmapSize="240" face="Chinese All*" fillColor="#666666"/>
-                      </textAttrs>
-                    </DOMTextRun>
-                  </textRuns>
-                </DOMStaticText>
+                  <transformationPoint>
+                    <Point x="40.15" y="18"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="recordTimer" name="recordTimer" centerPoint3DX="428.4" centerPoint3DY="77.45">
+                  <matrix>
+                    <Matrix tx="403.25" ty="64.05"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="25.15" y="13.4"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="statusLogger" name="statusLogger" centerPoint3DX="244.9" centerPoint3DY="369.3">
+                  <matrix>
+                    <Matrix tx="34.35" ty="355.5"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="210.55" y="13.8"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
               </elements>
             </DOMFrame>
           </frames>

@@ -9,13 +9,11 @@ package us.wcweb.model.events {
 		public static const ASYNC_ERROR : String = "asyncerror";
 		public static const PAUSE_TIME : String = "pauseTime";
 		public static const CLEANUP_STARTUP : String = "cleanupStartup";
-		
-		public static const REQUEST_BACKCODING : String = "request_backcoding";
-		
-		
-		
-		private var _data: *;
-		public function JwplayerConnectProxyEvent(type : String, data: * = null) {
+		public static const CONNECT_SUCCESS : String = "connectsuccess";
+		public static const CONNECT_FAILD : String = "connectfaild";
+		private var _data : *;
+
+		public function JwplayerConnectProxyEvent(type : String, data : * = null) {
 			super(type);
 			_data = data;
 		}

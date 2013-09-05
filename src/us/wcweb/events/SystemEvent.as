@@ -43,6 +43,7 @@ package us.wcweb.events {
 		
 		public static const START_RECORD :String ="star_record";
 		public static const POST_RECORD: String = "post_record";
+		public static const POST_ERROR: String = "post_error";
 		public static const STOP_POST: String = "stop_post";
 		public static const STAGE_CLICK :String = "stage_click";
 		

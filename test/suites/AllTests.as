@@ -15,7 +15,7 @@ package suites{
 //       public var test_RecordService:TestRecordService;
        public var test_contest:ParaketContextTest;
 //	   public var test_mp3PlayerCommand:TestMp3PlayerCommand;
-//	   public var testRecordProxy:TestRecordProxy;
+       public var testRecordProxy:TestRecordProxy;
     }
 }
 

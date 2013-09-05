@@ -1,6 +1,15 @@
 package us.wcweb.view.components.content {
+	import us.wcweb.utils.Strings;
+
+	import flash.display.Shape;
+	import flash.display.SpreadMethod;
+	import flash.display.GradientType;
+	import flash.geom.Matrix;
+
 	import us.wcweb.model.events.RecordProxyEvent;
+
 	import flash.events.IEventDispatcher;
+
 	import com.kevincao.kafe.utils.KafeHelper;
 
 	import us.wcweb.utils.Tools;
@@ -34,37 +43,28 @@ package us.wcweb.view.components.content {
 	 * 
 	 */
 	public class PlayerView extends MovieClip {
-		[Embed(source='/assets/swf/playerAssets.swf')]
-		public var PlayerContainer : Class;
 		// --------------------------------------------------------------------------
 		//
 		// Class Properties
 		//
 		// --------------------------------------------------------------------------
-		// public static const SHOW_TIPS : String = "showTips";
+		[Embed(source='/assets/swf/playerAssets.swf')]
+		public var PlayerContainer : Class;
 		// --------------------------------------------------------------------------
 		//
 		// Instance Properties
 		//
 		// --------------------------------------------------------------------------
-		public var recordTimer : TextField;
-		public var currentPosition : TextField;
-		public var stautsLabel : TextField;
-		public var recordBtn : MovieClip;
-		public var encordPlayBtn : MovieClip;
-		public var saveLocalBtn : MovieClip;
-		public var uploadBtn : MovieClip;
-		// [Embed(source='/assets/swf/playerAssets.swf',symbol='com.wcweb.UI.RecordBtn')]
-		public var rb : KafeButton;
 		public var skin : MovieClip;
 		public var container : MovieClipAsset;
 
-		// public var link_github : MovieClip;
-		// public var contentHolder : MovieClip;
-		// public var placeHolderScroller : MovieClip;
-		// private var _currentView : MovieClip;
-		// private var _tips : Array = [];
-		// private var _scroller : CustomScrollbar;
+		// currentPosition
+		// stautsLabel
+		// uploadBtn
+		// encordPlayBtn
+		// recordBtn
+		// playTimer
+		// recordTimer
 		// --------------------------------------------------------------------------
 		//
 		// Initialization
@@ -75,8 +75,8 @@ package us.wcweb.view.components.content {
 			// @TODO whern use symbol class cannot convert  to movieclipAsset
 			container = MovieClipAsset(new PlayerContainer());
 			addChild(container as MovieClip);
-			trace("for mock",this.name);
-			trace("for mock",container.name);
+			trace("for mock", this.name);
+			trace("for mock", container.name);
 		}
 
 		public function main() : void {
@@ -88,36 +88,52 @@ package us.wcweb.view.components.content {
 		// API
 		//
 		// --------------------------------------------------------------------------
-		// public function show() : void {
-		// Tweener.addTween(this, {y:150, alpha:1, transition:Equations.easeOutExpo, time:.8});
-		// }
-		//
-		// public function hide() : void {
-		// visible = false;
-		// }
-		public function stopTiming(currentPosition : Number) : void {
-			skin['currentPosition'].text = currentPosition;
+		public function hide() : void {
+			visible = false;
 		}
 
-		public function updateTiming(currentPosition : Number) : void {
-			skin['currentPosition'].text = currentPosition;
+		public function currentPosition(time : Number) : void {
+			skin['currentPosition'].txt.text = Strings.digits(time);
 		}
 
-		public function recordTime() : void {
+		public function playTimer(time : Number) : void {
+			skin.playTimer.txt.text = Strings.digits(time);
+		}
+
+		public function recordTimer(time : Number) : void {
+			skin.recordTimer.txt.text = Strings.digits(time);
 		}
 
 		public function clear(target : TextField) : void {
-			skin.stautsLabel.text = "fuckkkkkkk";
+			skin.statusLogger.txt.text = "程序信息显示在这里：）";
+		}
+
+		public function log(str : String) : void {
+			skin.statusLogger.txt.text = str;
 		}
 
 		public function showUploadBtnEncordBtn() : void {
-			getButton(skin.uploadBtn).enabled = true;
-			getButton(skin.encordPlayBtn).enabled = true;
+			/*getButton(skin.uploadBtn).enabled = true;*/
+			/*getButton(skin.encordPlayBtn).enabled = true;*/
 		}
 
 		public function hiddenUploadBtnEncordBtn() : void {
-			getButton(skin.uploadBtn).enabled = false;
-			getButton(skin.encordPlayBtn).enabled = false;
+			/*getButton(skin.uploadBtn).enabled = false;*/
+			/*getButton(skin.encordPlayBtn).enabled = false;*/
+		}
+
+		public function progressUpdate(percentage : int) : void {
+			var w : Number = skin.progressbar.width;
+			var h : Number = skin.progressbar.height;
+			var mask : Sprite = new Sprite();
+
+			mask.graphics.drawRect(0, 0, w * percentage, h);
+			addChild(mask);
+			skin.progressbar.mask = mask;
+		}
+
+		public function drawWave() : void {
+			// @TODO
 		}
 
 		// --------------------------------------------------------------------------
@@ -127,12 +143,17 @@ package us.wcweb.view.components.content {
 		// --------------------------------------------------------------------------
 		private function initializeView(e : Event) : void {
 			skin = MovieClip(e.target.content).cc;
-//			Tools.walkDisplayObjects(skin, Tools.traceContainer);
+			// Tools.walkDisplayObjects(skin, Tools.traceContainer);
 			addEventListener(MouseEvent.CLICK, initializeBehaviour);
 
-			getButton(skin.uploadBtn).enabled = false;
-			getButton(skin.encordPlayBtn).enabled = false;
+			/*getButton(skin.uploadBtn).enabled = false;*/
+			/*getButton(skin.encordPlayBtn).enabled = false;*/
 			// skin.stautsLabel.addEventListener(MouseEvent.CLICK, handleStageClick);
+
+			initializeProgressBar();
+		}
+
+		private function initializeProgressBar() : void {
 		}
 
 		private function handleStageClick(e : MouseEvent) : void {
@@ -143,13 +164,13 @@ package us.wcweb.view.components.content {
 		private function initializeBehaviour(e : MouseEvent) : void {
 			switch(e.target.name) {
 				case 'recordBtn':
-					handleEncordBtn(this,getButton(skin.recordBtn).selected);
+					handleEncordBtn(this, getButton(skin.recordBtn).selected);
 					break;
 				case 'encordPlayBtn':
-					handlePlayBtn(this,getButton(skin.encordPlayBtn).selected);
+					handlePlayBtn(this, getButton(skin.encordPlayBtn).selected);
 					break;
 				case 'uploadBtn':
-					handleUploadBtn(this,getButton(skin.uploadBtn).selected);
+					handleUploadBtn(this, getButton(skin.uploadBtn).selected);
 					break;
 				case 'stautsLabel':
 					clear(TextField(e.target));
@@ -159,12 +180,12 @@ package us.wcweb.view.components.content {
 					break;
 			}
 
-			function handleEncordBtn(dispatcher:IEventDispatcher,selected : Boolean) : void {
+			function handleEncordBtn(dispatcher : IEventDispatcher, selected : Boolean) : void {
 				getButton(skin.uploadBtn).selected = false;
 				getButton(skin.encordPlayBtn).selected = false;
 				if (selected) {
 					trace('getButton(skin.recordBtn).selected');
-					
+
 					dispatcher.dispatchEvent(new RecordProxyEvent(RecordProxyEvent.START_RECORD, null));
 				} else {
 					hiddenUploadBtnEncordBtn();
@@ -172,7 +193,7 @@ package us.wcweb.view.components.content {
 					dispatcher.dispatchEvent(new RecordProxyEvent(RecordProxyEvent.STOP_RECORD, null));
 				}
 			}
-			function handlePlayBtn(dispatcher:IEventDispatcher,selected : Boolean) : void {
+			function handlePlayBtn(dispatcher : IEventDispatcher, selected : Boolean) : void {
 				getButton(skin.uploadBtn).selected = false;
 				getButton(skin.recordBtn).selected = false;
 				if (selected) {
@@ -182,7 +203,7 @@ package us.wcweb.view.components.content {
 				}
 				trace("encordPlayBtn Click");
 			}
-			function handleUploadBtn(dispatcher:IEventDispatcher,selected : Boolean) : void {
+			function handleUploadBtn(dispatcher : IEventDispatcher, selected : Boolean) : void {
 				getButton(skin.recordBtn).selected = false;
 				getButton(skin.encordPlayBtn).selected = false;
 				if (selected) {

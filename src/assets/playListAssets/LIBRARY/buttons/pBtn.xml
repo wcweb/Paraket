@@ -365,7 +365,7 @@
             </DOMFrame>
             <DOMFrame index="29" duration="20" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="Animations/playing" selected="true" centerPoint3DX="18" centerPoint3DY="18">
+                <DOMSymbolInstance libraryItemName="Animations/playing" centerPoint3DX="18" centerPoint3DY="18">
                   <transformationPoint>
                     <Point x="18" y="18"/>
                   </transformationPoint>
@@ -400,7 +400,7 @@
                   <matrix>
                     <Matrix tx="0.1" ty="3"/>
                   </matrix>
-                  <dataBindingXML><![CDATA[<component metaDataFetched='true' schemaUrl='' schemaOperation='' sceneRootLabel='Scene 1' oldCopiedComponentPath='2.8.5'>
+                  <dataBindingXML><![CDATA[<component metaDataFetched='true' schemaUrl='' schemaOperation='' sceneRootLabel='Scene 1' oldCopiedComponentPath='2.10.5'>
 </component>
 ]]></dataBindingXML>
                   <parametersAsXML><![CDATA[   <property id="enabled">

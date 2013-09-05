@@ -85,7 +85,7 @@ package test.cases {
 			assertTrue("instance is Recorder", proxy is RecorderServiceProxy);
 		}
 
-		[Ignore("because it works")]
+		/*[Ignore("because it works")]*/
 		[Test]
 		public function shouldBeUploaded() : void {
 			var handler : Function = async.add(stopAndUpload, 20000);

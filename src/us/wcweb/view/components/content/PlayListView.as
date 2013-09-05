@@ -94,17 +94,17 @@ package us.wcweb.view.components.content {
 		private function initializeView() : void {
 			LibraManager.getInstance(this);
 			var win : JWindow = new JWindow(this);
-			win.setSize(new IntDimension(310, 200));
-			win.setLocation(new IntPoint(10, 150));
+			win.setSize(new IntDimension(310, 170));
+			win.setLocation(new IntPoint(28, 150));
 			win.show();
 
 			f = new JFrame(win);
-			f.setSize(new IntDimension(310, 200));
+			f.setSize(new IntDimension(310, 170));
 			// f.setLocation(new IntPoint((stage.stageWidth - f.getWidth()) >> 1, (stage.stageHeight - f.getHeight()) >> 1));
 			f.show();
 
 			list = new PlayListComponents(67);
-			list.setSize(new IntDimension(300, 180));
+			list.setSize(new IntDimension(310, 170));
 			var info : Object = {time:12, duration:200, author:'adminsdfsafasdfasdf', link:'abc.mp3'};
 			list.appendItem(new PlayListItem(info));
 			list.appendItem(new PlayListItem(info));

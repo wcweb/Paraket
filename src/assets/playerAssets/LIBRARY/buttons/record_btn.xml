@@ -1,6 +1,6 @@
 <DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="buttons/record_btn" itemID="5147d823-000002fd" linkageExportForAS="true" linkageClassName="com.wcweb.UI.RecordBtn" lastModified="1366975304" lastUniqueIdentifier="6">
   <timeline>
-    <DOMTimeline name="record_btn" guides='&lt;guidelines&gt;&lt;guideline direction="v"&gt;12&lt;/guideline&gt;&lt;guideline direction="h"&gt;10&lt;/guideline&gt;&lt;guideline direction="h"&gt;0&lt;/guideline&gt;&lt;guideline direction="v"&gt;25&lt;/guideline&gt;&lt;guideline direction="h"&gt;24&lt;/guideline&gt;&lt;/guidelines&gt;'>
+    <DOMTimeline name="record_btn" currentFrame="23" guides='&lt;guidelines&gt;&lt;guideline direction="v"&gt;12&lt;/guideline&gt;&lt;guideline direction="h"&gt;10&lt;/guideline&gt;&lt;guideline direction="h"&gt;0&lt;/guideline&gt;&lt;guideline direction="v"&gt;25&lt;/guideline&gt;&lt;guideline direction="h"&gt;24&lt;/guideline&gt;&lt;/guidelines&gt;'>
       <layers>
         <DOMLayer name="labels" color="#FF4FFF" autoNamed="false">
           <frames>
@@ -112,7 +112,7 @@
             </DOMFrame>
             <DOMFrame index="19" duration="20" keyMode="9728">
               <elements>
-                <DOMShape selected="true" isDrawingObject="true">
+                <DOMShape isDrawingObject="true">
                   <matrix>
                     <Matrix tx="0.7"/>
                   </matrix>
@@ -257,7 +257,7 @@
           <frames>
             <DOMFrame index="0" duration="39" keyMode="9728">
               <elements>
-                <DOMGroup selected="true">
+                <DOMGroup>
                   <members>
                     <DOMRectangleObject objectWidth="36" objectHeight="36" x="75.5" y="346.95" lockFlag="true" topLeftRadius="5" topRightRadius="5" bottomLeftRadius="5" bottomRightRadius="5">
                       <matrix>
@@ -374,7 +374,7 @@
                   <matrix>
                     <Matrix tx="3.85" ty="0.9"/>
                   </matrix>
-                  <dataBindingXML><![CDATA[<component metaDataFetched='true' schemaUrl='' schemaOperation='' sceneRootLabel='Scene 1' oldCopiedComponentPath='1.20.2'>
+                  <dataBindingXML><![CDATA[<component metaDataFetched='true' schemaUrl='' schemaOperation='' sceneRootLabel='Scene 1' oldCopiedComponentPath='1.39.2'>
 </component>
 ]]></dataBindingXML>
                   <parametersAsXML><![CDATA[   <property id="enabled">
