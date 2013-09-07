@@ -75,8 +75,8 @@ package us.wcweb.view.components.content {
 			// @TODO whern use symbol class cannot convert  to movieclipAsset
 			container = MovieClipAsset(new PlayerContainer());
 			addChild(container as MovieClip);
-			trace("for mock", this.name);
-			trace("for mock", container.name);
+			// trace("for mock", this.name);
+			// trace("for mock", container.name);
 		}
 
 		public function main() : void {
@@ -136,6 +136,16 @@ package us.wcweb.view.components.content {
 			// @TODO
 		}
 
+		public function onSuccessUpload() : void {
+			getButton(skin.uploadBtn).selected = false;
+			getButton(skin.uploadBtn).enabled = false;
+		}
+		
+		public function onSuccessRecord():void{
+			getButton(skin.uploadBtn).enabled = true;
+			getButton(skin.encordPlayBtn).enabled = true;
+		}
+
 		// --------------------------------------------------------------------------
 		//
 		// Eventhandling
@@ -183,13 +193,16 @@ package us.wcweb.view.components.content {
 			function handleEncordBtn(dispatcher : IEventDispatcher, selected : Boolean) : void {
 				getButton(skin.uploadBtn).selected = false;
 				getButton(skin.encordPlayBtn).selected = false;
+				getButton(skin.uploadBtn).enabled = false;
+				getButton(skin.encordPlayBtn).enabled = false;
+				
 				if (selected) {
-					trace('getButton(skin.recordBtn).selected');
+//					trace('getButton(skin.recordBtn).selected');
 
 					dispatcher.dispatchEvent(new RecordProxyEvent(RecordProxyEvent.START_RECORD, null));
 				} else {
 					hiddenUploadBtnEncordBtn();
-					trace('getButton(skin.recordBtn).deselected');
+//					trace('getButton(skin.recordBtn).deselected');
 					dispatcher.dispatchEvent(new RecordProxyEvent(RecordProxyEvent.STOP_RECORD, null));
 				}
 			}
@@ -201,16 +214,16 @@ package us.wcweb.view.components.content {
 				} else {
 					dispatcher.dispatchEvent(new RecordProxyEvent(RecordProxyEvent.STOP_CURRENT_PLAY, null));
 				}
-				trace("encordPlayBtn Click");
+//				trace("encordPlayBtn Click");
 			}
 			function handleUploadBtn(dispatcher : IEventDispatcher, selected : Boolean) : void {
 				getButton(skin.recordBtn).selected = false;
 				getButton(skin.encordPlayBtn).selected = false;
 				if (selected) {
-					trace("encordPlayBtn PlayListEvent.PLAY_CLIP");
+//					trace("encordPlayBtn PlayListEvent.PLAY_CLIP");
 					dispatcher.dispatchEvent(new SystemEvent(SystemEvent.POST_RECORD, null));
 				} else {
-					trace("encordPlayBtn PlayListEvent.PLAY_CLIP");
+//					trace("encordPlayBtn PlayListEvent.PLAY_CLIP");
 					dispatcher.dispatchEvent(new SystemEvent(SystemEvent.STOP_POST, null));
 				}
 			}

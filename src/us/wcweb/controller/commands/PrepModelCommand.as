@@ -50,6 +50,7 @@ package us.wcweb.controller.commands {
 			injector.mapSingleton(BackEndService);
 			injector.mapSingleton(PlayerProxy);
 			injector.mapSingleton(RecorderServiceProxy);
+			injector.mapSingleton(LocalConfigProxy);
 		}
 	}
 }

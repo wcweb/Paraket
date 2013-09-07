@@ -25,13 +25,15 @@ end
 
 # Compile the debug swf
 mxmlc "bin/Paraket.swf" do |t|
+  configure_mxmlc t
   t.input = "src/Paraket.as"
-  t.static_link_runtime_shared_libraries = true
+  # t.static_link_runtime_shared_libraries = true
+  t.library_path << 'lib/MonsterDebugger.swc'
   t.debug = true
 end
 
 desc "Compile and run the swf"
-flashplayer :run => "bin/Paraket.swf"
+flashplayer :run => "Public/Paraket.swf"
 
 
 

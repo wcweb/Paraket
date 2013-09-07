@@ -47,7 +47,7 @@ package us.wcweb.controller.commands {
 			dispatch(new SystemEvent(SystemEvent.LOAD_CONTENT));
 			trace("dispatch loadCOntent");
 			contextView.addChild(new PlayerView());
-			contextView.addChild(new PlayListView());
+//			contextView.addChild(new PlayListView());
 		}
 	}
 }

@@ -1,4 +1,5 @@
 package us.wcweb.model.proxies {
+	import us.wcweb.view.components.content.PlayerView;
 	import us.wcweb.model.events.RecordProxyEvent;
 
 	import flash.events.ErrorEvent;
@@ -46,6 +47,7 @@ package us.wcweb.model.proxies {
 		private var zipedFile : ByteArray;
 		[Inject]
 		public var player : PlayerProxy;
+
 
 		// ---------------------------------------
 		// CONSTRUCTOR
@@ -123,6 +125,7 @@ package us.wcweb.model.proxies {
 					else trace("cancel rendering");
 				} else {
 					trace("rendering audio: " + Math.floor(src.position * 100 / src.frameCount) + "%");
+					dispatch(new RecordProxyEvent(RecordProxyEvent.RENDERING,  Math.floor(src.position * 100 / src.frameCount) + "%"));
 				}
 			}
 			function finishRender() : void {
@@ -146,6 +149,7 @@ package us.wcweb.model.proxies {
 
 			function mp3EncodeProgress(e : ProgressEvent) : void {
 				trace("encoding mp3: " + e.bytesLoaded + "%") ;
+				dispatch(new RecordProxyEvent(RecordProxyEvent.ENCORDING, "压缩中 : " + e.bytesLoaded + "%"));
 			}
 
 			function mp3EncodeComplete(e : Event) : void {
@@ -154,6 +158,7 @@ package us.wcweb.model.proxies {
 			}
 			function mp3EncodeError(e : ErrorEvent) : void {
 				trace("mp3 encoding error :", e.text);
+				eventDispatcher.dispatchEvent(new RecordProxyEvent(RecordProxyEvent.ENCORD_ERROR, mp3_encorder.mp3Data));
 			}
 		}
 

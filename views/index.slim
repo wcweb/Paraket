@@ -31,13 +31,15 @@ javascript:
 javascript:
   	var flashvars = {};
 	flashvars.bridgeName = "example";
-	var params = {};
+	var params = {
+		wmode:"transparent"
+	};
 	var attributes = {};
 	attributes.id = "flexApp";
 	attributes.name = "flexApp";
 	flashvars.url ="";
 	flashvars.lc_name = "lc_arrow"; 
-	swfobject.embedSWF("Paraket-debug.swf", "flashcontent", "500", "300", "10.0.124", "", flashvars, params, attributes);
+	swfobject.embedSWF("Paraket.swf", "flashcontent", "214,", "137", "10.0.124", "", flashvars, params, attributes);
 
 
 form action='/upload' method='post' enctype='multipart/form-data'

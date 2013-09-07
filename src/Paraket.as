@@ -1,4 +1,5 @@
 package {
+	import com.demonsters.debugger.MonsterDebugger;
 	import us.wcweb.model.events.JwplayerConnectProxyEvent;
 	import us.wcweb.utils.Tools;
 
@@ -23,6 +24,9 @@ package {
 			// Security.allowDomain("maps.googleapis.com");
 
 			_context = new ParaketContext(this);
+			MonsterDebugger.initialize(this);
+			MonsterDebugger.trace(this,"init");
+			//_context.config=
 		}
 
 		public function countTime(time : Number) : void {

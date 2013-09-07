@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="statusLogger" itemID="517b41bd-000004bd" lastModified="1367032411">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="statusLogger" itemID="517b41bd-000004bd" lastModified="1378446272">
   <timeline>
     <DOMTimeline name="statusLogger">
       <layers>
@@ -57,9 +57,9 @@
             </DOMFrame>
             <DOMFrame index="9" duration="10" keyMode="9728">
               <elements>
-                <DOMStaticText selected="true" width="96.2" height="16" autoExpand="true" isSelectable="false">
+                <DOMStaticText width="96.2" height="16" autoExpand="true" isSelectable="false">
                   <matrix>
-                    <Matrix tx="156.55" ty="-18"/>
+                    <Matrix tx="367.9" ty="-107.95"/>
                   </matrix>
                   <textRuns>
                     <DOMTextRun>
@@ -87,7 +87,7 @@
           <frames>
             <DOMFrame index="0" duration="100" keyMode="9728">
               <elements>
-                <DOMDynamicText name="txt" width="199.4" height="9.35" includeOutlines="true" isSelectable="false">
+                <DOMDynamicText name="txt" width="82.5" height="15.2" includeOutlines="true" isSelectable="false">
                   <matrix>
                     <Matrix a="2.0703125" d="2.0703125" tx="4.15" ty="4.15"/>
                   </matrix>
@@ -95,7 +95,7 @@
                     <DOMTextRun>
                       <characters>系统正在启动.......</characters>
                       <textAttrs>
-                        <DOMTextAttrs aliasText="false" indent="-0.4" letterSpacing="4" size="6" bitmapSize="120" face="Chinese All*" fillColor="#666666"/>
+                        <DOMTextAttrs aliasText="false" indent="-0.4" letterSpacing="3" size="5" bitmapSize="100" face="Chinese All*" fillColor="#666666"/>
                       </textAttrs>
                     </DOMTextRun>
                   </textRuns>

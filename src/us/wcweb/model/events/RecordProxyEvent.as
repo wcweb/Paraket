@@ -16,6 +16,7 @@ package us.wcweb.model.events {
 		public static const PASUE_RECORD : String = "pasue_record";//@TODO pasue_record
 		public static const STOP_RECORD : String = "stop_record";
 		public static const RECORD_COMPLETE : String = "record_complete";
+		public static const RENDERING :String ="rendering";
 		// ENCORDING
 		public static const START_ENCORD : String = "start_encord";
 		public static const ENCORDING : String = 'encording';

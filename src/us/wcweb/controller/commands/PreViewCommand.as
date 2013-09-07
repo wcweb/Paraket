@@ -12,7 +12,7 @@ package us.wcweb.controller.commands {
     override public function execute() : void {
       // Your command content goes here dude
       mediatorMap.mapView(PlayerView, PlayerViewMediator);
-      mediatorMap.mapView(PlayListView, PlayListMediator);
+//      mediatorMap.mapView(PlayListView, PlayListMediator);
     }
   }
 }

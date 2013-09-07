@@ -1,4 +1,4 @@
-<DOMDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" width="500" currentTimeline="1" xflVersion="2.2" creatorInfo="Adobe Flash Professional CS6" platform="Macintosh" versionInfo="Saved by Adobe Flash Macintosh 12.0 build 481" majorVersion="12" buildNumber="481" guidesSnapTo="false" guidesVisible="false" viewAngle3D="50.6510299754819" vanishingPoint3DX="250" previewMode="full" nextSceneIdentifier="2" playOptionsPlayLoop="false" playOptionsPlayPages="false" playOptionsPlayFrameActions="false" autoSaveEnabled="true" autoSaveHasPrompted="true">
+<DOMDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" width="200" height="90" currentTimeline="1" xflVersion="2.2" creatorInfo="Adobe Flash Professional CS6" platform="Macintosh" versionInfo="Saved by Adobe Flash Macintosh 12.0 build 481" majorVersion="12" buildNumber="481" guidesSnapTo="false" guidesVisible="false" viewAngle3D="21.4381852880442" vanishingPoint3DX="250" previewMode="full" nextSceneIdentifier="2" playOptionsPlayLoop="false" playOptionsPlayPages="false" playOptionsPlayFrameActions="false" autoSaveEnabled="true" autoSaveHasPrompted="true">
      <folders>
           <DOMFolderItem name="Animations" itemID="515007aa-00000598" isExpanded="true"/>
           <DOMFolderItem name="buttons" itemID="5150075c-0000058c" isExpanded="true"/>
@@ -110,7 +110,7 @@
           <Include href="buttons/pBtn.xml" itemID="5170b2b6-000003ac" lastModified="1366347640"/>
           <Include href="buttons/record_btn.xml" itemID="5147d823-000002fd" lastModified="1366975304"/>
           <Include href="buttons/saveLocalBtn.xml" itemID="51500cde-0000060a" lastModified="1366975908"/>
-          <Include href="container.xml" itemID="5147d224-000002d5" lastModified="1367035572"/>
+          <Include href="container.xml" itemID="5147d224-000002d5" lastModified="1378443815"/>
           <Include href="currentPosition.xml" loadImmediate="false" itemID="517b3d93-00000461" lastModified="1367032212"/>
           <Include href="Component Assets/_private/Component_avatar.xml" loadImmediate="false" itemID="51873472-000002cc" lastModified="1367815282"/>
           <Include href="Component Assets/ProgressBarSkins/ProgressBar_barSkin.xml" loadImmediate="false" itemID="51873472-000002c9" lastModified="1367815282"/>
@@ -121,7 +121,7 @@
           <Include href="progressbar copy.xml" loadImmediate="false" itemID="5187347e-00000357" lastModified="1367815282"/>
           <Include href="ProgressBar.xml" itemID="44b2ac3f-000001bc" lastModified="1292423118"/>
           <Include href="recordTimer.xml" loadImmediate="false" itemID="517b3dae-00000469" lastModified="1367032197"/>
-          <Include href="statusLogger.xml" loadImmediate="false" itemID="517b41bd-000004bd" lastModified="1367032411"/>
+          <Include href="statusLogger.xml" loadImmediate="false" itemID="517b41bd-000004bd" lastModified="1378446272"/>
      </symbols>
      <timelines>
           <DOMTimeline name="Scene 1">
@@ -469,6 +469,8 @@
      </extendedSwatchLists>
      <PrinterSettings platform="macintosh"/>
      <publishHistory>
+          <PublishItem publishSize="7448285" publishTime="1378443873"/>
+          <PublishItem publishSize="7448287" publishTime="1378442394"/>
           <PublishItem publishSize="7448574" publishTime="1367032420"/>
           <PublishItem publishSize="7448512" publishTime="1367031853"/>
           <PublishItem publishSize="7416387" publishTime="1367028362"/>
@@ -487,8 +489,6 @@
           <PublishItem publishSize="17821003" publishTime="1366170612"/>
           <PublishItem publishSize="17820998" publishTime="1366168547"/>
           <PublishItem publishSize="17820998" publishTime="1366167783"/>
-          <PublishItem publishSize="17820992" publishTime="1365988038"/>
-          <PublishItem publishSize="17820984" publishTime="1365909842"/>
      </publishHistory>
      <swcCache>
           <Swc hashKey="QlVLg9cDBUV9RgnoNwJSn/" href="HAE4HL84WB.swc">

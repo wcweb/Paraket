@@ -44,6 +44,7 @@ package us.wcweb.model.proxies {
 			function onLoadProgress(event : ProgressEvent) : void {
 				var loadedPct : uint = Math.round(100 * (event.bytesLoaded / event.bytesTotal));
 				trace("The sound is " + loadedPct + "% loaded.");
+
 			}
 
 			function onLoadComplete(event : Event) : void {

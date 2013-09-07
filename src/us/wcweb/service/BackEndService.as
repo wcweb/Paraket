@@ -1,4 +1,9 @@
 package us.wcweb.service {
+	import com.demonsters.debugger.MonsterDebugger;
+	import us.wcweb.utils.Tools;
+	import us.wcweb.model.proxies.LocalConfigProxy;
+	import us.wcweb.events.SystemEvent;
+
 	import flash.net.URLVariables;
 
 	import ru.inspirit.net.events.MultipartURLLoaderEvent;
@@ -7,17 +12,9 @@ package us.wcweb.service {
 
 	import ru.inspirit.net.MultipartURLLoader;
 
-	import flash.net.URLRequestHeader;
 	import flash.utils.ByteArray;
-	import flash.events.DataEvent;
 	import flash.events.Event;
-	import flash.events.HTTPStatusEvent;
-	import flash.events.SecurityErrorEvent;
-	import flash.events.IOErrorEvent;
-	import flash.display.Loader;
 	import flash.net.URLLoader;
-	import flash.net.URLRequestMethod;
-	import flash.net.URLRequest;
 
 	import org.robotlegs.mvcs.Actor;
 
@@ -25,25 +22,40 @@ package us.wcweb.service {
 	 * @author macbookpro
 	 */
 	public class BackEndService extends Actor {
-		private var url : String = '';
-		private var file_post : Object;
-		private var loader : URLLoader;
-		private var uploadPostObject : Object;
+		[Inject]
+		public var localConfig : LocalConfigProxy;
 		private var _config : Object;
 		private var mp3loader : MultipartURLLoader;
 
 		public function BackEndService() {
-			_config = {base_url:'http://127.0.0.1:9292', upload_url:'/uploadmp3', filename:'', fieldname:'Filedata2', username:''};
+			
+			MonsterDebugger.initialize(this);
+			_config = {// base_url:'http://127.0.0.1:9292',
+			upload_url:'/uploadmp3', filename:'', fieldname:'Filedata2', username:''};
 			// loader = new URLLoader();
 			// configureListeners(loader);
+
+			// Tools.__extend(_config, localConfig.parameters);
 
 			mp3loader = new MultipartURLLoader();
 			mp3loader.dataFormat = URLLoaderDataFormat.VARIABLES;
 
+			for (var key: Object in _config) {
+				if (localConfig.parameters.hasOwnProperty(key)) {
+					_config[key] = localConfig.parameters[key];
+					mp3loader.addVariable(key.toString(), _config[key]);
+				}
+			}
+			
+			MonsterDebugger.trace(this, _config);
+			// for (var key: Object in _config) {
+			// mp3loader.addVariable(key.toString(), _config[key]);
+			// }
+
+			// mp3loader.addVariable('username', 'test variable');
 			mp3loader.addEventListener(Event.COMPLETE, onReady);
 			mp3loader.addEventListener(MultipartURLLoaderEvent.DATA_PREPARE_PROGRESS, onWrite);
 			mp3loader.addEventListener(MultipartURLLoaderEvent.DATA_PREPARE_COMPLETE, onWriteEnd);
-//			mp3loader.addVariable('username', 'test variable');
 		}
 
 		private function onReady(e : Event) : void {
@@ -58,15 +70,17 @@ package us.wcweb.service {
 
 		private function onWriteEnd(e : MultipartURLLoaderEvent) : void {
 			trace('\nDATA PREPARE COMPLETE');
+			dispatch(new SystemEvent(SystemEvent.POST_SUCCESS, 'SERVER RESPONSE: Success '));
 		}
 
 		private function onWrite(e : MultipartURLLoaderEvent) : void {
 			trace('Prepare data: ' + e.bytesTotal + '/' + e.bytesWritten);
+			dispatch(new SystemEvent(SystemEvent.POST_PROCESS, 'Prepare data: ' + e.bytesTotal + '/' + e.bytesWritten));
 		}
 
 		public function uploadMp3(mp3 : ByteArray) : void {
-			mp3loader.addFile(mp3, (new Date()).getTime() + '.mp3', 'Filedata2');
-			mp3loader.load(config.base_url + _config.upload_url);
+			mp3loader.addFile(mp3, (new Date()).getTime() + '.mp3', _config.fieldname);
+			mp3loader.load(_config.upload_url);
 
 			// var header : URLRequestHeader = new URLRequestHeader("Content-type", "application/octet-stream");
 			// var request : URLRequest = new URLRequest(_config.base_url + _config.upload_url + "?user=" + _config.username);
@@ -75,6 +89,10 @@ package us.wcweb.service {
 			// request.data = mp3;
 			// loader.load(request);
 			// trace('request: ', request);
+		}
+
+		public function stopUpload() : void {
+			mp3loader.dispose();
 		}
 
 		// private function configureListeners(loader : URLLoader) : void {

@@ -20,16 +20,19 @@
  * THE SOFTWARE.
  */
 package us.wcweb.controller.commands {
-	import us.wcweb.model.events.RecordProxyEvent;
-	import us.wcweb.controller.commands.playerControllers.StopCurrentItemCommand;
-	import us.wcweb.controller.commands.playerControllers.PlayCurrentItemCommand;
-	import us.wcweb.controller.commands.playerControllers.StopRecordCommand;
-	import us.wcweb.controller.commands.playerControllers.StartRecordCommand;
-	import us.wcweb.view.events.PlayerViewEvent;
-	import us.wcweb.model.events.PlayerProxyEvent;
-	import us.wcweb.events.SystemEvent;
-
+	import us.wcweb.controller.commands.playerControllers.StopPostCommand;
 	import org.robotlegs.mvcs.Command;
+	import us.wcweb.controller.commands.playerControllers.PlayClipItemCommand;
+	import us.wcweb.controller.commands.playerControllers.PlayCurrentItemCommand;
+	import us.wcweb.controller.commands.playerControllers.StartRecordCommand;
+	import us.wcweb.controller.commands.playerControllers.StopCurrentItemCommand;
+	import us.wcweb.controller.commands.playerControllers.StopRecordCommand;
+	import us.wcweb.controller.commands.stageCommands.CleanupStartupCommand;
+	import us.wcweb.events.SystemEvent;
+	import us.wcweb.model.events.PlayerProxyEvent;
+	import us.wcweb.model.events.RecordProxyEvent;
+	import us.wcweb.view.events.PlayerViewEvent;
+
 
 	/**
 	 * Map Commands.
@@ -48,13 +51,16 @@ package us.wcweb.controller.commands {
 			commandMap.mapEvent(SystemEvent.LOAD_CONTENT, LoadXMLCommand, SystemEvent, true);
 			
 			commandMap.mapEvent(SystemEvent.CLEANUP_STARTUP, CleanupStartupCommand, SystemEvent, true);
-			commandMap.mapEvent(SystemEvent.STAGE_CLICK, StageClickCommand, SystemEvent);
+			//commandMap.mapEvent(SystemEvent.STAGE_CLICK, StageClickCommand, SystemEvent);
 			commandMap.mapEvent(PlayerProxyEvent.PLAY_ITEM, PlayClipItemCommand, PlayerProxyEvent);
 
 			commandMap.mapEvent(RecordProxyEvent.START_RECORD, StartRecordCommand);
 			commandMap.mapEvent(RecordProxyEvent.STOP_RECORD, StopRecordCommand);
 			commandMap.mapEvent(RecordProxyEvent.PLAY_CURRENT_RECORDED, PlayCurrentItemCommand);
 			commandMap.mapEvent(RecordProxyEvent.STOP_CURRENT_PLAY, StopCurrentItemCommand);
+			commandMap.mapEvent(SystemEvent.STOP_POST, StopPostCommand);
+			
+			
 		}
 	}
 }

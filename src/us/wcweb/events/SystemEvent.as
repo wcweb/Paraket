@@ -35,19 +35,18 @@ package us.wcweb.events {
 		//
 		// --------------------------------------------------------------------------
 		public static const LOAD_CONTENT : String = "loadContent";
-//		public static const GOOGLE_MAP_ON_STAGE : String = "googleMapOnStage";
-//		public static const REQUEST_GEOCODING : String = "requestGeoCoding";
+		// public static const GOOGLE_MAP_ON_STAGE : String = "googleMapOnStage";
+		// public static const REQUEST_GEOCODING : String = "requestGeoCoding";
 		public static const CLEANUP_STARTUP : String = "cleanupStartup";
-		
-//		public static const REQUEST_BACKCODING : String = "request_backcoding";
-		
-		public static const START_RECORD :String ="star_record";
-		public static const POST_RECORD: String = "post_record";
-		public static const POST_ERROR: String = "post_error";
-		public static const STOP_POST: String = "stop_post";
-		public static const STAGE_CLICK :String = "stage_click";
-		
-		
+		// public static const REQUEST_BACKCODING : String = "request_backcoding";
+		public static const START_RECORD : String = "star_record";
+		public static const POST_RECORD : String = "post_record";
+		public static const POST_ERROR : String = "post_error";
+		public static const STOP_POST : String = "stop_post";
+		public static const STAGE_CLICK : String = "stage_click";
+		public static const POST_PROCESS : String = "post_process";
+		public static const POST_SUCCESS :String = "post_success";
+
 		// --------------------------------------------------------------------------
 		//
 		// Instance Properties
