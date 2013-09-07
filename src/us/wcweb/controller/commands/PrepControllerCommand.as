@@ -20,6 +20,7 @@
  * THE SOFTWARE.
  */
 package us.wcweb.controller.commands {
+	import us.wcweb.controller.commands.playerControllers.PostRecordCommand;
 	import us.wcweb.controller.commands.playerControllers.StopPostCommand;
 	import org.robotlegs.mvcs.Command;
 	import us.wcweb.controller.commands.playerControllers.PlayClipItemCommand;
@@ -48,6 +49,7 @@ package us.wcweb.controller.commands {
 		// --------------------------------------------------------------------------
 		override public function execute() : void {
 			// commandMap.mapEvent(SystemEvent.REQUEST_GEOCODING, UpdateTimingCommand, SystemEvent);
+//			commandMap.mapEvent(SystemEvent.load, commandClass)
 			commandMap.mapEvent(SystemEvent.LOAD_CONTENT, LoadXMLCommand, SystemEvent, true);
 			
 			commandMap.mapEvent(SystemEvent.CLEANUP_STARTUP, CleanupStartupCommand, SystemEvent, true);
@@ -58,6 +60,7 @@ package us.wcweb.controller.commands {
 			commandMap.mapEvent(RecordProxyEvent.STOP_RECORD, StopRecordCommand);
 			commandMap.mapEvent(RecordProxyEvent.PLAY_CURRENT_RECORDED, PlayCurrentItemCommand);
 			commandMap.mapEvent(RecordProxyEvent.STOP_CURRENT_PLAY, StopCurrentItemCommand);
+			commandMap.mapEvent(SystemEvent.POST_RECORD, PostRecordCommand);
 			commandMap.mapEvent(SystemEvent.STOP_POST, StopPostCommand);
 			
 			

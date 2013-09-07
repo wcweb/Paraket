@@ -1,11 +1,11 @@
 body {
-  background-color: #5CACEE;
+	background-color: #5CACEE;
 }
 
 a {
-  color: white;
+	color: white;
 }
 
 a:hover {
-  color: black;
+	color: black;
 }

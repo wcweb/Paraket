@@ -35,11 +35,14 @@ javascript:
 		wmode:"transparent"
 	};
 	var attributes = {};
-	attributes.id = "flexApp";
-	attributes.name = "flexApp";
-	flashvars.url ="";
-	flashvars.lc_name = "lc_arrow"; 
+
+	flashvars.pkid="pkid";
+	flashvars.targettype="";
+	flashvars.filedname="Filedata2"
+	flashvars.upload_url ="http://127.0.0.1:9292/uploadmp3";
+
 	swfobject.embedSWF("Paraket.swf", "flashcontent", "214,", "137", "10.0.124", "", flashvars, params, attributes);
+	// swfobject.embedSWF("Paraket-test.swf", "flashcontent", "500,", "300", "10.0.124", "", flashvars, params, attributes);
 
 
 form action='/upload' method='post' enctype='multipart/form-data'

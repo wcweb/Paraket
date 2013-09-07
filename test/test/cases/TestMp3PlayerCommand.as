@@ -28,7 +28,7 @@ package test.cases {
 	import org.robotlegs.mvcs.Context;
 	import org.swiftsuspenders.Injector;
 	import org.swiftsuspenders.Reflector;
-	import org.swiftsuspenders.mapping.MappingEvent;
+//	import org.swiftsuspenders.mapping.MappingEvent;
 	import us.wcweb.CleanedContext;
 	import us.wcweb.ParaketContext;
 	import us.wcweb.controller.commands.playerControllers.PlayClipItemCommand;

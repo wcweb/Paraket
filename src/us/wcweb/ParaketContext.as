@@ -1,4 +1,6 @@
 package us.wcweb {
+	import com.demonsters.debugger.MonsterDebugger;
+
 	import us.wcweb.model.events.JwplayerConnectProxyEvent;
 	import us.wcweb.utils.Tools;
 	import us.wcweb.model.proxies.LocalConfigProxy;
@@ -17,6 +19,8 @@ package us.wcweb {
 		public var config : Object;
 		[Inject]
 		public var local_config : LocalConfigProxy;
+		[Inject]
+		public var MonsterDebuggerHelper : Class;
 
 		// ---------------------------------------
 		// CONSTRUCTOR
@@ -35,10 +39,15 @@ package us.wcweb {
 			// Model
 			// injector.mapSingleton(YOUR PROXY);
 
+			// injector.mapSingleton(LocalConfigProxy);
 			local_config = new LocalConfigProxy();
+			injector.mapValue(LocalConfigProxy, local_config)
 			local_config.setConfig(this.contextView);
+			// injector.mapClass(MonsterDebuggerHelper, MonsterDebugger);
+			MonsterDebugger.initialize(this);
 
-			injector.mapValue(LocalConfigProxy, local_config);
+			// Console.initialize(this);
+			// Console.trace(this, "init");
 
 			// Controller
 			// commandMap.mapEvent( YOUR START UP COMMAND, ContextEvent.STARTUP, ContextEvent, true );
@@ -53,13 +62,12 @@ package us.wcweb {
 			// Dispatch a start up event
 			dispatchEvent(new ContextEvent(ContextEvent.STARTUP));
 
-//			addEventListener(JwplayerConnectProxyEvent.UPDATE_TIME, handleupdateTimer);
+			// addEventListener(JwplayerConnectProxyEvent.UPDATE_TIME, handleupdateTimer);
 
 			super.startup();
 		}
-
-//		private function handleupdateTimer(e : JwplayerConnectProxyEvent) : void {
-//			dispatchEvent(e);
-//		}
+		// private function handleupdateTimer(e : JwplayerConnectProxyEvent) : void {
+		// dispatchEvent(e);
+		// }
 	}
 }

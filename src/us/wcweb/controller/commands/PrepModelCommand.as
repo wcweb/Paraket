@@ -24,7 +24,9 @@ package us.wcweb.controller.commands {
 	import us.wcweb.model.proxies.PlayerProxy;
 	import us.wcweb.model.proxies.LocalConfigProxy;
 	import us.wcweb.service.BackEndService;
+
 	import org.robotlegs.mvcs.Command;
+
 	import us.wcweb.model.proxies.AssetLoaderProxy;
 	import us.wcweb.model.proxies.JwplayerConnectProxy;
 
@@ -50,7 +52,7 @@ package us.wcweb.controller.commands {
 			injector.mapSingleton(BackEndService);
 			injector.mapSingleton(PlayerProxy);
 			injector.mapSingleton(RecorderServiceProxy);
-			injector.mapSingleton(LocalConfigProxy);
+			// injector.mapSingleton(LocalConfigProxy); // already init in context
 		}
 	}
 }

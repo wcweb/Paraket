@@ -1,5 +1,6 @@
 package us.wcweb.view.mediators {
 	import com.demonsters.debugger.MonsterDebugger;
+
 	import us.wcweb.utils.Strings;
 
 	import org.robotlegs.base.EventMap;
@@ -25,8 +26,7 @@ package us.wcweb.view.mediators {
 
 		public function PlayerViewMediator() {
 			super();
-			MonsterDebugger.initialize(this);
-			
+			// MonsterDebugger.initialize(this);
 		}
 
 		// ---------------------------------------
@@ -47,7 +47,10 @@ package us.wcweb.view.mediators {
 			eventMap.mapListener(view, RecordProxyEvent.PLAY_CURRENT_RECORDED, handlePlayCurrentRecorded);
 			eventMap.mapListener(view, RecordProxyEvent.STOP_CURRENT_PLAY, handleStopCurrentPlay);
 
+			eventMap.mapListener(view, RecordProxyEvent.NO_RECORD, handleNoRecord);
+
 			eventMap.mapListener(view, SystemEvent.POST_RECORD, handlePostRecord);
+			
 			eventMap.mapListener(view, SystemEvent.POST_PROCESS, handlePostProcess);
 			eventMap.mapListener(view, SystemEvent.POST_SUCCESS, handlePostSucess);
 			eventMap.mapListener(view, SystemEvent.POST_ERROR, handlePostError);
@@ -100,14 +103,16 @@ package us.wcweb.view.mediators {
 		// private function handleStageClick(event : SystemEvent) : void {
 		// dispatch(event);
 		// }
-		
-		
 		/*
 		 * RecordProxyEvent
 		 */
 		private function handleStartRecord(event : RecordProxyEvent) : void {
 			dispatch(event);
 			view.log("开始录音：");
+		}
+
+		private function handleNoRecord(event : RecordProxyEvent) : void {
+			view.log("还没录音哦。");
 		}
 
 		private function handleStopRecord(event : RecordProxyEvent) : void {
@@ -151,13 +156,13 @@ package us.wcweb.view.mediators {
 		}
 
 		private function handleRecordRecording(event : RecordProxyEvent) : void {
-			view.log('active:' + event.data);
-			trace('active:' + event.data);
-			MonsterDebugger.trace(this, 'active:' + event.data);
+			view.log('麦克风活跃度:' + event.data);
+			trace('麦克风活跃度:' + event.data);
+			// MonsterDebugger.trace(this, 'active:' + event.data);
 		}
 
 		private function handleEncordComplete(event : RecordProxyEvent) : void {
-			view.log(event.data);
+			view.log("已压缩成MP3。可以上传或播放");
 			view.onSuccessRecord();
 		}
 

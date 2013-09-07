@@ -1,127 +1,149 @@
-<DOMComponentItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="ProgressBar" itemID="44b2ac3f-000001bc" linkageExportForAS="true" linkageClassName="fl.controls.ProgressBar" lastModified="1292423118" lastUniqueIdentifier="14" tooltip="ProgressBar" customIconID="0" actionscriptClass="fl.controls.ProgressBar" livePreviewScmSourceFilename="ProgressBar.swf" persistLivePreview11="true" livePreview11ScmSourceFilename="C:\Users\jkamerer\AppData\Local\Adobe\Flash CS5.5\en_US\Configuration\TMPxmhs0ayltq..swf" editFrameIndex="2" requiredMinimumPlayerVersion="9" requiredMinimumASVersion="3" parametersAreLocked="true">
-  <timeline>
-    <DOMTimeline name="ProgressBar" currentFrame="1">
-      <layers>
-        <DOMLayer name="assets" color="#9933CC" autoNamed="false">
-          <frames>
-            <DOMFrame index="0" keyMode="9728">
-              <elements/>
-            </DOMFrame>
-            <DOMFrame index="1" keyMode="9728">
-              <elements>
-                <DOMSymbolInstance libraryItemName="Component Assets/ProgressBarSkins/ProgressBar_trackSkin">
-                  <matrix>
-                    <Matrix d="0.999725341796875" tx="22" ty="64"/>
-                  </matrix>
-                  <transformationPoint>
-                    <Point x="75" y="2"/>
-                  </transformationPoint>
-                </DOMSymbolInstance>
-                <DOMSymbolInstance libraryItemName="Component Assets/ProgressBarSkins/ProgressBar_barSkin">
-                  <matrix>
-                    <Matrix d="0.999725341796875" tx="117" ty="30"/>
-                  </matrix>
-                  <transformationPoint>
-                    <Point x="26.5" y="2"/>
-                  </transformationPoint>
-                </DOMSymbolInstance>
-                <DOMSymbolInstance libraryItemName="Component Assets/ProgressBarSkins/ProgressBar_indeterminateSkin">
-                  <matrix>
-                    <Matrix d="0.999725341796875" tx="90.05" ty="100"/>
-                  </matrix>
-                  <transformationPoint>
-                    <Point x="39.95" y="20"/>
-                  </transformationPoint>
-                </DOMSymbolInstance>
-              </elements>
-            </DOMFrame>
-          </frames>
-        </DOMLayer>
-        <DOMLayer name="asset names" color="#FF4FFF" locked="true" current="true" isSelected="true" autoNamed="false" layerType="guide">
-          <frames>
-            <DOMFrame index="0" keyMode="9728">
-              <elements/>
-            </DOMFrame>
-            <DOMFrame index="1" keyMode="9728">
-              <elements>
-                <DOMRectangleObject objectWidth="427" objectHeight="177.95" x="-4" y="137" selected="true" lockFlag="true" topLeftRadius="20" topRightRadius="20" bottomLeftRadius="20" bottomRightRadius="20">
-                  <matrix>
-                    <Matrix d="0.999725341796875" tx="4" ty="-136.95"/>
-                  </matrix>
-                  <fill>
-                    <SolidColor color="#EEEEEE"/>
-                  </fill>
-                  <stroke>
-                    <SolidStroke scaleMode="normal">
-                      <fill>
-                        <SolidColor color="#CCCCCC"/>
-                      </fill>
-                    </SolidStroke>
-                  </stroke>
-                </DOMRectangleObject>
-                <DOMStaticText selected="true" width="144" height="18" isSelectable="false">
-                  <matrix>
-                    <Matrix d="0.999725341796875" tx="232.4" ty="66"/>
-                  </matrix>
-                  <textRuns>
-                    <DOMTextRun>
-                      <characters>Track Skin</characters>
-                      <textAttrs>
-                        <DOMTextAttrs aliasText="false" lineSpacing="14.8" size="16" face="TimesNewRomanPSMT" fillColor="#666666"/>
-                      </textAttrs>
-                    </DOMTextRun>
-                  </textRuns>
-                </DOMStaticText>
-                <DOMStaticText selected="true" width="144" height="18" isSelectable="false">
-                  <matrix>
-                    <Matrix d="0.999725341796875" tx="232.4" ty="24.1"/>
-                  </matrix>
-                  <textRuns>
-                    <DOMTextRun>
-                      <characters>Bar Skin</characters>
-                      <textAttrs>
-                        <DOMTextAttrs aliasText="false" lineSpacing="14.8" size="16" face="TimesNewRomanPSMT" fillColor="#666666"/>
-                      </textAttrs>
-                    </DOMTextRun>
-                  </textRuns>
-                </DOMStaticText>
-                <DOMStaticText selected="true" width="144" height="18" isSelectable="false">
-                  <matrix>
-                    <Matrix d="0.999725341796875" tx="232.4" ty="116.3"/>
-                  </matrix>
-                  <textRuns>
-                    <DOMTextRun>
-                      <characters>Indeterminate Pattern</characters>
-                      <textAttrs>
-                        <DOMTextAttrs aliasText="false" lineSpacing="14.8" size="16" face="TimesNewRomanPSMT" fillColor="#666666"/>
-                      </textAttrs>
-                    </DOMTextRun>
-                  </textRuns>
-                </DOMStaticText>
-              </elements>
-            </DOMFrame>
-          </frames>
-        </DOMLayer>
-        <DOMLayer name="avatar" color="#4FFF4F" locked="true" autoNamed="false">
-          <frames>
-            <DOMFrame index="0" keyMode="9728">
-              <elements>
-                <DOMSymbolInstance libraryItemName="Component Assets/_private/Component_avatar">
-                  <matrix>
-                    <Matrix a="1.875" d="0.18182373046875"/>
-                  </matrix>
-                  <transformationPoint>
-                    <Point x="40" y="11"/>
-                  </transformationPoint>
-                </DOMSymbolInstance>
-              </elements>
-            </DOMFrame>
-            <DOMFrame index="1" keyMode="9728">
-              <elements/>
-            </DOMFrame>
-          </frames>
-        </DOMLayer>
-      </layers>
-    </DOMTimeline>
-  </timeline>
+<DOMComponentItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://ns.adobe.com/xfl/2008/" name="ProgressBar" itemID="44b2ac3f-000001bc"
+	linkageExportForAS="true" linkageClassName="fl.controls.ProgressBar"
+	lastModified="1292423118" lastUniqueIdentifier="14" tooltip="ProgressBar"
+	customIconID="0" actionscriptClass="fl.controls.ProgressBar"
+	livePreviewScmSourceFilename="ProgressBar.swf" persistLivePreview11="true"
+	livePreview11ScmSourceFilename="C:\Users\jkamerer\AppData\Local\Adobe\Flash CS5.5\en_US\Configuration\TMPxmhs0ayltq..swf"
+	editFrameIndex="2" requiredMinimumPlayerVersion="9"
+	requiredMinimumASVersion="3" parametersAreLocked="true">
+	<timeline>
+		<DOMTimeline name="ProgressBar" currentFrame="1">
+			<layers>
+				<DOMLayer name="assets" color="#9933CC" autoNamed="false">
+					<frames>
+						<DOMFrame index="0" keyMode="9728">
+							<elements />
+						</DOMFrame>
+						<DOMFrame index="1" keyMode="9728">
+							<elements>
+								<DOMSymbolInstance
+									libraryItemName="Component Assets/ProgressBarSkins/ProgressBar_trackSkin">
+									<matrix>
+										<Matrix d="0.999725341796875" tx="22" ty="64" />
+									</matrix>
+									<transformationPoint>
+										<Point x="75" y="2" />
+									</transformationPoint>
+								</DOMSymbolInstance>
+								<DOMSymbolInstance
+									libraryItemName="Component Assets/ProgressBarSkins/ProgressBar_barSkin">
+									<matrix>
+										<Matrix d="0.999725341796875" tx="117" ty="30" />
+									</matrix>
+									<transformationPoint>
+										<Point x="26.5" y="2" />
+									</transformationPoint>
+								</DOMSymbolInstance>
+								<DOMSymbolInstance
+									libraryItemName="Component Assets/ProgressBarSkins/ProgressBar_indeterminateSkin">
+									<matrix>
+										<Matrix d="0.999725341796875" tx="90.05" ty="100" />
+									</matrix>
+									<transformationPoint>
+										<Point x="39.95" y="20" />
+									</transformationPoint>
+								</DOMSymbolInstance>
+							</elements>
+						</DOMFrame>
+					</frames>
+				</DOMLayer>
+				<DOMLayer name="asset names" color="#FF4FFF" locked="true"
+					current="true" isSelected="true" autoNamed="false" layerType="guide">
+					<frames>
+						<DOMFrame index="0" keyMode="9728">
+							<elements />
+						</DOMFrame>
+						<DOMFrame index="1" keyMode="9728">
+							<elements>
+								<DOMRectangleObject objectWidth="427"
+									objectHeight="177.95" x="-4" y="137" selected="true" lockFlag="true"
+									topLeftRadius="20" topRightRadius="20" bottomLeftRadius="20"
+									bottomRightRadius="20">
+									<matrix>
+										<Matrix d="0.999725341796875" tx="4" ty="-136.95" />
+									</matrix>
+									<fill>
+										<SolidColor color="#EEEEEE" />
+									</fill>
+									<stroke>
+										<SolidStroke scaleMode="normal">
+											<fill>
+												<SolidColor color="#CCCCCC" />
+											</fill>
+										</SolidStroke>
+									</stroke>
+								</DOMRectangleObject>
+								<DOMStaticText selected="true" width="144" height="18"
+									isSelectable="false">
+									<matrix>
+										<Matrix d="0.999725341796875" tx="232.4" ty="66" />
+									</matrix>
+									<textRuns>
+										<DOMTextRun>
+											<characters>Track Skin</characters>
+											<textAttrs>
+												<DOMTextAttrs aliasText="false" lineSpacing="14.8"
+													size="16" face="TimesNewRomanPSMT" fillColor="#666666" />
+											</textAttrs>
+										</DOMTextRun>
+									</textRuns>
+								</DOMStaticText>
+								<DOMStaticText selected="true" width="144" height="18"
+									isSelectable="false">
+									<matrix>
+										<Matrix d="0.999725341796875" tx="232.4" ty="24.1" />
+									</matrix>
+									<textRuns>
+										<DOMTextRun>
+											<characters>Bar Skin</characters>
+											<textAttrs>
+												<DOMTextAttrs aliasText="false" lineSpacing="14.8"
+													size="16" face="TimesNewRomanPSMT" fillColor="#666666" />
+											</textAttrs>
+										</DOMTextRun>
+									</textRuns>
+								</DOMStaticText>
+								<DOMStaticText selected="true" width="144" height="18"
+									isSelectable="false">
+									<matrix>
+										<Matrix d="0.999725341796875" tx="232.4" ty="116.3" />
+									</matrix>
+									<textRuns>
+										<DOMTextRun>
+											<characters>Indeterminate Pattern</characters>
+											<textAttrs>
+												<DOMTextAttrs aliasText="false" lineSpacing="14.8"
+													size="16" face="TimesNewRomanPSMT" fillColor="#666666" />
+											</textAttrs>
+										</DOMTextRun>
+									</textRuns>
+								</DOMStaticText>
+							</elements>
+						</DOMFrame>
+					</frames>
+				</DOMLayer>
+				<DOMLayer name="avatar" color="#4FFF4F" locked="true"
+					autoNamed="false">
+					<frames>
+						<DOMFrame index="0" keyMode="9728">
+							<elements>
+								<DOMSymbolInstance libraryItemName="Component Assets/_private/Component_avatar">
+									<matrix>
+										<Matrix a="1.875" d="0.18182373046875" />
+									</matrix>
+									<transformationPoint>
+										<Point x="40" y="11" />
+									</transformationPoint>
+								</DOMSymbolInstance>
+							</elements>
+						</DOMFrame>
+						<DOMFrame index="1" keyMode="9728">
+							<elements />
+						</DOMFrame>
+					</frames>
+				</DOMLayer>
+			</layers>
+		</DOMTimeline>
+	</timeline>
 </DOMComponentItem>

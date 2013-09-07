@@ -1,4 +1,4 @@
-<DOMDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" width="200" height="90" currentTimeline="1" xflVersion="2.2" creatorInfo="Adobe Flash Professional CS6" platform="Macintosh" versionInfo="Saved by Adobe Flash Macintosh 12.0 build 481" majorVersion="12" buildNumber="481" guidesSnapTo="false" guidesVisible="false" viewAngle3D="21.4381852880442" vanishingPoint3DX="250" previewMode="full" nextSceneIdentifier="2" playOptionsPlayLoop="false" playOptionsPlayPages="false" playOptionsPlayFrameActions="false" autoSaveEnabled="true" autoSaveHasPrompted="true">
+<DOMDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" width="214" height="137" currentTimeline="1" xflVersion="2.2" creatorInfo="Adobe Flash Professional CS6" platform="Macintosh" versionInfo="Saved by Adobe Flash Macintosh 12.0 build 481" majorVersion="12" buildNumber="481" guidesSnapTo="false" guidesVisible="false" viewAngle3D="22.9004660533285" vanishingPoint3DX="250" previewMode="full" nextSceneIdentifier="2" playOptionsPlayLoop="false" playOptionsPlayPages="false" playOptionsPlayFrameActions="false" autoSaveEnabled="true" autoSaveHasPrompted="true">
      <folders>
           <DOMFolderItem name="Animations" itemID="515007aa-00000598" isExpanded="true"/>
           <DOMFolderItem name="buttons" itemID="5150075c-0000058c" isExpanded="true"/>
@@ -8,9 +8,9 @@
           <DOMFolderItem name="font" itemID="51500747-00000587" isExpanded="true"/>
      </folders>
      <fonts>
-          <DOMFontItem name="Chinese" itemID="516fff21-000003a7" font="MicrosoftYaHei" size="0" id="4" sourceLastImported="1366294305" embedRanges="9999"/>
+          <DOMFontItem name="font/Chinese All" itemID="5150072c-00000583" linkageExportForAS="true" linkageBaseClass="flash.text.Font" linkageClassName="com.wcweb.UI.Fonts.ChineseAll" font="MicrosoftYaHei" size="0" id="1" sourceLastImported="1378533240" embedRanges="9999|14"/>
           <DOMFontItem name="font/Arail" itemID="5150062a-0000057c" font="ArialMT" size="0" id="2" sourceLastImported="1364198954" embedRanges="1|2|3|4|5"/>
-          <DOMFontItem name="font/Chinese All" itemID="5150072c-00000583" linkageExportForAS="true" linkageBaseClass="flash.text.Font" linkageClassName="com.wcweb.UI.Fonts.ChineseAll" font="MicrosoftYaHei" size="0" id="1" sourceLastImported="1366974320" embedRanges="9999|14"/>
+          <DOMFontItem name="Chinese" itemID="516fff21-000003a7" font="MicrosoftYaHei" size="0" id="4" sourceLastImported="1366294305" embedRanges="9999"/>
      </fonts>
      <media>
           <DOMCompiledClipItem name="buttons/KafeButton" itemID="5146d7d3-0000007c" linkageExportForAS="true" linkageClassName="com.kevincao.kafe.components.KafeButtonComp" sourceLastImported="1300596021" sourcePlatform="macintosh" customIconID="0" actionscriptClass="com.kevincao.kafe.components.KafeButtonComp" livePreviewScmHRef="EZVLGJUMHQ.swf" livePreviewScmSourceFilename="/Users/macbookpro/Library/Application Support/Adobe/Flash CS6/en_US/Configuration/TMPEZVLFJUMHQ..swf" persistLivePreview11="true" livePreview11ScmHRef="EZVLGJUMHQ1.swf" livePreview11ScmSourceFilename="/Users/macbookpro/Library/Application Support/Adobe/Flash CS6/en_US/Configuration/TMPEZVHQJUMHQ..swf" editFrameIndex="1" requiredMinimumPlayerVersion="0" requiredMinimumASVersion="0" parametersAreLocked="true" swcPath="buttons/KafeButton.xml" rootSymbolLinkageID="com.kevincao.kafe.components.KafeButtonComp" movieRectRight="640" movieRectBottom="640" playerVersion="9" actionscriptVersion="3" hashKey="QlVLg9cDBUV9RgnoNwJSn/">
@@ -121,7 +121,7 @@
           <Include href="progressbar copy.xml" loadImmediate="false" itemID="5187347e-00000357" lastModified="1367815282"/>
           <Include href="ProgressBar.xml" itemID="44b2ac3f-000001bc" lastModified="1292423118"/>
           <Include href="recordTimer.xml" loadImmediate="false" itemID="517b3dae-00000469" lastModified="1367032197"/>
-          <Include href="statusLogger.xml" loadImmediate="false" itemID="517b41bd-000004bd" lastModified="1378446272"/>
+          <Include href="statusLogger.xml" loadImmediate="false" itemID="517b41bd-000004bd" lastModified="1378533288"/>
      </symbols>
      <timelines>
           <DOMTimeline name="Scene 1">
@@ -469,6 +469,8 @@
      </extendedSwatchLists>
      <PrinterSettings platform="macintosh"/>
      <publishHistory>
+          <PublishItem publishSize="7448284" publishTime="1378530805"/>
+          <PublishItem publishSize="7448284" publishTime="1378530769"/>
           <PublishItem publishSize="7448285" publishTime="1378443873"/>
           <PublishItem publishSize="7448287" publishTime="1378442394"/>
           <PublishItem publishSize="7448574" publishTime="1367032420"/>
@@ -487,8 +489,6 @@
           <PublishItem publishSize="17821084" publishTime="1366172274"/>
           <PublishItem publishSize="17821082" publishTime="1366170926"/>
           <PublishItem publishSize="17821003" publishTime="1366170612"/>
-          <PublishItem publishSize="17820998" publishTime="1366168547"/>
-          <PublishItem publishSize="17820998" publishTime="1366167783"/>
      </publishHistory>
      <swcCache>
           <Swc hashKey="QlVLg9cDBUV9RgnoNwJSn/" href="HAE4HL84WB.swc">

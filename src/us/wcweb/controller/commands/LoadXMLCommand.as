@@ -38,7 +38,7 @@ package us.wcweb.controller.commands {
 		public var proxy : AssetLoaderProxy;
 		
 		[Inject]
-		public var config:LocalConfigProxy;
+		public var local_config:LocalConfigProxy;
 		
 
 		// --------------------------------------------------------------------------
@@ -47,11 +47,15 @@ package us.wcweb.controller.commands {
 		//
 		// --------------------------------------------------------------------------
 		override public function execute() : void {
-			trace("locasXML COMMAND config "+ Tools.getProperties(config.parameters));
-			if( config.parameters.files ==''){
-				trace("there is a error in js config flash var "+ Tools.getProperties(config.parameters));
+			trace("locasXML COMMAND config "+ Tools.getProperties(local_config.parameters));
+			var ss:Object = Tools.getProperties(local_config.parameters);
+			if( local_config.parameters.hasOwnProperty("file")){
+				trace("there is a error in js config flash var "+ Tools.getProperties(local_config.parameters));
 			}else{
-				proxy.loadXMLContent(config.parameters.files);	
+				if(local_config.parameters.files !== ''){
+					proxy.loadXMLContent(local_config.parameters.files);	
+				}
+				
 			}
 			
 		}

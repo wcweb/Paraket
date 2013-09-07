@@ -1,18 +1,49 @@
-<DOMDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" backgroundColor="#F4F5F5" width="500" height="200" currentTimeline="1" xflVersion="2.2" creatorInfo="Adobe Flash Professional CS6" platform="Macintosh" versionInfo="Saved by Adobe Flash Macintosh 12.0 build 481" majorVersion="12" buildNumber="481" rulerVisible="true" viewAngle3D="50.6510299754819" previewMode="full" nextSceneIdentifier="2" playOptionsPlayLoop="false" playOptionsPlayPages="false" playOptionsPlayFrameActions="false" autoSaveEnabled="true" autoSaveHasPrompted="true" hasAccessibleData="true">
-     <folders>
-          <DOMFolderItem name="Animations" itemID="515007aa-00000598"/>
-          <DOMFolderItem name="buttons" itemID="5150075c-0000058c" isExpanded="true"/>
-          <DOMFolderItem name="font" itemID="51500747-00000587" isExpanded="true"/>
-          <DOMFolderItem name="nouse" itemID="5150076a-00000592"/>
-     </folders>
-     <fonts>
-          <DOMFontItem name="font/Chinese All" itemID="5150072c-00000583" linkageExportForAS="true" linkageClassName="com.wcweb.UI.Fonts.ChineseAll" font="KaiTi" size="0" id="3" sourceLastImported="1364222109" embedRanges="9999|14"/>
-          <DOMFontItem name="font/Arail" itemID="5150062a-0000057c" font="ArialMT" size="0" id="2" sourceLastImported="1364198954" embedRanges="1|2|3|4|5"/>
-          <DOMFontItem name="font/Chinese" itemID="5150065a-0000057d" font="KaiTi" size="0" id="1" sourceLastImported="1363666223" embedRanges="14"/>
-     </fonts>
-     <media>
-          <DOMCompiledClipItem name="buttons/EasyButton" itemID="5146d7d3-00000042" linkageExportForAS="true" linkageClassName="com.kevincao.kafe.components.EasyButtonComp" sourceExternalFilepath="./LIBRARY/EasyButton" sourceLastImported="1300797727" sourcePlatform="macintosh" customIconID="0" actionscriptClass="com.kevincao.kafe.components.EasyButtonComp" livePreviewScmHRef="F41CUJUMN4.swf" livePreviewScmSourceFilename="/Users/macbookpro/Library/Application Support/Adobe/Flash CS6/en_US/Configuration/TMPF41CUJUMN4..swf" persistLivePreview11="true" livePreview11ScmHRef="F41CUJUMN42.swf" livePreview11ScmSourceFilename="/Users/macbookpro/Library/Application Support/Adobe/Flash CS6/en_US/Configuration/TMPF41BOJUMN4..swf" editFrameIndex="1" requiredMinimumPlayerVersion="0" requiredMinimumASVersion="0" parametersAreLocked="true" swcPath="buttons/EasyButton.xml" rootSymbolLinkageID="com.kevincao.kafe.components.EasyButtonComp" movieRectRight="640" movieRectBottom="640" playerVersion="9" actionscriptVersion="3" hashKey="joHPkYW6Gn6HXQANfslZ50">
-               <parametersAsXML><![CDATA[   <property id="enabled">
+<DOMDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://ns.adobe.com/xfl/2008/" backgroundColor="#F4F5F5" width="500"
+	height="200" currentTimeline="1" xflVersion="2.2"
+	creatorInfo="Adobe Flash Professional CS6" platform="Macintosh"
+	versionInfo="Saved by Adobe Flash Macintosh 12.0 build 481"
+	majorVersion="12" buildNumber="481" rulerVisible="true" viewAngle3D="50.6510299754819"
+	previewMode="full" nextSceneIdentifier="2" playOptionsPlayLoop="false"
+	playOptionsPlayPages="false" playOptionsPlayFrameActions="false"
+	autoSaveEnabled="true" autoSaveHasPrompted="true" hasAccessibleData="true">
+	<folders>
+		<DOMFolderItem name="Animations" itemID="515007aa-00000598" />
+		<DOMFolderItem name="buttons" itemID="5150075c-0000058c"
+			isExpanded="true" />
+		<DOMFolderItem name="font" itemID="51500747-00000587"
+			isExpanded="true" />
+		<DOMFolderItem name="nouse" itemID="5150076a-00000592" />
+	</folders>
+	<fonts>
+		<DOMFontItem name="font/Chinese All" itemID="5150072c-00000583"
+			linkageExportForAS="true" linkageClassName="com.wcweb.UI.Fonts.ChineseAll"
+			font="KaiTi" size="0" id="3" sourceLastImported="1364222109"
+			embedRanges="9999|14" />
+		<DOMFontItem name="font/Arail" itemID="5150062a-0000057c"
+			font="ArialMT" size="0" id="2" sourceLastImported="1364198954"
+			embedRanges="1|2|3|4|5" />
+		<DOMFontItem name="font/Chinese" itemID="5150065a-0000057d"
+			font="KaiTi" size="0" id="1" sourceLastImported="1363666223"
+			embedRanges="14" />
+	</fonts>
+	<media>
+		<DOMCompiledClipItem name="buttons/EasyButton"
+			itemID="5146d7d3-00000042" linkageExportForAS="true"
+			linkageClassName="com.kevincao.kafe.components.EasyButtonComp"
+			sourceExternalFilepath="./LIBRARY/EasyButton" sourceLastImported="1300797727"
+			sourcePlatform="macintosh" customIconID="0"
+			actionscriptClass="com.kevincao.kafe.components.EasyButtonComp"
+			livePreviewScmHRef="F41CUJUMN4.swf"
+			livePreviewScmSourceFilename="/Users/macbookpro/Library/Application Support/Adobe/Flash CS6/en_US/Configuration/TMPF41CUJUMN4..swf"
+			persistLivePreview11="true" livePreview11ScmHRef="F41CUJUMN42.swf"
+			livePreview11ScmSourceFilename="/Users/macbookpro/Library/Application Support/Adobe/Flash CS6/en_US/Configuration/TMPF41BOJUMN4..swf"
+			editFrameIndex="1" requiredMinimumPlayerVersion="0"
+			requiredMinimumASVersion="0" parametersAreLocked="true"
+			swcPath="buttons/EasyButton.xml" rootSymbolLinkageID="com.kevincao.kafe.components.EasyButtonComp"
+			movieRectRight="640" movieRectBottom="640" playerVersion="9"
+			actionscriptVersion="3" hashKey="joHPkYW6Gn6HXQANfslZ50">
+			<parametersAsXML><![CDATA[   <property id="enabled">
       <Inspectable name="enabled" variable="enabled" category="" verbose="1" defaultValue="true" type="Boolean"/>
    </property>
    <property id="href">
@@ -22,7 +53,7 @@
       <Inspectable name="window" variable="window" category="" verbose="0" defaultValue="_blank" type="String"/>
    </property>
 ]]></parametersAsXML>
-               <classProperties><![CDATA[<component id="com/kevincao/kafe/components/EasyButtonComp" class="com.kevincao.kafe.components.EasyButtonComp" livePreviewClass="com.kevincao.kafe.components.EasyButtonComp" modified="1300797727215">
+			<classProperties><![CDATA[<component id="com/kevincao/kafe/components/EasyButtonComp" class="com.kevincao.kafe.components.EasyButtonComp" livePreviewClass="com.kevincao.kafe.components.EasyButtonComp" modified="1300797727215">
 <movieBounds xmin="0" xmax="640" ymin="0" ymax="640" />
 <classDefs>
 	<classDef id="fl.livepreview.LivePreviewParent"/>
@@ -73,13 +104,29 @@
 </class></livePreview>
 </component>
 ]]></classProperties>
-               <customIcon>
-                    <CustomIcon rowByteCount="72" colorDepth="32" width="18" height="18" frameRight="360" frameBottom="360" isTransparent="true" href="F41CVJUMN4.dat"/>
-               </customIcon>
-               <SwcItem name="com.kevincao.kafe.components.EasyButtonComp" version="1300797727" isTopLevel="true"/>
-          </DOMCompiledClipItem>
-          <DOMCompiledClipItem name="buttons/KafeButton" itemID="5146d7d3-0000007c" linkageExportForAS="true" linkageClassName="com.kevincao.kafe.components.KafeButtonComp" sourceLastImported="1300596021" sourcePlatform="macintosh" customIconID="0" actionscriptClass="com.kevincao.kafe.components.KafeButtonComp" livePreviewScmHRef="EZVLGJUMHQ.swf" livePreviewScmSourceFilename="/Users/macbookpro/Library/Application Support/Adobe/Flash CS6/en_US/Configuration/TMPEZVLFJUMHQ..swf" persistLivePreview11="true" livePreview11ScmHRef="EZVLGJUMHQ1.swf" livePreview11ScmSourceFilename="/Users/macbookpro/Library/Application Support/Adobe/Flash CS6/en_US/Configuration/TMPEZVHQJUMHQ..swf" editFrameIndex="1" requiredMinimumPlayerVersion="0" requiredMinimumASVersion="0" parametersAreLocked="true" swcPath="buttons/KafeButton.xml" rootSymbolLinkageID="com.kevincao.kafe.components.KafeButtonComp" movieRectRight="640" movieRectBottom="640" playerVersion="9" actionscriptVersion="3" hashKey="QlVLg9cDBUV9RgnoNwJSn/">
-               <parametersAsXML><![CDATA[   <property id="enabled">
+			<customIcon>
+				<CustomIcon rowByteCount="72" colorDepth="32" width="18"
+					height="18" frameRight="360" frameBottom="360" isTransparent="true"
+					href="F41CVJUMN4.dat" />
+			</customIcon>
+			<SwcItem name="com.kevincao.kafe.components.EasyButtonComp"
+				version="1300797727" isTopLevel="true" />
+		</DOMCompiledClipItem>
+		<DOMCompiledClipItem name="buttons/KafeButton"
+			itemID="5146d7d3-0000007c" linkageExportForAS="true"
+			linkageClassName="com.kevincao.kafe.components.KafeButtonComp"
+			sourceLastImported="1300596021" sourcePlatform="macintosh"
+			customIconID="0" actionscriptClass="com.kevincao.kafe.components.KafeButtonComp"
+			livePreviewScmHRef="EZVLGJUMHQ.swf"
+			livePreviewScmSourceFilename="/Users/macbookpro/Library/Application Support/Adobe/Flash CS6/en_US/Configuration/TMPEZVLFJUMHQ..swf"
+			persistLivePreview11="true" livePreview11ScmHRef="EZVLGJUMHQ1.swf"
+			livePreview11ScmSourceFilename="/Users/macbookpro/Library/Application Support/Adobe/Flash CS6/en_US/Configuration/TMPEZVHQJUMHQ..swf"
+			editFrameIndex="1" requiredMinimumPlayerVersion="0"
+			requiredMinimumASVersion="0" parametersAreLocked="true"
+			swcPath="buttons/KafeButton.xml" rootSymbolLinkageID="com.kevincao.kafe.components.KafeButtonComp"
+			movieRectRight="640" movieRectBottom="640" playerVersion="9"
+			actionscriptVersion="3" hashKey="QlVLg9cDBUV9RgnoNwJSn/">
+			<parametersAsXML><![CDATA[   <property id="enabled">
       <Inspectable name="enabled" variable="enabled" category="" verbose="1" defaultValue="true" type="Boolean"/>
    </property>
    <property id="href">
@@ -98,7 +145,7 @@
       <Inspectable name="window" variable="window" category="" verbose="0" defaultValue="_blank" type="String"/>
    </property>
 ]]></parametersAsXML>
-               <classProperties><![CDATA[<component id="com/kevincao/kafe/components/KafeButtonComp" class="com.kevincao.kafe.components.KafeButtonComp" livePreviewClass="com.kevincao.kafe.components.KafeButtonComp" modified="1300596021875">
+			<classProperties><![CDATA[<component id="com/kevincao/kafe/components/KafeButtonComp" class="com.kevincao.kafe.components.KafeButtonComp" livePreviewClass="com.kevincao.kafe.components.KafeButtonComp" modified="1300596021875">
 <movieBounds xmin="0" xmax="640" ymin="0" ymax="640" />
 <classDefs>
 	<classDef id="fl.livepreview.LivePreviewParent"/>
@@ -159,447 +206,733 @@
 </class></livePreview>
 </component>
 ]]></classProperties>
-               <customIcon>
-                    <CustomIcon rowByteCount="72" colorDepth="32" width="18" height="18" frameRight="360" frameBottom="360" isTransparent="true" href="EZVLJJUMHQ.dat"/>
-               </customIcon>
-               <SwcItem name="com.kevincao.kafe.components.KafeButtonComp" version="1300596021" isTopLevel="true"/>
-          </DOMCompiledClipItem>
-          <DOMBitmapItem name="nouse/link.png" itemID="51493bde-00000300" sourceExternalFilepath="./LIBRARY/link.png" sourceLastImported="1362457932" sourcePlatform="macintosh" externalFileSize="1217" useImportedJPEGData="false" compressionType="lossless" originalCompressionType="lossless" quality="50" href="nouse/link.png" bitmapDataHRef="M 4 1363753595.dat" frameRight="480" frameBottom="480"/>
-          <DOMBitmapItem name="nouse/map.png" itemID="51493bde-00000301" sourceExternalFilepath="./LIBRARY/map.png" sourceLastImported="1362457932" sourcePlatform="macintosh" externalFileSize="1291" useImportedJPEGData="false" compressionType="lossless" originalCompressionType="lossless" quality="50" href="nouse/map.png" bitmapDataHRef="M 5 1363753595.dat" frameRight="480" frameBottom="480"/>
-          <DOMBitmapItem name="nouse/media-icons.png" itemID="51493bde-00000302" sourceExternalFilepath="./LIBRARY/media-icons.png" sourceLastImported="1362457932" sourcePlatform="macintosh" externalFileSize="2038" useImportedJPEGData="false" compressionType="lossless" originalCompressionType="lossless" quality="50" href="nouse/media-icons.png" bitmapDataHRef="M 6 1363753595.dat" frameRight="1280" frameBottom="320"/>
-          <DOMBitmapItem name="nouse/media-white.png" itemID="51493bde-00000303" sourceExternalFilepath="./LIBRARY/media-white.png" sourceLastImported="1362457932" sourcePlatform="macintosh" externalFileSize="978" useImportedJPEGData="false" compressionType="lossless" originalCompressionType="lossless" quality="50" href="nouse/media-white.png" bitmapDataHRef="M 7 1363753595.dat" frameRight="440" frameBottom="520"/>
-          <DOMBitmapItem name="nouse/media.png" itemID="51493bde-00000304" sourceExternalFilepath="./LIBRARY/media.png" sourceLastImported="1362457932" sourcePlatform="macintosh" externalFileSize="981" useImportedJPEGData="false" compressionType="lossless" originalCompressionType="lossless" quality="50" href="nouse/media.png" bitmapDataHRef="M 8 1363753595.dat" frameRight="440" frameBottom="520"/>
-          <DOMBitmapItem name="nouse/persona-logo.png" itemID="51493bde-00000305" sourceExternalFilepath="./LIBRARY/persona-logo.png" sourceLastImported="1362457932" sourcePlatform="macintosh" externalFileSize="2615" originalCompressionType="lossless" quality="50" href="nouse/persona-logo.png" bitmapDataHRef="M 9 1363753595.dat" frameRight="800" frameBottom="800"/>
-          <DOMBitmapItem name="nouse/Screen Shot 2013-03-20 at 下午12.40.59.png" itemID="51500812-00000604" sourceExternalFilepath="/Users/macbookpro/Documents/JWPlayer/soundRecorder/src/UI/LIBRARY/nouse/Screen Shot 2013-03-20 at 下午12.40.59.png" sourceLastImported="1364199442" sourcePlatform="macintosh" externalFileSize="19976" useImportedJPEGData="false" compressionType="lossless" originalCompressionType="lossless" quality="50" href="nouse/Screen Shot 2013-03-20 at 下午12.40.59.png" bitmapDataHRef="M 19 1363754487.dat" frameRight="18240" frameBottom="4440"/>
-          <DOMBitmapItem name="nouse/spinny.gif" itemID="51493bde-00000306" sourceExternalFilepath="./LIBRARY/spinny.gif" sourceLastImported="1362457932" sourcePlatform="macintosh" externalFileSize="673" useImportedJPEGData="false" compressionType="lossless" originalCompressionType="lossless" quality="50" href="nouse/spinny.gif" bitmapDataHRef="M 10 1363753595.dat" frameRight="320" frameBottom="320"/>
-          <DOMBitmapItem name="nouse/ticket.png" itemID="51493bde-00000307" sourceExternalFilepath="./LIBRARY/ticket.png" sourceLastImported="1362457932" sourcePlatform="macintosh" externalFileSize="590" useImportedJPEGData="false" compressionType="lossless" originalCompressionType="lossless" quality="50" href="nouse/ticket.png" bitmapDataHRef="M 18 1363753595.dat" frameRight="1000" frameBottom="520"/>
-     </media>
-     <symbols>
-          <Include href="Animations/arrow.xml" itemIcon="1" loadImmediate="false" itemID="515007cc-00000599" lastModified="1364199372"/>
-          <Include href="Animations/playing.xml" loadImmediate="false" itemID="514fc7e5-00000521" lastModified="1364183103"/>
-          <Include href="Animations/recording.xml" loadImmediate="false" itemID="514fc30b-00000506" lastModified="1364182641"/>
-          <Include href="Animations/uploading.xml" loadImmediate="false" itemID="514fcca3-0000056c" lastModified="1364184232"/>
-          <Include href="Animations/uploading_arrow.xml" loadImmediate="false" itemID="514fc9fd-00000542" lastModified="1364199438"/>
-          <Include href="buttons/btn.xml" itemID="5147cf8b-000002d0" lastModified="1364229431"/>
-          <Include href="buttons/encord.xml" itemID="514fb778-000002c3" lastModified="1364229408"/>
-          <Include href="buttons/record_btn.xml" itemID="5147d823-000002fd" lastModified="1364229392"/>
-          <Include href="buttons/saveLocalBtn.xml" itemID="51500cde-0000060a" lastModified="1364229417"/>
-          <Include href="container.xml" itemID="5147d224-000002d5" lastModified="1364229287"/>
-          <Include href="nouse/s.xml" loadImmediate="false" itemID="51506b80-0000062b" lastModified="1364224896"/>
-          <Include href="nouse/Symbol 1.xml" loadImmediate="false" itemID="51493e15-00000321" lastModified="1363754517"/>
-          <Include href="nouse/Symbol 17.xml" loadImmediate="false" itemID="51493a7b-000002c7" lastModified="1364199317"/>
-     </symbols>
-     <timelines>
-          <DOMTimeline name="Scene 1">
-               <layers>
-                    <DOMLayer name="Layer 2" color="#9933CC">
-                         <frames>
-                              <DOMFrame index="0" keyMode="9728">
-                                   <elements/>
-                              </DOMFrame>
-                         </frames>
-                    </DOMLayer>
-                    <DOMLayer name="Layer 1" color="#4FFF4F" current="true" isSelected="true">
-                         <frames>
-                              <DOMFrame index="0" keyMode="9728">
-                                   <elements>
-                                        <DOMSymbolInstance libraryItemName="container" selected="true" centerPoint3DX="380.65" centerPoint3DY="311.2">
-                                             <matrix>
-                                                  <Matrix a="0.939529418945312" d="0.939529418945312" tx="14.05" ty="19.05"/>
-                                             </matrix>
-                                             <transformationPoint>
-                                                  <Point/>
-                                             </transformationPoint>
-                                        </DOMSymbolInstance>
-                                   </elements>
-                              </DOMFrame>
-                         </frames>
-                    </DOMLayer>
-               </layers>
-          </DOMTimeline>
-     </timelines>
-     <swatchLists>
-          <swatchList>
-               <swatches>
-                    <SolidSwatchItem/>
-                    <SolidSwatchItem/>
-                    <SolidSwatchItem/>
-                    <SolidSwatchItem/>
-                    <SolidSwatchItem color="#003300" hue="80" saturation="239" brightness="24"/>
-                    <SolidSwatchItem color="#006600" hue="80" saturation="239" brightness="48"/>
-                    <SolidSwatchItem color="#009900" hue="80" saturation="239" brightness="72"/>
-                    <SolidSwatchItem color="#00CC00" hue="80" saturation="239" brightness="96"/>
-                    <SolidSwatchItem color="#00FF00" hue="80" saturation="239" brightness="120"/>
-                    <SolidSwatchItem color="#330000" saturation="239" brightness="24"/>
-                    <SolidSwatchItem color="#333300" hue="40" saturation="239" brightness="24"/>
-                    <SolidSwatchItem color="#336600" hue="60" saturation="239" brightness="48"/>
-                    <SolidSwatchItem color="#339900" hue="67" saturation="239" brightness="72"/>
-                    <SolidSwatchItem color="#33CC00" hue="70" saturation="239" brightness="96"/>
-                    <SolidSwatchItem color="#33FF00" hue="72" saturation="239" brightness="120"/>
-                    <SolidSwatchItem color="#660000" saturation="239" brightness="48"/>
-                    <SolidSwatchItem color="#663300" hue="20" saturation="239" brightness="48"/>
-                    <SolidSwatchItem color="#666600" hue="40" saturation="239" brightness="48"/>
-                    <SolidSwatchItem color="#669900" hue="53" saturation="239" brightness="72"/>
-                    <SolidSwatchItem color="#66CC00" hue="60" saturation="239" brightness="96"/>
-                    <SolidSwatchItem color="#66FF00" hue="64" saturation="239" brightness="120"/>
-                    <SolidSwatchItem/>
-                    <SolidSwatchItem color="#333333" brightness="48"/>
-                    <SolidSwatchItem/>
-                    <SolidSwatchItem color="#000033" hue="160" saturation="239" brightness="24"/>
-                    <SolidSwatchItem color="#003333" hue="120" saturation="239" brightness="24"/>
-                    <SolidSwatchItem color="#006633" hue="100" saturation="239" brightness="48"/>
-                    <SolidSwatchItem color="#009933" hue="93" saturation="239" brightness="72"/>
-                    <SolidSwatchItem color="#00CC33" hue="90" saturation="239" brightness="96"/>
-                    <SolidSwatchItem color="#00FF33" hue="88" saturation="239" brightness="120"/>
-                    <SolidSwatchItem color="#330033" hue="200" saturation="239" brightness="24"/>
-                    <SolidSwatchItem color="#333333" brightness="48"/>
-                    <SolidSwatchItem color="#336633" hue="80" saturation="80" brightness="72"/>
-                    <SolidSwatchItem color="#339933" hue="80" saturation="120" brightness="96"/>
-                    <SolidSwatchItem color="#33CC33" hue="80" saturation="144" brightness="120"/>
-                    <SolidSwatchItem color="#33FF33" hue="80" saturation="239" brightness="144"/>
-                    <SolidSwatchItem color="#660033" hue="220" saturation="239" brightness="48"/>
-                    <SolidSwatchItem color="#663333" saturation="80" brightness="72"/>
-                    <SolidSwatchItem color="#666633" hue="40" saturation="80" brightness="72"/>
-                    <SolidSwatchItem color="#669933" hue="60" saturation="120" brightness="96"/>
-                    <SolidSwatchItem color="#66CC33" hue="67" saturation="144" brightness="120"/>
-                    <SolidSwatchItem color="#66FF33" hue="70" saturation="239" brightness="144"/>
-                    <SolidSwatchItem/>
-                    <SolidSwatchItem color="#666666" brightness="96"/>
-                    <SolidSwatchItem/>
-                    <SolidSwatchItem color="#000066" hue="160" saturation="239" brightness="48"/>
-                    <SolidSwatchItem color="#003366" hue="140" saturation="239" brightness="48"/>
-                    <SolidSwatchItem color="#006666" hue="120" saturation="239" brightness="48"/>
-                    <SolidSwatchItem color="#009966" hue="107" saturation="239" brightness="72"/>
-                    <SolidSwatchItem color="#00CC66" hue="100" saturation="239" brightness="96"/>
-                    <SolidSwatchItem color="#00FF66" hue="96" saturation="239" brightness="120"/>
-                    <SolidSwatchItem color="#330066" hue="180" saturation="239" brightness="48"/>
-                    <SolidSwatchItem color="#333366" hue="160" saturation="80" brightness="72"/>
-                    <SolidSwatchItem color="#336666" hue="120" saturation="80" brightness="72"/>
-                    <SolidSwatchItem color="#339966" hue="100" saturation="120" brightness="96"/>
-                    <SolidSwatchItem color="#33CC66" hue="93" saturation="144" brightness="120"/>
-                    <SolidSwatchItem color="#33FF66" hue="90" saturation="239" brightness="144"/>
-                    <SolidSwatchItem color="#660066" hue="200" saturation="239" brightness="48"/>
-                    <SolidSwatchItem color="#663366" hue="200" saturation="80" brightness="72"/>
-                    <SolidSwatchItem color="#666666" brightness="96"/>
-                    <SolidSwatchItem color="#669966" hue="80" saturation="48" brightness="120"/>
-                    <SolidSwatchItem color="#66CC66" hue="80" saturation="120" brightness="144"/>
-                    <SolidSwatchItem color="#66FF66" hue="80" saturation="239" brightness="168"/>
-                    <SolidSwatchItem/>
-                    <SolidSwatchItem color="#999999" brightness="144"/>
-                    <SolidSwatchItem/>
-                    <SolidSwatchItem color="#000099" hue="160" saturation="239" brightness="72"/>
-                    <SolidSwatchItem color="#003399" hue="147" saturation="239" brightness="72"/>
-                    <SolidSwatchItem color="#006699" hue="133" saturation="239" brightness="72"/>
-                    <SolidSwatchItem color="#009999" hue="120" saturation="239" brightness="72"/>
-                    <SolidSwatchItem color="#00CC99" hue="110" saturation="239" brightness="96"/>
-                    <SolidSwatchItem color="#00FF99" hue="104" saturation="239" brightness="120"/>
-                    <SolidSwatchItem color="#330099" hue="173" saturation="239" brightness="72"/>
-                    <SolidSwatchItem color="#333399" hue="160" saturation="120" brightness="96"/>
-                    <SolidSwatchItem color="#336699" hue="140" saturation="120" brightness="96"/>
-                    <SolidSwatchItem color="#339999" hue="120" saturation="120" brightness="96"/>
-                    <SolidSwatchItem color="#33CC99" hue="107" saturation="144" brightness="120"/>
-                    <SolidSwatchItem color="#33FF99" hue="100" saturation="239" brightness="144"/>
-                    <SolidSwatchItem color="#660099" hue="187" saturation="239" brightness="72"/>
-                    <SolidSwatchItem color="#663399" hue="180" saturation="120" brightness="96"/>
-                    <SolidSwatchItem color="#666699" hue="160" saturation="48" brightness="120"/>
-                    <SolidSwatchItem color="#669999" hue="120" saturation="48" brightness="120"/>
-                    <SolidSwatchItem color="#66CC99" hue="100" saturation="120" brightness="144"/>
-                    <SolidSwatchItem color="#66FF99" hue="93" saturation="239" brightness="168"/>
-                    <SolidSwatchItem/>
-                    <SolidSwatchItem color="#CCCCCC" brightness="192"/>
-                    <SolidSwatchItem/>
-                    <SolidSwatchItem color="#0000CC" hue="160" saturation="239" brightness="96"/>
-                    <SolidSwatchItem color="#0033CC" hue="150" saturation="239" brightness="96"/>
-                    <SolidSwatchItem color="#0066CC" hue="140" saturation="239" brightness="96"/>
-                    <SolidSwatchItem color="#0099CC" hue="130" saturation="239" brightness="96"/>
-                    <SolidSwatchItem color="#00CCCC" hue="120" saturation="239" brightness="96"/>
-                    <SolidSwatchItem color="#00FFCC" hue="112" saturation="239" brightness="120"/>
-                    <SolidSwatchItem color="#3300CC" hue="170" saturation="239" brightness="96"/>
-                    <SolidSwatchItem color="#3333CC" hue="160" saturation="144" brightness="120"/>
-                    <SolidSwatchItem color="#3366CC" hue="147" saturation="144" brightness="120"/>
-                    <SolidSwatchItem color="#3399CC" hue="133" saturation="144" brightness="120"/>
-                    <SolidSwatchItem color="#33CCCC" hue="120" saturation="144" brightness="120"/>
-                    <SolidSwatchItem color="#33FFCC" hue="110" saturation="239" brightness="144"/>
-                    <SolidSwatchItem color="#6600CC" hue="180" saturation="239" brightness="96"/>
-                    <SolidSwatchItem color="#6633CC" hue="173" saturation="144" brightness="120"/>
-                    <SolidSwatchItem color="#6666CC" hue="160" saturation="120" brightness="144"/>
-                    <SolidSwatchItem color="#6699CC" hue="140" saturation="120" brightness="144"/>
-                    <SolidSwatchItem color="#66CCCC" hue="120" saturation="120" brightness="144"/>
-                    <SolidSwatchItem color="#66FFCC" hue="107" saturation="239" brightness="168"/>
-                    <SolidSwatchItem/>
-                    <SolidSwatchItem color="#FFFFFF" brightness="240"/>
-                    <SolidSwatchItem/>
-                    <SolidSwatchItem color="#0000FF" hue="160" saturation="239" brightness="120"/>
-                    <SolidSwatchItem color="#0033FF" hue="152" saturation="239" brightness="120"/>
-                    <SolidSwatchItem color="#0066FF" hue="144" saturation="239" brightness="120"/>
-                    <SolidSwatchItem color="#0099FF" hue="136" saturation="239" brightness="120"/>
-                    <SolidSwatchItem color="#00CCFF" hue="128" saturation="239" brightness="120"/>
-                    <SolidSwatchItem color="#00FFFF" hue="120" saturation="239" brightness="120"/>
-                    <SolidSwatchItem color="#3300FF" hue="168" saturation="239" brightness="120"/>
-                    <SolidSwatchItem color="#3333FF" hue="160" saturation="239" brightness="144"/>
-                    <SolidSwatchItem color="#3366FF" hue="150" saturation="239" brightness="144"/>
-                    <SolidSwatchItem color="#3399FF" hue="140" saturation="239" brightness="144"/>
-                    <SolidSwatchItem color="#33CCFF" hue="130" saturation="239" brightness="144"/>
-                    <SolidSwatchItem color="#33FFFF" hue="120" saturation="239" brightness="144"/>
-                    <SolidSwatchItem color="#6600FF" hue="176" saturation="239" brightness="120"/>
-                    <SolidSwatchItem color="#6633FF" hue="170" saturation="239" brightness="144"/>
-                    <SolidSwatchItem color="#6666FF" hue="160" saturation="239" brightness="168"/>
-                    <SolidSwatchItem color="#6699FF" hue="147" saturation="239" brightness="168"/>
-                    <SolidSwatchItem color="#66CCFF" hue="133" saturation="239" brightness="168"/>
-                    <SolidSwatchItem color="#66FFFF" hue="120" saturation="239" brightness="168"/>
-                    <SolidSwatchItem/>
-                    <SolidSwatchItem color="#FF0000" saturation="239" brightness="120"/>
-                    <SolidSwatchItem/>
-                    <SolidSwatchItem color="#990000" saturation="239" brightness="72"/>
-                    <SolidSwatchItem color="#993300" hue="13" saturation="239" brightness="72"/>
-                    <SolidSwatchItem color="#996600" hue="27" saturation="239" brightness="72"/>
-                    <SolidSwatchItem color="#999900" hue="40" saturation="239" brightness="72"/>
-                    <SolidSwatchItem color="#99CC00" hue="50" saturation="239" brightness="96"/>
-                    <SolidSwatchItem color="#99FF00" hue="56" saturation="239" brightness="120"/>
-                    <SolidSwatchItem color="#CC0000" saturation="239" brightness="96"/>
-                    <SolidSwatchItem color="#CC3300" hue="10" saturation="239" brightness="96"/>
-                    <SolidSwatchItem color="#CC6600" hue="20" saturation="239" brightness="96"/>
-                    <SolidSwatchItem color="#CC9900" hue="30" saturation="239" brightness="96"/>
-                    <SolidSwatchItem color="#CCCC00" hue="40" saturation="239" brightness="96"/>
-                    <SolidSwatchItem color="#CCFF00" hue="48" saturation="239" brightness="120"/>
-                    <SolidSwatchItem color="#FF0000" saturation="239" brightness="120"/>
-                    <SolidSwatchItem color="#FF3300" hue="8" saturation="239" brightness="120"/>
-                    <SolidSwatchItem color="#FF6600" hue="16" saturation="239" brightness="120"/>
-                    <SolidSwatchItem color="#FF9900" hue="24" saturation="239" brightness="120"/>
-                    <SolidSwatchItem color="#FFCC00" hue="32" saturation="239" brightness="120"/>
-                    <SolidSwatchItem color="#FFFF00" hue="40" saturation="239" brightness="120"/>
-                    <SolidSwatchItem/>
-                    <SolidSwatchItem color="#00FF00" hue="80" saturation="239" brightness="120"/>
-                    <SolidSwatchItem/>
-                    <SolidSwatchItem color="#990033" hue="227" saturation="239" brightness="72"/>
-                    <SolidSwatchItem color="#993333" saturation="120" brightness="96"/>
-                    <SolidSwatchItem color="#996633" hue="20" saturation="120" brightness="96"/>
-                    <SolidSwatchItem color="#999933" hue="40" saturation="120" brightness="96"/>
-                    <SolidSwatchItem color="#99CC33" hue="53" saturation="144" brightness="120"/>
-                    <SolidSwatchItem color="#99FF33" hue="60" saturation="239" brightness="144"/>
-                    <SolidSwatchItem color="#CC0033" hue="230" saturation="239" brightness="96"/>
-                    <SolidSwatchItem color="#CC3333" saturation="144" brightness="120"/>
-                    <SolidSwatchItem color="#CC6633" hue="13" saturation="144" brightness="120"/>
-                    <SolidSwatchItem color="#CC9933" hue="27" saturation="144" brightness="120"/>
-                    <SolidSwatchItem color="#CCCC33" hue="40" saturation="144" brightness="120"/>
-                    <SolidSwatchItem color="#CCFF33" hue="50" saturation="239" brightness="144"/>
-                    <SolidSwatchItem color="#FF0033" hue="232" saturation="239" brightness="120"/>
-                    <SolidSwatchItem color="#FF3333" saturation="239" brightness="144"/>
-                    <SolidSwatchItem color="#FF6633" hue="10" saturation="239" brightness="144"/>
-                    <SolidSwatchItem color="#FF9933" hue="20" saturation="239" brightness="144"/>
-                    <SolidSwatchItem color="#FFCC33" hue="30" saturation="239" brightness="144"/>
-                    <SolidSwatchItem color="#FFFF33" hue="40" saturation="239" brightness="144"/>
-                    <SolidSwatchItem/>
-                    <SolidSwatchItem color="#0000FF" hue="160" saturation="239" brightness="120"/>
-                    <SolidSwatchItem/>
-                    <SolidSwatchItem color="#990066" hue="213" saturation="239" brightness="72"/>
-                    <SolidSwatchItem color="#993366" hue="220" saturation="120" brightness="96"/>
-                    <SolidSwatchItem color="#996666" saturation="48" brightness="120"/>
-                    <SolidSwatchItem color="#999966" hue="40" saturation="48" brightness="120"/>
-                    <SolidSwatchItem color="#99CC66" hue="60" saturation="120" brightness="144"/>
-                    <SolidSwatchItem color="#99FF66" hue="67" saturation="239" brightness="168"/>
-                    <SolidSwatchItem color="#CC0066" hue="220" saturation="239" brightness="96"/>
-                    <SolidSwatchItem color="#CC3366" hue="227" saturation="144" brightness="120"/>
-                    <SolidSwatchItem color="#CC6666" saturation="120" brightness="144"/>
-                    <SolidSwatchItem color="#CC9966" hue="20" saturation="120" brightness="144"/>
-                    <SolidSwatchItem color="#CCCC66" hue="40" saturation="120" brightness="144"/>
-                    <SolidSwatchItem color="#CCFF66" hue="53" saturation="239" brightness="168"/>
-                    <SolidSwatchItem color="#FF0066" hue="224" saturation="239" brightness="120"/>
-                    <SolidSwatchItem color="#FF3366" hue="230" saturation="239" brightness="144"/>
-                    <SolidSwatchItem color="#FF6666" saturation="239" brightness="168"/>
-                    <SolidSwatchItem color="#FF9966" hue="13" saturation="239" brightness="168"/>
-                    <SolidSwatchItem color="#FFCC66" hue="27" saturation="239" brightness="168"/>
-                    <SolidSwatchItem color="#FFFF66" hue="40" saturation="239" brightness="168"/>
-                    <SolidSwatchItem/>
-                    <SolidSwatchItem color="#FFFF00" hue="40" saturation="239" brightness="120"/>
-                    <SolidSwatchItem/>
-                    <SolidSwatchItem color="#990099" hue="200" saturation="239" brightness="72"/>
-                    <SolidSwatchItem color="#993399" hue="200" saturation="120" brightness="96"/>
-                    <SolidSwatchItem color="#996699" hue="200" saturation="48" brightness="120"/>
-                    <SolidSwatchItem color="#999999" brightness="144"/>
-                    <SolidSwatchItem color="#99CC99" hue="80" saturation="80" brightness="168"/>
-                    <SolidSwatchItem color="#99FF99" hue="80" saturation="239" brightness="192"/>
-                    <SolidSwatchItem color="#CC0099" hue="210" saturation="239" brightness="96"/>
-                    <SolidSwatchItem color="#CC3399" hue="213" saturation="144" brightness="120"/>
-                    <SolidSwatchItem color="#CC6699" hue="220" saturation="120" brightness="144"/>
-                    <SolidSwatchItem color="#CC9999" saturation="80" brightness="168"/>
-                    <SolidSwatchItem color="#CCCC99" hue="40" saturation="80" brightness="168"/>
-                    <SolidSwatchItem color="#CCFF99" hue="60" saturation="239" brightness="192"/>
-                    <SolidSwatchItem color="#FF0099" hue="216" saturation="239" brightness="120"/>
-                    <SolidSwatchItem color="#FF3399" hue="220" saturation="239" brightness="144"/>
-                    <SolidSwatchItem color="#FF6699" hue="227" saturation="239" brightness="168"/>
-                    <SolidSwatchItem color="#FF9999" saturation="239" brightness="192"/>
-                    <SolidSwatchItem color="#FFCC99" hue="20" saturation="239" brightness="192"/>
-                    <SolidSwatchItem color="#FFFF99" hue="40" saturation="239" brightness="192"/>
-                    <SolidSwatchItem/>
-                    <SolidSwatchItem color="#00FFFF" hue="120" saturation="239" brightness="120"/>
-                    <SolidSwatchItem/>
-                    <SolidSwatchItem color="#9900CC" hue="190" saturation="239" brightness="96"/>
-                    <SolidSwatchItem color="#9933CC" hue="187" saturation="144" brightness="120"/>
-                    <SolidSwatchItem color="#9966CC" hue="180" saturation="120" brightness="144"/>
-                    <SolidSwatchItem color="#9999CC" hue="160" saturation="80" brightness="168"/>
-                    <SolidSwatchItem color="#99CCCC" hue="120" saturation="80" brightness="168"/>
-                    <SolidSwatchItem color="#99FFCC" hue="100" saturation="239" brightness="192"/>
-                    <SolidSwatchItem color="#CC00CC" hue="200" saturation="239" brightness="96"/>
-                    <SolidSwatchItem color="#CC33CC" hue="200" saturation="144" brightness="120"/>
-                    <SolidSwatchItem color="#CC66CC" hue="200" saturation="120" brightness="144"/>
-                    <SolidSwatchItem color="#CC99CC" hue="200" saturation="80" brightness="168"/>
-                    <SolidSwatchItem color="#CCCCCC" brightness="192"/>
-                    <SolidSwatchItem color="#CCFFCC" hue="80" saturation="239" brightness="216"/>
-                    <SolidSwatchItem color="#FF00CC" hue="208" saturation="239" brightness="120"/>
-                    <SolidSwatchItem color="#FF33CC" hue="210" saturation="239" brightness="144"/>
-                    <SolidSwatchItem color="#FF66CC" hue="213" saturation="239" brightness="168"/>
-                    <SolidSwatchItem color="#FF99CC" hue="220" saturation="239" brightness="192"/>
-                    <SolidSwatchItem color="#FFCCCC" saturation="239" brightness="216"/>
-                    <SolidSwatchItem color="#FFFFCC" hue="40" saturation="239" brightness="216"/>
-                    <SolidSwatchItem/>
-                    <SolidSwatchItem color="#FF00FF" hue="200" saturation="239" brightness="120"/>
-                    <SolidSwatchItem/>
-                    <SolidSwatchItem color="#9900FF" hue="184" saturation="239" brightness="120"/>
-                    <SolidSwatchItem color="#9933FF" hue="180" saturation="239" brightness="144"/>
-                    <SolidSwatchItem color="#9966FF" hue="173" saturation="239" brightness="168"/>
-                    <SolidSwatchItem color="#9999FF" hue="160" saturation="239" brightness="192"/>
-                    <SolidSwatchItem color="#99CCFF" hue="140" saturation="239" brightness="192"/>
-                    <SolidSwatchItem color="#99FFFF" hue="120" saturation="239" brightness="192"/>
-                    <SolidSwatchItem color="#CC00FF" hue="192" saturation="239" brightness="120"/>
-                    <SolidSwatchItem color="#CC33FF" hue="190" saturation="239" brightness="144"/>
-                    <SolidSwatchItem color="#CC66FF" hue="187" saturation="239" brightness="168"/>
-                    <SolidSwatchItem color="#CC99FF" hue="180" saturation="239" brightness="192"/>
-                    <SolidSwatchItem color="#CCCCFF" hue="160" saturation="239" brightness="216"/>
-                    <SolidSwatchItem color="#CCFFFF" hue="120" saturation="239" brightness="216"/>
-                    <SolidSwatchItem color="#FF00FF" hue="200" saturation="239" brightness="120"/>
-                    <SolidSwatchItem color="#FF33FF" hue="200" saturation="239" brightness="144"/>
-                    <SolidSwatchItem color="#FF66FF" hue="200" saturation="239" brightness="168"/>
-                    <SolidSwatchItem color="#FF99FF" hue="200" saturation="239" brightness="192"/>
-                    <SolidSwatchItem color="#FFCCFF" hue="200" saturation="239" brightness="216"/>
-                    <SolidSwatchItem color="#FFFFFF" brightness="240"/>
-                    <SolidSwatchItem color="#FF3300" hue="8" saturation="239" brightness="120"/>
-               </swatches>
-          </swatchList>
-     </swatchLists>
-     <extendedSwatchLists>
-          <swatchList>
-               <swatches>
-                    <LinearGradientSwatchItem>
-                         <GradientEntry color="#FFFFFF" ratio="0"/>
-                         <GradientEntry ratio="1"/>
-                    </LinearGradientSwatchItem>
-                    <RadialGradientSwatchItem>
-                         <GradientEntry color="#FFFFFF" ratio="0"/>
-                         <GradientEntry ratio="1"/>
-                    </RadialGradientSwatchItem>
-                    <RadialGradientSwatchItem>
-                         <GradientEntry color="#FF0000" ratio="0"/>
-                         <GradientEntry ratio="1"/>
-                    </RadialGradientSwatchItem>
-                    <RadialGradientSwatchItem>
-                         <GradientEntry color="#00FF00" ratio="0"/>
-                         <GradientEntry ratio="1"/>
-                    </RadialGradientSwatchItem>
-                    <RadialGradientSwatchItem>
-                         <GradientEntry color="#0000FF" ratio="0"/>
-                         <GradientEntry ratio="1"/>
-                    </RadialGradientSwatchItem>
-                    <LinearGradientSwatchItem>
-                         <GradientEntry color="#0066FD" ratio="0"/>
-                         <GradientEntry color="#FFFFFF" ratio="0.376470588235294"/>
-                         <GradientEntry color="#FFFFFF" ratio="0.47843137254902"/>
-                         <GradientEntry color="#996600" ratio="0.501960784313725"/>
-                         <GradientEntry color="#FFCC00" ratio="0.666666666666667"/>
-                         <GradientEntry color="#FFFFFF" ratio="1"/>
-                    </LinearGradientSwatchItem>
-                    <LinearGradientSwatchItem>
-                         <GradientEntry color="#FF0000" ratio="0"/>
-                         <GradientEntry color="#FFFF00" ratio="0.164705882352941"/>
-                         <GradientEntry color="#00FF00" ratio="0.364705882352941"/>
-                         <GradientEntry color="#00FFFF" ratio="0.498039215686275"/>
-                         <GradientEntry color="#0000FF" ratio="0.666666666666667"/>
-                         <GradientEntry color="#FF00FF" ratio="0.831372549019608"/>
-                         <GradientEntry color="#FF0000" ratio="1"/>
-                    </LinearGradientSwatchItem>
-                    <LinearGradientSwatchItem>
-                         <GradientEntry color="#1E8C3F" ratio="0"/>
-                         <GradientEntry color="#004D35" ratio="1"/>
-                    </LinearGradientSwatchItem>
-                    <LinearGradientSwatchItem>
-                         <GradientEntry color="#1E8C3F" ratio="0"/>
-                         <GradientEntry color="#004D35" ratio="1"/>
-                    </LinearGradientSwatchItem>
-                    <LinearGradientSwatchItem>
-                         <GradientEntry color="#E96B3F" ratio="0"/>
-                         <GradientEntry color="#E5313C" ratio="1"/>
-                    </LinearGradientSwatchItem>
-                    <LinearGradientSwatchItem>
-                         <GradientEntry color="#E96B3F" ratio="0"/>
-                         <GradientEntry color="#E5313C" ratio="1"/>
-                    </LinearGradientSwatchItem>
-               </swatches>
-          </swatchList>
-     </extendedSwatchLists>
-     <PrinterSettings platform="macintosh"/>
-     <publishHistory>
-          <PublishItem publishSize="17824959" publishTime="1364228544"/>
-          <PublishItem publishSize="17824944" publishTime="1364224905"/>
-          <PublishItem publishSize="17824822" publishTime="1364224843"/>
-          <PublishItem publishSize="17824822" publishTime="1364224834"/>
-          <PublishItem publishSize="17824816" publishTime="1364224549"/>
-          <PublishItem publishSize="17824743" publishTime="1364223512"/>
-          <PublishItem publishSize="17824707" publishTime="1364223111"/>
-          <PublishItem publishSize="17824707" publishTime="1364222975"/>
-          <PublishItem publishSize="17824588" publishTime="1364222859"/>
-          <PublishItem publishSize="17824786" publishTime="1364222797"/>
-          <PublishItem publishSize="17824780" publishTime="1364222769"/>
-          <PublishItem publishSize="17824749" publishTime="1364222712"/>
-          <PublishItem publishSize="17824749" publishTime="1364222704"/>
-          <PublishItem publishSize="17824742" publishTime="1364222594"/>
-          <PublishItem publishSize="17824738" publishTime="1364222572"/>
-          <PublishItem publishSize="17824732" publishTime="1364222294"/>
-          <PublishItem publishSize="17843699" publishTime="1364222160"/>
-          <PublishItem publishSize="17843668" publishTime="1364222117"/>
-          <PublishItem publishSize="17843450" publishTime="1364221886"/>
-          <PublishItem publishSize="17843462" publishTime="1364221828"/>
-     </publishHistory>
-     <swcCache>
-          <Swc hashKey="joHPkYW6Gn6HXQANfslZ50" href="F97JJJUMTT.swc">
-               <classDefinitions>
-                    <ClassDefinition value="fl.livepreview.LivePreviewParent"/>
-                    <ClassDefinition value="com.kevincao.kafe.events.KafeEvent"/>
-                    <ClassDefinition value="com.kevincao.kafe.events.AnimationEvent"/>
-                    <ClassDefinition value="com.kevincao.kafe.components.IComponent"/>
-                    <ClassDefinition value="com.kevincao.kafe.components.EasyButtonComp"/>
-                    <ClassDefinition value="com.kevincao.kafe.behaviors.display.IButton"/>
-                    <ClassDefinition value="com.kevincao.kafe.behaviors.display.EasyButton"/>
-                    <ClassDefinition value="com.kevincao.kafe.behaviors.AbstractBehavior"/>
-                    <ClassDefinition value="com.kevincao.kafe.behaviors.display.MovieClipSkinBehavior"/>
-                    <ClassDefinition value="com.kevincao.kafe.behaviors.display.ButtonBase"/>
-                    <ClassDefinition value="com.kevincao.kafe.behaviors.IBehavior"/>
-                    <ClassDefinition value="com.kevincao.kafe.components.CompBase"/>
-                    <ClassDefinition value="com.kevincao.kafe.components.ButtonBaseComp"/>
-                    <ClassDefinition value="com.kevincao.kafeui.events.KUIEvent"/>
-                    <ClassDefinition value="com.kevincao.kafe.components.EasyButtonComp"/>
-                    <ClassDefinition value="fl.livepreview.LivePreviewParent"/>
-               </classDefinitions>
-          </Swc>
-          <Swc hashKey="QlVLg9cDBUV9RgnoNwJSn/" href="JTAG1JW1HY.swc">
-               <classDefinitions>
-                    <ClassDefinition value="fl.livepreview.LivePreviewParent"/>
-                    <ClassDefinition value="com.kevincao.kafe.events.KafeEvent"/>
-                    <ClassDefinition value="com.kevincao.kafe.behaviors.display.KafeButton"/>
-                    <ClassDefinition value="com.kevincao.kafe.events.AnimationEvent"/>
-                    <ClassDefinition value="com.kevincao.kafe.components.IComponent"/>
-                    <ClassDefinition value="com.kevincao.kafe.behaviors.display.IButton"/>
-                    <ClassDefinition value="com.kevincao.kafe.behaviors.display.ISelectableButton"/>
-                    <ClassDefinition value="com.kevincao.kafe.behaviors.AbstractBehavior"/>
-                    <ClassDefinition value="com.kevincao.kafe.behaviors.display.MovieClipSkinBehavior"/>
-                    <ClassDefinition value="com.kevincao.kafe.behaviors.display.ButtonBase"/>
-                    <ClassDefinition value="com.kevincao.kafe.behaviors.IBehavior"/>
-                    <ClassDefinition value="com.kevincao.kafe.components.KafeButtonComp"/>
-                    <ClassDefinition value="com.kevincao.kafe.components.CompBase"/>
-                    <ClassDefinition value="com.kevincao.kafe.components.ButtonBaseComp"/>
-                    <ClassDefinition value="com.kevincao.kafeui.events.KUIEvent"/>
-                    <ClassDefinition value="com.kevincao.kafe.components.KafeButtonComp"/>
-                    <ClassDefinition value="fl.livepreview.LivePreviewParent"/>
-               </classDefinitions>
-          </Swc>
-     </swcCache>
+			<customIcon>
+				<CustomIcon rowByteCount="72" colorDepth="32" width="18"
+					height="18" frameRight="360" frameBottom="360" isTransparent="true"
+					href="EZVLJJUMHQ.dat" />
+			</customIcon>
+			<SwcItem name="com.kevincao.kafe.components.KafeButtonComp"
+				version="1300596021" isTopLevel="true" />
+		</DOMCompiledClipItem>
+		<DOMBitmapItem name="nouse/link.png" itemID="51493bde-00000300"
+			sourceExternalFilepath="./LIBRARY/link.png" sourceLastImported="1362457932"
+			sourcePlatform="macintosh" externalFileSize="1217"
+			useImportedJPEGData="false" compressionType="lossless"
+			originalCompressionType="lossless" quality="50" href="nouse/link.png"
+			bitmapDataHRef="M 4 1363753595.dat" frameRight="480" frameBottom="480" />
+		<DOMBitmapItem name="nouse/map.png" itemID="51493bde-00000301"
+			sourceExternalFilepath="./LIBRARY/map.png" sourceLastImported="1362457932"
+			sourcePlatform="macintosh" externalFileSize="1291"
+			useImportedJPEGData="false" compressionType="lossless"
+			originalCompressionType="lossless" quality="50" href="nouse/map.png"
+			bitmapDataHRef="M 5 1363753595.dat" frameRight="480" frameBottom="480" />
+		<DOMBitmapItem name="nouse/media-icons.png" itemID="51493bde-00000302"
+			sourceExternalFilepath="./LIBRARY/media-icons.png"
+			sourceLastImported="1362457932" sourcePlatform="macintosh"
+			externalFileSize="2038" useImportedJPEGData="false" compressionType="lossless"
+			originalCompressionType="lossless" quality="50" href="nouse/media-icons.png"
+			bitmapDataHRef="M 6 1363753595.dat" frameRight="1280" frameBottom="320" />
+		<DOMBitmapItem name="nouse/media-white.png" itemID="51493bde-00000303"
+			sourceExternalFilepath="./LIBRARY/media-white.png"
+			sourceLastImported="1362457932" sourcePlatform="macintosh"
+			externalFileSize="978" useImportedJPEGData="false" compressionType="lossless"
+			originalCompressionType="lossless" quality="50" href="nouse/media-white.png"
+			bitmapDataHRef="M 7 1363753595.dat" frameRight="440" frameBottom="520" />
+		<DOMBitmapItem name="nouse/media.png" itemID="51493bde-00000304"
+			sourceExternalFilepath="./LIBRARY/media.png" sourceLastImported="1362457932"
+			sourcePlatform="macintosh" externalFileSize="981"
+			useImportedJPEGData="false" compressionType="lossless"
+			originalCompressionType="lossless" quality="50" href="nouse/media.png"
+			bitmapDataHRef="M 8 1363753595.dat" frameRight="440" frameBottom="520" />
+		<DOMBitmapItem name="nouse/persona-logo.png" itemID="51493bde-00000305"
+			sourceExternalFilepath="./LIBRARY/persona-logo.png"
+			sourceLastImported="1362457932" sourcePlatform="macintosh"
+			externalFileSize="2615" originalCompressionType="lossless" quality="50"
+			href="nouse/persona-logo.png" bitmapDataHRef="M 9 1363753595.dat"
+			frameRight="800" frameBottom="800" />
+		<DOMBitmapItem name="nouse/Screen Shot 2013-03-20 at 下午12.40.59.png"
+			itemID="51500812-00000604"
+			sourceExternalFilepath="/Users/macbookpro/Documents/JWPlayer/soundRecorder/src/UI/LIBRARY/nouse/Screen Shot 2013-03-20 at 下午12.40.59.png"
+			sourceLastImported="1364199442" sourcePlatform="macintosh"
+			externalFileSize="19976" useImportedJPEGData="false" compressionType="lossless"
+			originalCompressionType="lossless" quality="50"
+			href="nouse/Screen Shot 2013-03-20 at 下午12.40.59.png" bitmapDataHRef="M 19 1363754487.dat"
+			frameRight="18240" frameBottom="4440" />
+		<DOMBitmapItem name="nouse/spinny.gif" itemID="51493bde-00000306"
+			sourceExternalFilepath="./LIBRARY/spinny.gif" sourceLastImported="1362457932"
+			sourcePlatform="macintosh" externalFileSize="673"
+			useImportedJPEGData="false" compressionType="lossless"
+			originalCompressionType="lossless" quality="50" href="nouse/spinny.gif"
+			bitmapDataHRef="M 10 1363753595.dat" frameRight="320" frameBottom="320" />
+		<DOMBitmapItem name="nouse/ticket.png" itemID="51493bde-00000307"
+			sourceExternalFilepath="./LIBRARY/ticket.png" sourceLastImported="1362457932"
+			sourcePlatform="macintosh" externalFileSize="590"
+			useImportedJPEGData="false" compressionType="lossless"
+			originalCompressionType="lossless" quality="50" href="nouse/ticket.png"
+			bitmapDataHRef="M 18 1363753595.dat" frameRight="1000" frameBottom="520" />
+	</media>
+	<symbols>
+		<Include href="Animations/arrow.xml" itemIcon="1"
+			loadImmediate="false" itemID="515007cc-00000599" lastModified="1364199372" />
+		<Include href="Animations/playing.xml" loadImmediate="false"
+			itemID="514fc7e5-00000521" lastModified="1364183103" />
+		<Include href="Animations/recording.xml" loadImmediate="false"
+			itemID="514fc30b-00000506" lastModified="1364182641" />
+		<Include href="Animations/uploading.xml" loadImmediate="false"
+			itemID="514fcca3-0000056c" lastModified="1364184232" />
+		<Include href="Animations/uploading_arrow.xml" loadImmediate="false"
+			itemID="514fc9fd-00000542" lastModified="1364199438" />
+		<Include href="buttons/btn.xml" itemID="5147cf8b-000002d0"
+			lastModified="1364229431" />
+		<Include href="buttons/encord.xml" itemID="514fb778-000002c3"
+			lastModified="1364229408" />
+		<Include href="buttons/record_btn.xml" itemID="5147d823-000002fd"
+			lastModified="1364229392" />
+		<Include href="buttons/saveLocalBtn.xml" itemID="51500cde-0000060a"
+			lastModified="1364229417" />
+		<Include href="container.xml" itemID="5147d224-000002d5"
+			lastModified="1364229287" />
+		<Include href="nouse/s.xml" loadImmediate="false" itemID="51506b80-0000062b"
+			lastModified="1364224896" />
+		<Include href="nouse/Symbol 1.xml" loadImmediate="false"
+			itemID="51493e15-00000321" lastModified="1363754517" />
+		<Include href="nouse/Symbol 17.xml" loadImmediate="false"
+			itemID="51493a7b-000002c7" lastModified="1364199317" />
+	</symbols>
+	<timelines>
+		<DOMTimeline name="Scene 1">
+			<layers>
+				<DOMLayer name="Layer 2" color="#9933CC">
+					<frames>
+						<DOMFrame index="0" keyMode="9728">
+							<elements />
+						</DOMFrame>
+					</frames>
+				</DOMLayer>
+				<DOMLayer name="Layer 1" color="#4FFF4F" current="true"
+					isSelected="true">
+					<frames>
+						<DOMFrame index="0" keyMode="9728">
+							<elements>
+								<DOMSymbolInstance libraryItemName="container"
+									selected="true" centerPoint3DX="380.65" centerPoint3DY="311.2">
+									<matrix>
+										<Matrix a="0.939529418945312" d="0.939529418945312" tx="14.05"
+											ty="19.05" />
+									</matrix>
+									<transformationPoint>
+										<Point />
+									</transformationPoint>
+								</DOMSymbolInstance>
+							</elements>
+						</DOMFrame>
+					</frames>
+				</DOMLayer>
+			</layers>
+		</DOMTimeline>
+	</timelines>
+	<swatchLists>
+		<swatchList>
+			<swatches>
+				<SolidSwatchItem />
+				<SolidSwatchItem />
+				<SolidSwatchItem />
+				<SolidSwatchItem />
+				<SolidSwatchItem color="#003300" hue="80"
+					saturation="239" brightness="24" />
+				<SolidSwatchItem color="#006600" hue="80"
+					saturation="239" brightness="48" />
+				<SolidSwatchItem color="#009900" hue="80"
+					saturation="239" brightness="72" />
+				<SolidSwatchItem color="#00CC00" hue="80"
+					saturation="239" brightness="96" />
+				<SolidSwatchItem color="#00FF00" hue="80"
+					saturation="239" brightness="120" />
+				<SolidSwatchItem color="#330000" saturation="239"
+					brightness="24" />
+				<SolidSwatchItem color="#333300" hue="40"
+					saturation="239" brightness="24" />
+				<SolidSwatchItem color="#336600" hue="60"
+					saturation="239" brightness="48" />
+				<SolidSwatchItem color="#339900" hue="67"
+					saturation="239" brightness="72" />
+				<SolidSwatchItem color="#33CC00" hue="70"
+					saturation="239" brightness="96" />
+				<SolidSwatchItem color="#33FF00" hue="72"
+					saturation="239" brightness="120" />
+				<SolidSwatchItem color="#660000" saturation="239"
+					brightness="48" />
+				<SolidSwatchItem color="#663300" hue="20"
+					saturation="239" brightness="48" />
+				<SolidSwatchItem color="#666600" hue="40"
+					saturation="239" brightness="48" />
+				<SolidSwatchItem color="#669900" hue="53"
+					saturation="239" brightness="72" />
+				<SolidSwatchItem color="#66CC00" hue="60"
+					saturation="239" brightness="96" />
+				<SolidSwatchItem color="#66FF00" hue="64"
+					saturation="239" brightness="120" />
+				<SolidSwatchItem />
+				<SolidSwatchItem color="#333333" brightness="48" />
+				<SolidSwatchItem />
+				<SolidSwatchItem color="#000033" hue="160"
+					saturation="239" brightness="24" />
+				<SolidSwatchItem color="#003333" hue="120"
+					saturation="239" brightness="24" />
+				<SolidSwatchItem color="#006633" hue="100"
+					saturation="239" brightness="48" />
+				<SolidSwatchItem color="#009933" hue="93"
+					saturation="239" brightness="72" />
+				<SolidSwatchItem color="#00CC33" hue="90"
+					saturation="239" brightness="96" />
+				<SolidSwatchItem color="#00FF33" hue="88"
+					saturation="239" brightness="120" />
+				<SolidSwatchItem color="#330033" hue="200"
+					saturation="239" brightness="24" />
+				<SolidSwatchItem color="#333333" brightness="48" />
+				<SolidSwatchItem color="#336633" hue="80"
+					saturation="80" brightness="72" />
+				<SolidSwatchItem color="#339933" hue="80"
+					saturation="120" brightness="96" />
+				<SolidSwatchItem color="#33CC33" hue="80"
+					saturation="144" brightness="120" />
+				<SolidSwatchItem color="#33FF33" hue="80"
+					saturation="239" brightness="144" />
+				<SolidSwatchItem color="#660033" hue="220"
+					saturation="239" brightness="48" />
+				<SolidSwatchItem color="#663333" saturation="80"
+					brightness="72" />
+				<SolidSwatchItem color="#666633" hue="40"
+					saturation="80" brightness="72" />
+				<SolidSwatchItem color="#669933" hue="60"
+					saturation="120" brightness="96" />
+				<SolidSwatchItem color="#66CC33" hue="67"
+					saturation="144" brightness="120" />
+				<SolidSwatchItem color="#66FF33" hue="70"
+					saturation="239" brightness="144" />
+				<SolidSwatchItem />
+				<SolidSwatchItem color="#666666" brightness="96" />
+				<SolidSwatchItem />
+				<SolidSwatchItem color="#000066" hue="160"
+					saturation="239" brightness="48" />
+				<SolidSwatchItem color="#003366" hue="140"
+					saturation="239" brightness="48" />
+				<SolidSwatchItem color="#006666" hue="120"
+					saturation="239" brightness="48" />
+				<SolidSwatchItem color="#009966" hue="107"
+					saturation="239" brightness="72" />
+				<SolidSwatchItem color="#00CC66" hue="100"
+					saturation="239" brightness="96" />
+				<SolidSwatchItem color="#00FF66" hue="96"
+					saturation="239" brightness="120" />
+				<SolidSwatchItem color="#330066" hue="180"
+					saturation="239" brightness="48" />
+				<SolidSwatchItem color="#333366" hue="160"
+					saturation="80" brightness="72" />
+				<SolidSwatchItem color="#336666" hue="120"
+					saturation="80" brightness="72" />
+				<SolidSwatchItem color="#339966" hue="100"
+					saturation="120" brightness="96" />
+				<SolidSwatchItem color="#33CC66" hue="93"
+					saturation="144" brightness="120" />
+				<SolidSwatchItem color="#33FF66" hue="90"
+					saturation="239" brightness="144" />
+				<SolidSwatchItem color="#660066" hue="200"
+					saturation="239" brightness="48" />
+				<SolidSwatchItem color="#663366" hue="200"
+					saturation="80" brightness="72" />
+				<SolidSwatchItem color="#666666" brightness="96" />
+				<SolidSwatchItem color="#669966" hue="80"
+					saturation="48" brightness="120" />
+				<SolidSwatchItem color="#66CC66" hue="80"
+					saturation="120" brightness="144" />
+				<SolidSwatchItem color="#66FF66" hue="80"
+					saturation="239" brightness="168" />
+				<SolidSwatchItem />
+				<SolidSwatchItem color="#999999" brightness="144" />
+				<SolidSwatchItem />
+				<SolidSwatchItem color="#000099" hue="160"
+					saturation="239" brightness="72" />
+				<SolidSwatchItem color="#003399" hue="147"
+					saturation="239" brightness="72" />
+				<SolidSwatchItem color="#006699" hue="133"
+					saturation="239" brightness="72" />
+				<SolidSwatchItem color="#009999" hue="120"
+					saturation="239" brightness="72" />
+				<SolidSwatchItem color="#00CC99" hue="110"
+					saturation="239" brightness="96" />
+				<SolidSwatchItem color="#00FF99" hue="104"
+					saturation="239" brightness="120" />
+				<SolidSwatchItem color="#330099" hue="173"
+					saturation="239" brightness="72" />
+				<SolidSwatchItem color="#333399" hue="160"
+					saturation="120" brightness="96" />
+				<SolidSwatchItem color="#336699" hue="140"
+					saturation="120" brightness="96" />
+				<SolidSwatchItem color="#339999" hue="120"
+					saturation="120" brightness="96" />
+				<SolidSwatchItem color="#33CC99" hue="107"
+					saturation="144" brightness="120" />
+				<SolidSwatchItem color="#33FF99" hue="100"
+					saturation="239" brightness="144" />
+				<SolidSwatchItem color="#660099" hue="187"
+					saturation="239" brightness="72" />
+				<SolidSwatchItem color="#663399" hue="180"
+					saturation="120" brightness="96" />
+				<SolidSwatchItem color="#666699" hue="160"
+					saturation="48" brightness="120" />
+				<SolidSwatchItem color="#669999" hue="120"
+					saturation="48" brightness="120" />
+				<SolidSwatchItem color="#66CC99" hue="100"
+					saturation="120" brightness="144" />
+				<SolidSwatchItem color="#66FF99" hue="93"
+					saturation="239" brightness="168" />
+				<SolidSwatchItem />
+				<SolidSwatchItem color="#CCCCCC" brightness="192" />
+				<SolidSwatchItem />
+				<SolidSwatchItem color="#0000CC" hue="160"
+					saturation="239" brightness="96" />
+				<SolidSwatchItem color="#0033CC" hue="150"
+					saturation="239" brightness="96" />
+				<SolidSwatchItem color="#0066CC" hue="140"
+					saturation="239" brightness="96" />
+				<SolidSwatchItem color="#0099CC" hue="130"
+					saturation="239" brightness="96" />
+				<SolidSwatchItem color="#00CCCC" hue="120"
+					saturation="239" brightness="96" />
+				<SolidSwatchItem color="#00FFCC" hue="112"
+					saturation="239" brightness="120" />
+				<SolidSwatchItem color="#3300CC" hue="170"
+					saturation="239" brightness="96" />
+				<SolidSwatchItem color="#3333CC" hue="160"
+					saturation="144" brightness="120" />
+				<SolidSwatchItem color="#3366CC" hue="147"
+					saturation="144" brightness="120" />
+				<SolidSwatchItem color="#3399CC" hue="133"
+					saturation="144" brightness="120" />
+				<SolidSwatchItem color="#33CCCC" hue="120"
+					saturation="144" brightness="120" />
+				<SolidSwatchItem color="#33FFCC" hue="110"
+					saturation="239" brightness="144" />
+				<SolidSwatchItem color="#6600CC" hue="180"
+					saturation="239" brightness="96" />
+				<SolidSwatchItem color="#6633CC" hue="173"
+					saturation="144" brightness="120" />
+				<SolidSwatchItem color="#6666CC" hue="160"
+					saturation="120" brightness="144" />
+				<SolidSwatchItem color="#6699CC" hue="140"
+					saturation="120" brightness="144" />
+				<SolidSwatchItem color="#66CCCC" hue="120"
+					saturation="120" brightness="144" />
+				<SolidSwatchItem color="#66FFCC" hue="107"
+					saturation="239" brightness="168" />
+				<SolidSwatchItem />
+				<SolidSwatchItem color="#FFFFFF" brightness="240" />
+				<SolidSwatchItem />
+				<SolidSwatchItem color="#0000FF" hue="160"
+					saturation="239" brightness="120" />
+				<SolidSwatchItem color="#0033FF" hue="152"
+					saturation="239" brightness="120" />
+				<SolidSwatchItem color="#0066FF" hue="144"
+					saturation="239" brightness="120" />
+				<SolidSwatchItem color="#0099FF" hue="136"
+					saturation="239" brightness="120" />
+				<SolidSwatchItem color="#00CCFF" hue="128"
+					saturation="239" brightness="120" />
+				<SolidSwatchItem color="#00FFFF" hue="120"
+					saturation="239" brightness="120" />
+				<SolidSwatchItem color="#3300FF" hue="168"
+					saturation="239" brightness="120" />
+				<SolidSwatchItem color="#3333FF" hue="160"
+					saturation="239" brightness="144" />
+				<SolidSwatchItem color="#3366FF" hue="150"
+					saturation="239" brightness="144" />
+				<SolidSwatchItem color="#3399FF" hue="140"
+					saturation="239" brightness="144" />
+				<SolidSwatchItem color="#33CCFF" hue="130"
+					saturation="239" brightness="144" />
+				<SolidSwatchItem color="#33FFFF" hue="120"
+					saturation="239" brightness="144" />
+				<SolidSwatchItem color="#6600FF" hue="176"
+					saturation="239" brightness="120" />
+				<SolidSwatchItem color="#6633FF" hue="170"
+					saturation="239" brightness="144" />
+				<SolidSwatchItem color="#6666FF" hue="160"
+					saturation="239" brightness="168" />
+				<SolidSwatchItem color="#6699FF" hue="147"
+					saturation="239" brightness="168" />
+				<SolidSwatchItem color="#66CCFF" hue="133"
+					saturation="239" brightness="168" />
+				<SolidSwatchItem color="#66FFFF" hue="120"
+					saturation="239" brightness="168" />
+				<SolidSwatchItem />
+				<SolidSwatchItem color="#FF0000" saturation="239"
+					brightness="120" />
+				<SolidSwatchItem />
+				<SolidSwatchItem color="#990000" saturation="239"
+					brightness="72" />
+				<SolidSwatchItem color="#993300" hue="13"
+					saturation="239" brightness="72" />
+				<SolidSwatchItem color="#996600" hue="27"
+					saturation="239" brightness="72" />
+				<SolidSwatchItem color="#999900" hue="40"
+					saturation="239" brightness="72" />
+				<SolidSwatchItem color="#99CC00" hue="50"
+					saturation="239" brightness="96" />
+				<SolidSwatchItem color="#99FF00" hue="56"
+					saturation="239" brightness="120" />
+				<SolidSwatchItem color="#CC0000" saturation="239"
+					brightness="96" />
+				<SolidSwatchItem color="#CC3300" hue="10"
+					saturation="239" brightness="96" />
+				<SolidSwatchItem color="#CC6600" hue="20"
+					saturation="239" brightness="96" />
+				<SolidSwatchItem color="#CC9900" hue="30"
+					saturation="239" brightness="96" />
+				<SolidSwatchItem color="#CCCC00" hue="40"
+					saturation="239" brightness="96" />
+				<SolidSwatchItem color="#CCFF00" hue="48"
+					saturation="239" brightness="120" />
+				<SolidSwatchItem color="#FF0000" saturation="239"
+					brightness="120" />
+				<SolidSwatchItem color="#FF3300" hue="8" saturation="239"
+					brightness="120" />
+				<SolidSwatchItem color="#FF6600" hue="16"
+					saturation="239" brightness="120" />
+				<SolidSwatchItem color="#FF9900" hue="24"
+					saturation="239" brightness="120" />
+				<SolidSwatchItem color="#FFCC00" hue="32"
+					saturation="239" brightness="120" />
+				<SolidSwatchItem color="#FFFF00" hue="40"
+					saturation="239" brightness="120" />
+				<SolidSwatchItem />
+				<SolidSwatchItem color="#00FF00" hue="80"
+					saturation="239" brightness="120" />
+				<SolidSwatchItem />
+				<SolidSwatchItem color="#990033" hue="227"
+					saturation="239" brightness="72" />
+				<SolidSwatchItem color="#993333" saturation="120"
+					brightness="96" />
+				<SolidSwatchItem color="#996633" hue="20"
+					saturation="120" brightness="96" />
+				<SolidSwatchItem color="#999933" hue="40"
+					saturation="120" brightness="96" />
+				<SolidSwatchItem color="#99CC33" hue="53"
+					saturation="144" brightness="120" />
+				<SolidSwatchItem color="#99FF33" hue="60"
+					saturation="239" brightness="144" />
+				<SolidSwatchItem color="#CC0033" hue="230"
+					saturation="239" brightness="96" />
+				<SolidSwatchItem color="#CC3333" saturation="144"
+					brightness="120" />
+				<SolidSwatchItem color="#CC6633" hue="13"
+					saturation="144" brightness="120" />
+				<SolidSwatchItem color="#CC9933" hue="27"
+					saturation="144" brightness="120" />
+				<SolidSwatchItem color="#CCCC33" hue="40"
+					saturation="144" brightness="120" />
+				<SolidSwatchItem color="#CCFF33" hue="50"
+					saturation="239" brightness="144" />
+				<SolidSwatchItem color="#FF0033" hue="232"
+					saturation="239" brightness="120" />
+				<SolidSwatchItem color="#FF3333" saturation="239"
+					brightness="144" />
+				<SolidSwatchItem color="#FF6633" hue="10"
+					saturation="239" brightness="144" />
+				<SolidSwatchItem color="#FF9933" hue="20"
+					saturation="239" brightness="144" />
+				<SolidSwatchItem color="#FFCC33" hue="30"
+					saturation="239" brightness="144" />
+				<SolidSwatchItem color="#FFFF33" hue="40"
+					saturation="239" brightness="144" />
+				<SolidSwatchItem />
+				<SolidSwatchItem color="#0000FF" hue="160"
+					saturation="239" brightness="120" />
+				<SolidSwatchItem />
+				<SolidSwatchItem color="#990066" hue="213"
+					saturation="239" brightness="72" />
+				<SolidSwatchItem color="#993366" hue="220"
+					saturation="120" brightness="96" />
+				<SolidSwatchItem color="#996666" saturation="48"
+					brightness="120" />
+				<SolidSwatchItem color="#999966" hue="40"
+					saturation="48" brightness="120" />
+				<SolidSwatchItem color="#99CC66" hue="60"
+					saturation="120" brightness="144" />
+				<SolidSwatchItem color="#99FF66" hue="67"
+					saturation="239" brightness="168" />
+				<SolidSwatchItem color="#CC0066" hue="220"
+					saturation="239" brightness="96" />
+				<SolidSwatchItem color="#CC3366" hue="227"
+					saturation="144" brightness="120" />
+				<SolidSwatchItem color="#CC6666" saturation="120"
+					brightness="144" />
+				<SolidSwatchItem color="#CC9966" hue="20"
+					saturation="120" brightness="144" />
+				<SolidSwatchItem color="#CCCC66" hue="40"
+					saturation="120" brightness="144" />
+				<SolidSwatchItem color="#CCFF66" hue="53"
+					saturation="239" brightness="168" />
+				<SolidSwatchItem color="#FF0066" hue="224"
+					saturation="239" brightness="120" />
+				<SolidSwatchItem color="#FF3366" hue="230"
+					saturation="239" brightness="144" />
+				<SolidSwatchItem color="#FF6666" saturation="239"
+					brightness="168" />
+				<SolidSwatchItem color="#FF9966" hue="13"
+					saturation="239" brightness="168" />
+				<SolidSwatchItem color="#FFCC66" hue="27"
+					saturation="239" brightness="168" />
+				<SolidSwatchItem color="#FFFF66" hue="40"
+					saturation="239" brightness="168" />
+				<SolidSwatchItem />
+				<SolidSwatchItem color="#FFFF00" hue="40"
+					saturation="239" brightness="120" />
+				<SolidSwatchItem />
+				<SolidSwatchItem color="#990099" hue="200"
+					saturation="239" brightness="72" />
+				<SolidSwatchItem color="#993399" hue="200"
+					saturation="120" brightness="96" />
+				<SolidSwatchItem color="#996699" hue="200"
+					saturation="48" brightness="120" />
+				<SolidSwatchItem color="#999999" brightness="144" />
+				<SolidSwatchItem color="#99CC99" hue="80"
+					saturation="80" brightness="168" />
+				<SolidSwatchItem color="#99FF99" hue="80"
+					saturation="239" brightness="192" />
+				<SolidSwatchItem color="#CC0099" hue="210"
+					saturation="239" brightness="96" />
+				<SolidSwatchItem color="#CC3399" hue="213"
+					saturation="144" brightness="120" />
+				<SolidSwatchItem color="#CC6699" hue="220"
+					saturation="120" brightness="144" />
+				<SolidSwatchItem color="#CC9999" saturation="80"
+					brightness="168" />
+				<SolidSwatchItem color="#CCCC99" hue="40"
+					saturation="80" brightness="168" />
+				<SolidSwatchItem color="#CCFF99" hue="60"
+					saturation="239" brightness="192" />
+				<SolidSwatchItem color="#FF0099" hue="216"
+					saturation="239" brightness="120" />
+				<SolidSwatchItem color="#FF3399" hue="220"
+					saturation="239" brightness="144" />
+				<SolidSwatchItem color="#FF6699" hue="227"
+					saturation="239" brightness="168" />
+				<SolidSwatchItem color="#FF9999" saturation="239"
+					brightness="192" />
+				<SolidSwatchItem color="#FFCC99" hue="20"
+					saturation="239" brightness="192" />
+				<SolidSwatchItem color="#FFFF99" hue="40"
+					saturation="239" brightness="192" />
+				<SolidSwatchItem />
+				<SolidSwatchItem color="#00FFFF" hue="120"
+					saturation="239" brightness="120" />
+				<SolidSwatchItem />
+				<SolidSwatchItem color="#9900CC" hue="190"
+					saturation="239" brightness="96" />
+				<SolidSwatchItem color="#9933CC" hue="187"
+					saturation="144" brightness="120" />
+				<SolidSwatchItem color="#9966CC" hue="180"
+					saturation="120" brightness="144" />
+				<SolidSwatchItem color="#9999CC" hue="160"
+					saturation="80" brightness="168" />
+				<SolidSwatchItem color="#99CCCC" hue="120"
+					saturation="80" brightness="168" />
+				<SolidSwatchItem color="#99FFCC" hue="100"
+					saturation="239" brightness="192" />
+				<SolidSwatchItem color="#CC00CC" hue="200"
+					saturation="239" brightness="96" />
+				<SolidSwatchItem color="#CC33CC" hue="200"
+					saturation="144" brightness="120" />
+				<SolidSwatchItem color="#CC66CC" hue="200"
+					saturation="120" brightness="144" />
+				<SolidSwatchItem color="#CC99CC" hue="200"
+					saturation="80" brightness="168" />
+				<SolidSwatchItem color="#CCCCCC" brightness="192" />
+				<SolidSwatchItem color="#CCFFCC" hue="80"
+					saturation="239" brightness="216" />
+				<SolidSwatchItem color="#FF00CC" hue="208"
+					saturation="239" brightness="120" />
+				<SolidSwatchItem color="#FF33CC" hue="210"
+					saturation="239" brightness="144" />
+				<SolidSwatchItem color="#FF66CC" hue="213"
+					saturation="239" brightness="168" />
+				<SolidSwatchItem color="#FF99CC" hue="220"
+					saturation="239" brightness="192" />
+				<SolidSwatchItem color="#FFCCCC" saturation="239"
+					brightness="216" />
+				<SolidSwatchItem color="#FFFFCC" hue="40"
+					saturation="239" brightness="216" />
+				<SolidSwatchItem />
+				<SolidSwatchItem color="#FF00FF" hue="200"
+					saturation="239" brightness="120" />
+				<SolidSwatchItem />
+				<SolidSwatchItem color="#9900FF" hue="184"
+					saturation="239" brightness="120" />
+				<SolidSwatchItem color="#9933FF" hue="180"
+					saturation="239" brightness="144" />
+				<SolidSwatchItem color="#9966FF" hue="173"
+					saturation="239" brightness="168" />
+				<SolidSwatchItem color="#9999FF" hue="160"
+					saturation="239" brightness="192" />
+				<SolidSwatchItem color="#99CCFF" hue="140"
+					saturation="239" brightness="192" />
+				<SolidSwatchItem color="#99FFFF" hue="120"
+					saturation="239" brightness="192" />
+				<SolidSwatchItem color="#CC00FF" hue="192"
+					saturation="239" brightness="120" />
+				<SolidSwatchItem color="#CC33FF" hue="190"
+					saturation="239" brightness="144" />
+				<SolidSwatchItem color="#CC66FF" hue="187"
+					saturation="239" brightness="168" />
+				<SolidSwatchItem color="#CC99FF" hue="180"
+					saturation="239" brightness="192" />
+				<SolidSwatchItem color="#CCCCFF" hue="160"
+					saturation="239" brightness="216" />
+				<SolidSwatchItem color="#CCFFFF" hue="120"
+					saturation="239" brightness="216" />
+				<SolidSwatchItem color="#FF00FF" hue="200"
+					saturation="239" brightness="120" />
+				<SolidSwatchItem color="#FF33FF" hue="200"
+					saturation="239" brightness="144" />
+				<SolidSwatchItem color="#FF66FF" hue="200"
+					saturation="239" brightness="168" />
+				<SolidSwatchItem color="#FF99FF" hue="200"
+					saturation="239" brightness="192" />
+				<SolidSwatchItem color="#FFCCFF" hue="200"
+					saturation="239" brightness="216" />
+				<SolidSwatchItem color="#FFFFFF" brightness="240" />
+				<SolidSwatchItem color="#FF3300" hue="8" saturation="239"
+					brightness="120" />
+			</swatches>
+		</swatchList>
+	</swatchLists>
+	<extendedSwatchLists>
+		<swatchList>
+			<swatches>
+				<LinearGradientSwatchItem>
+					<GradientEntry color="#FFFFFF" ratio="0" />
+					<GradientEntry ratio="1" />
+				</LinearGradientSwatchItem>
+				<RadialGradientSwatchItem>
+					<GradientEntry color="#FFFFFF" ratio="0" />
+					<GradientEntry ratio="1" />
+				</RadialGradientSwatchItem>
+				<RadialGradientSwatchItem>
+					<GradientEntry color="#FF0000" ratio="0" />
+					<GradientEntry ratio="1" />
+				</RadialGradientSwatchItem>
+				<RadialGradientSwatchItem>
+					<GradientEntry color="#00FF00" ratio="0" />
+					<GradientEntry ratio="1" />
+				</RadialGradientSwatchItem>
+				<RadialGradientSwatchItem>
+					<GradientEntry color="#0000FF" ratio="0" />
+					<GradientEntry ratio="1" />
+				</RadialGradientSwatchItem>
+				<LinearGradientSwatchItem>
+					<GradientEntry color="#0066FD" ratio="0" />
+					<GradientEntry color="#FFFFFF" ratio="0.376470588235294" />
+					<GradientEntry color="#FFFFFF" ratio="0.47843137254902" />
+					<GradientEntry color="#996600" ratio="0.501960784313725" />
+					<GradientEntry color="#FFCC00" ratio="0.666666666666667" />
+					<GradientEntry color="#FFFFFF" ratio="1" />
+				</LinearGradientSwatchItem>
+				<LinearGradientSwatchItem>
+					<GradientEntry color="#FF0000" ratio="0" />
+					<GradientEntry color="#FFFF00" ratio="0.164705882352941" />
+					<GradientEntry color="#00FF00" ratio="0.364705882352941" />
+					<GradientEntry color="#00FFFF" ratio="0.498039215686275" />
+					<GradientEntry color="#0000FF" ratio="0.666666666666667" />
+					<GradientEntry color="#FF00FF" ratio="0.831372549019608" />
+					<GradientEntry color="#FF0000" ratio="1" />
+				</LinearGradientSwatchItem>
+				<LinearGradientSwatchItem>
+					<GradientEntry color="#1E8C3F" ratio="0" />
+					<GradientEntry color="#004D35" ratio="1" />
+				</LinearGradientSwatchItem>
+				<LinearGradientSwatchItem>
+					<GradientEntry color="#1E8C3F" ratio="0" />
+					<GradientEntry color="#004D35" ratio="1" />
+				</LinearGradientSwatchItem>
+				<LinearGradientSwatchItem>
+					<GradientEntry color="#E96B3F" ratio="0" />
+					<GradientEntry color="#E5313C" ratio="1" />
+				</LinearGradientSwatchItem>
+				<LinearGradientSwatchItem>
+					<GradientEntry color="#E96B3F" ratio="0" />
+					<GradientEntry color="#E5313C" ratio="1" />
+				</LinearGradientSwatchItem>
+			</swatches>
+		</swatchList>
+	</extendedSwatchLists>
+	<PrinterSettings platform="macintosh" />
+	<publishHistory>
+		<PublishItem publishSize="17824959" publishTime="1364228544" />
+		<PublishItem publishSize="17824944" publishTime="1364224905" />
+		<PublishItem publishSize="17824822" publishTime="1364224843" />
+		<PublishItem publishSize="17824822" publishTime="1364224834" />
+		<PublishItem publishSize="17824816" publishTime="1364224549" />
+		<PublishItem publishSize="17824743" publishTime="1364223512" />
+		<PublishItem publishSize="17824707" publishTime="1364223111" />
+		<PublishItem publishSize="17824707" publishTime="1364222975" />
+		<PublishItem publishSize="17824588" publishTime="1364222859" />
+		<PublishItem publishSize="17824786" publishTime="1364222797" />
+		<PublishItem publishSize="17824780" publishTime="1364222769" />
+		<PublishItem publishSize="17824749" publishTime="1364222712" />
+		<PublishItem publishSize="17824749" publishTime="1364222704" />
+		<PublishItem publishSize="17824742" publishTime="1364222594" />
+		<PublishItem publishSize="17824738" publishTime="1364222572" />
+		<PublishItem publishSize="17824732" publishTime="1364222294" />
+		<PublishItem publishSize="17843699" publishTime="1364222160" />
+		<PublishItem publishSize="17843668" publishTime="1364222117" />
+		<PublishItem publishSize="17843450" publishTime="1364221886" />
+		<PublishItem publishSize="17843462" publishTime="1364221828" />
+	</publishHistory>
+	<swcCache>
+		<Swc hashKey="joHPkYW6Gn6HXQANfslZ50" href="F97JJJUMTT.swc">
+			<classDefinitions>
+				<ClassDefinition value="fl.livepreview.LivePreviewParent" />
+				<ClassDefinition value="com.kevincao.kafe.events.KafeEvent" />
+				<ClassDefinition value="com.kevincao.kafe.events.AnimationEvent" />
+				<ClassDefinition value="com.kevincao.kafe.components.IComponent" />
+				<ClassDefinition value="com.kevincao.kafe.components.EasyButtonComp" />
+				<ClassDefinition value="com.kevincao.kafe.behaviors.display.IButton" />
+				<ClassDefinition value="com.kevincao.kafe.behaviors.display.EasyButton" />
+				<ClassDefinition value="com.kevincao.kafe.behaviors.AbstractBehavior" />
+				<ClassDefinition
+					value="com.kevincao.kafe.behaviors.display.MovieClipSkinBehavior" />
+				<ClassDefinition value="com.kevincao.kafe.behaviors.display.ButtonBase" />
+				<ClassDefinition value="com.kevincao.kafe.behaviors.IBehavior" />
+				<ClassDefinition value="com.kevincao.kafe.components.CompBase" />
+				<ClassDefinition value="com.kevincao.kafe.components.ButtonBaseComp" />
+				<ClassDefinition value="com.kevincao.kafeui.events.KUIEvent" />
+				<ClassDefinition value="com.kevincao.kafe.components.EasyButtonComp" />
+				<ClassDefinition value="fl.livepreview.LivePreviewParent" />
+			</classDefinitions>
+		</Swc>
+		<Swc hashKey="QlVLg9cDBUV9RgnoNwJSn/" href="JTAG1JW1HY.swc">
+			<classDefinitions>
+				<ClassDefinition value="fl.livepreview.LivePreviewParent" />
+				<ClassDefinition value="com.kevincao.kafe.events.KafeEvent" />
+				<ClassDefinition value="com.kevincao.kafe.behaviors.display.KafeButton" />
+				<ClassDefinition value="com.kevincao.kafe.events.AnimationEvent" />
+				<ClassDefinition value="com.kevincao.kafe.components.IComponent" />
+				<ClassDefinition value="com.kevincao.kafe.behaviors.display.IButton" />
+				<ClassDefinition
+					value="com.kevincao.kafe.behaviors.display.ISelectableButton" />
+				<ClassDefinition value="com.kevincao.kafe.behaviors.AbstractBehavior" />
+				<ClassDefinition
+					value="com.kevincao.kafe.behaviors.display.MovieClipSkinBehavior" />
+				<ClassDefinition value="com.kevincao.kafe.behaviors.display.ButtonBase" />
+				<ClassDefinition value="com.kevincao.kafe.behaviors.IBehavior" />
+				<ClassDefinition value="com.kevincao.kafe.components.KafeButtonComp" />
+				<ClassDefinition value="com.kevincao.kafe.components.CompBase" />
+				<ClassDefinition value="com.kevincao.kafe.components.ButtonBaseComp" />
+				<ClassDefinition value="com.kevincao.kafeui.events.KUIEvent" />
+				<ClassDefinition value="com.kevincao.kafe.components.KafeButtonComp" />
+				<ClassDefinition value="fl.livepreview.LivePreviewParent" />
+			</classDefinitions>
+		</Swc>
+	</swcCache>
 </DOMDocument>

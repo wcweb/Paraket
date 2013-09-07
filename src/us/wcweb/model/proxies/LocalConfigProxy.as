@@ -17,6 +17,7 @@ package us.wcweb.model.proxies {
 		public function LocalConfigProxy() {
 			
 			super();
+			//setConfig(Context.context);
 			
 		}
 		public function setConfig(context:DisplayObjectContainer):void{

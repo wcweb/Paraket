@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="statusLogger" itemID="517b41bd-000004bd" lastModified="1378446272">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="statusLogger" itemID="517b41bd-000004bd" lastModified="1378533288">
   <timeline>
     <DOMTimeline name="statusLogger">
       <layers>
@@ -87,15 +87,15 @@
           <frames>
             <DOMFrame index="0" duration="100" keyMode="9728">
               <elements>
-                <DOMDynamicText name="txt" width="82.5" height="15.2" includeOutlines="true" isSelectable="false">
+                <DOMDynamicText name="txt" fontRenderingMode="device" width="91.75" height="27.25" isSelectable="false" renderAsHTML="true">
                   <matrix>
                     <Matrix a="2.0703125" d="2.0703125" tx="4.15" ty="4.15"/>
                   </matrix>
                   <textRuns>
                     <DOMTextRun>
-                      <characters>系统正在启动.......</characters>
+                      <characters>...</characters>
                       <textAttrs>
-                        <DOMTextAttrs aliasText="false" indent="-0.4" letterSpacing="3" size="5" bitmapSize="100" face="Chinese All*" fillColor="#666666"/>
+                        <DOMTextAttrs aliasText="false" indent="-0.4" letterSpacing="5" size="5" bitmapSize="100" face="Chinese All*" fillColor="#666666"/>
                       </textAttrs>
                     </DOMTextRun>
                   </textRuns>

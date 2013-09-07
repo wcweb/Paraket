@@ -1,15 +1,19 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="PlayListView" itemID="516b53e7-00000303" linkageExportForAS="true" linkageClassName="PlayListView" lastModified="1366295291" lastUniqueIdentifier="3">
-  <timeline>
-    <DOMTimeline name="PlayListView">
-      <layers>
-        <DOMLayer name="Layer 1" color="#4FFF4F" current="true" isSelected="true">
-          <frames>
-            <DOMFrame index="0" keyMode="9728">
-              <elements/>
-            </DOMFrame>
-          </frames>
-        </DOMLayer>
-      </layers>
-    </DOMTimeline>
-  </timeline>
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://ns.adobe.com/xfl/2008/" name="PlayListView" itemID="516b53e7-00000303"
+	linkageExportForAS="true" linkageClassName="PlayListView" lastModified="1366295291"
+	lastUniqueIdentifier="3">
+	<timeline>
+		<DOMTimeline name="PlayListView">
+			<layers>
+				<DOMLayer name="Layer 1" color="#4FFF4F" current="true"
+					isSelected="true">
+					<frames>
+						<DOMFrame index="0" keyMode="9728">
+							<elements />
+						</DOMFrame>
+					</frames>
+				</DOMLayer>
+			</layers>
+		</DOMTimeline>
+	</timeline>
 </DOMSymbolItem>

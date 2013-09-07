@@ -45,9 +45,13 @@ package us.wcweb.model.proxies {
 		private const DELAY_LENGTH : int = 4000;
 		private var ziped : Boolean = false;
 		private var zipedFile : ByteArray;
+		public const INITIALZE : int = 0;
+		public const ENCORDING : int = 2;
+		public const RECORDING : int = 3;
+		public const ENCORDED : int = 5;
+		public var status : int;
 		[Inject]
 		public var player : PlayerProxy;
-
 
 		// ---------------------------------------
 		// CONSTRUCTOR
@@ -104,6 +108,8 @@ package us.wcweb.model.proxies {
 			// trace(waveData);
 			// sequence.addSourceAt(0, src);
 			// audio = new AudioPerformer(sequence, new AudioDescriptor());
+
+			status = ENCORDED;
 			dispatch(new RecordProxyEvent(RecordProxyEvent.ENCORD_COMPLETE, waveData));
 		}
 
@@ -125,7 +131,7 @@ package us.wcweb.model.proxies {
 					else trace("cancel rendering");
 				} else {
 					trace("rendering audio: " + Math.floor(src.position * 100 / src.frameCount) + "%");
-					dispatch(new RecordProxyEvent(RecordProxyEvent.RENDERING,  Math.floor(src.position * 100 / src.frameCount) + "%"));
+					dispatch(new RecordProxyEvent(RecordProxyEvent.RENDERING, Math.floor(src.position * 100 / src.frameCount) + "%"));
 				}
 			}
 			function finishRender() : void {
@@ -187,7 +193,15 @@ package us.wcweb.model.proxies {
 		}
 
 		public function play() : void {
-			player.playRaw(recorder.output);
+			if (!empty()) {
+				player.playRaw(recorder.output);
+			} else {
+				eventDispatcher.dispatchEvent(new RecordProxyEvent(RecordProxyEvent.NO_RECORD, null));
+			}
+		}
+
+		public function empty() : Boolean {
+			return recorder.output == null;
 		}
 
 		public function stopPlaying() : void {

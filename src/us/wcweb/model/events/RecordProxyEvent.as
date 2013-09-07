@@ -17,10 +17,14 @@ package us.wcweb.model.events {
 		public static const STOP_RECORD : String = "stop_record";
 		public static const RECORD_COMPLETE : String = "record_complete";
 		public static const RENDERING :String ="rendering";
+		
+		public static const NO_RECORD:String = "no_record";
+		
 		// ENCORDING
 		public static const START_ENCORD : String = "start_encord";
 		public static const ENCORDING : String = 'encording';
 		public static const ENCORD_ERROR : String = "encorderror";
+		public static const ENCORD_WAIT: String ="encord_wait";
 		public static const ENCORD_COMPLETE : String = 'encord_complete';//@FIX
 		// PLAYING
 		public static const PLAY_CURRENT_RECORDED : String = "play_current_recorded";

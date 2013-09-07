@@ -1,4 +1,8 @@
 package us.wcweb.view.components.content {
+	import com.demonsters.debugger.MonsterDebugger;
+
+	import flash.display.LoaderInfo;
+
 	import us.wcweb.utils.Strings;
 
 	import flash.display.Shape;
@@ -140,8 +144,8 @@ package us.wcweb.view.components.content {
 			getButton(skin.uploadBtn).selected = false;
 			getButton(skin.uploadBtn).enabled = false;
 		}
-		
-		public function onSuccessRecord():void{
+
+		public function onSuccessRecord() : void {
 			getButton(skin.uploadBtn).enabled = true;
 			getButton(skin.encordPlayBtn).enabled = true;
 		}
@@ -153,21 +157,29 @@ package us.wcweb.view.components.content {
 		// --------------------------------------------------------------------------
 		private function initializeView(e : Event) : void {
 			skin = MovieClip(e.target.content).cc;
-			// Tools.walkDisplayObjects(skin, Tools.traceContainer);
+			getButton(skin.uploadBtn).enabled = false;
+			getButton(skin.encordPlayBtn).enabled = false;
+			getButton(skin.uploadBtn).selected = false;
+			getButton(skin.encordPlayBtn).selected = false;
+
 			addEventListener(MouseEvent.CLICK, initializeBehaviour);
+			// Tools.walkDisplayObjects(skin, Tools.traceContainer);
+			
 
 			/*getButton(skin.uploadBtn).enabled = false;*/
 			/*getButton(skin.encordPlayBtn).enabled = false;*/
 			// skin.stautsLabel.addEventListener(MouseEvent.CLICK, handleStageClick);
-
-			initializeProgressBar();
+			// var fvars : Object = LoaderInfo(Loader(container.getChildAt(0)).contentLoaderInfo).parameters;
+			// trace(fvars);
+			// MonsterDebugger.trace(this, fvars);
+			// initializeProgressBar();
 		}
 
 		private function initializeProgressBar() : void {
 		}
 
 		private function handleStageClick(e : MouseEvent) : void {
-			trace(e.target);
+			// trace(e.target);
 			this.dispatchEvent(new SystemEvent(SystemEvent.STAGE_CLICK));
 		}
 
@@ -195,14 +207,14 @@ package us.wcweb.view.components.content {
 				getButton(skin.encordPlayBtn).selected = false;
 				getButton(skin.uploadBtn).enabled = false;
 				getButton(skin.encordPlayBtn).enabled = false;
-				
+
 				if (selected) {
-//					trace('getButton(skin.recordBtn).selected');
+					// trace('getButton(skin.recordBtn).selected');
 
 					dispatcher.dispatchEvent(new RecordProxyEvent(RecordProxyEvent.START_RECORD, null));
 				} else {
 					hiddenUploadBtnEncordBtn();
-//					trace('getButton(skin.recordBtn).deselected');
+					// trace('getButton(skin.recordBtn).deselected');
 					dispatcher.dispatchEvent(new RecordProxyEvent(RecordProxyEvent.STOP_RECORD, null));
 				}
 			}
@@ -214,16 +226,16 @@ package us.wcweb.view.components.content {
 				} else {
 					dispatcher.dispatchEvent(new RecordProxyEvent(RecordProxyEvent.STOP_CURRENT_PLAY, null));
 				}
-//				trace("encordPlayBtn Click");
+				// trace("encordPlayBtn Click");
 			}
 			function handleUploadBtn(dispatcher : IEventDispatcher, selected : Boolean) : void {
 				getButton(skin.recordBtn).selected = false;
 				getButton(skin.encordPlayBtn).selected = false;
 				if (selected) {
-//					trace("encordPlayBtn PlayListEvent.PLAY_CLIP");
+					trace("upload PlayListEvent.PLAY_CLIP");
 					dispatcher.dispatchEvent(new SystemEvent(SystemEvent.POST_RECORD, null));
 				} else {
-//					trace("encordPlayBtn PlayListEvent.PLAY_CLIP");
+					// trace("encordPlayBtn PlayListEvent.PLAY_CLIP");
 					dispatcher.dispatchEvent(new SystemEvent(SystemEvent.STOP_POST, null));
 				}
 			}
