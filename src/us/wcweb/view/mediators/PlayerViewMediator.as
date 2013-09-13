@@ -50,11 +50,12 @@ package us.wcweb.view.mediators {
 			eventMap.mapListener(view, RecordProxyEvent.NO_RECORD, handleNoRecord);
 
 			eventMap.mapListener(view, SystemEvent.POST_RECORD, handlePostRecord);
-			
-			eventMap.mapListener(view, SystemEvent.POST_PROCESS, handlePostProcess);
-			eventMap.mapListener(view, SystemEvent.POST_SUCCESS, handlePostSucess);
-			eventMap.mapListener(view, SystemEvent.POST_ERROR, handlePostError);
 			eventMap.mapListener(view, SystemEvent.STOP_POST, handleStopPost);
+
+			eventMap.mapListener(eventDispatcher, SystemEvent.POST_PROCESS, handlePostProcess);
+			eventMap.mapListener(eventDispatcher, SystemEvent.POST_SUCCESS, handlePostSucess);
+			eventMap.mapListener(eventDispatcher, SystemEvent.POST_ERROR, handlePostError);
+
 			// eventMap.mapListener(view, SystemEvent.STAGE_CLICK, handleStageClick);
 
 			eventMap.mapListener(eventDispatcher, JwplayerConnectProxyEvent.UPDATE_TIME, handleUpdateTiming);
@@ -82,18 +83,18 @@ package us.wcweb.view.mediators {
 			view.log("上传录音...");
 		}
 
+		private function handleStopPost(event : SystemEvent) : void {
+			dispatch(event);
+			view.log(" 上传取消。");
+		}
+
 		private function handlePostSucess(event : SystemEvent) : void {
-			view.log(event.body);
+			view.log("上传成功");
 			view.onSuccessUpload();
 		}
 
 		private function handlePostProcess(event : SystemEvent) : void {
 			view.log(event.body);
-		}
-
-		private function handleStopPost(event : SystemEvent) : void {
-			dispatch(event);
-			view.log(" 上传取消。");
 		}
 
 		private function handlePostError(event : SystemEvent) : void {
@@ -119,7 +120,7 @@ package us.wcweb.view.mediators {
 			trace("handle timing update :" + event);
 			// dispatch(event)
 			eventDispatcher.dispatchEvent(event);
-			view.log("停止录音。");
+			view.log("已经停止录音, 等待编码压缩...");
 		}
 
 		private function handleRendering(event : RecordProxyEvent) : void {

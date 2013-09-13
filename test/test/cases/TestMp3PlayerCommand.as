@@ -18,17 +18,19 @@ package test.cases {
 	import asunit.framework.ErrorEvent;
 	import asunit.framework.IAsync;
 	import asunit.framework.TimeoutCommand;
+
 	import flash.display.Sprite;
 	import flash.events.Event;
 	import flash.events.EventDispatcher;
 	import flash.events.IEventDispatcher;
 	import flash.utils.clearTimeout;
 	import flash.utils.setTimeout;
+
 	import org.robotlegs.base.CommandMap;
 	import org.robotlegs.mvcs.Context;
 	import org.swiftsuspenders.Injector;
 	import org.swiftsuspenders.Reflector;
-//	import org.swiftsuspenders.mapping.MappingEvent;
+	// import org.swiftsuspenders.mapping.MappingEvent;
 	import us.wcweb.CleanedContext;
 	import us.wcweb.ParaketContext;
 	import us.wcweb.controller.commands.playerControllers.PlayClipItemCommand;
@@ -37,18 +39,6 @@ package test.cases {
 	import us.wcweb.model.services.RecorderService;
 	import us.wcweb.view.components.content.PlayListView;
 	import us.wcweb.view.mediators.PlayListMediator;
-
-
-
-
-
-
-
-
-
-
-
-
 
 	/**
 	 * @author macbookpro
@@ -68,8 +58,6 @@ package test.cases {
 		private var mp3 : String = 'http://127.0.0.1:9292/assets/abc.mp3';
 		[Inject]
 		public var async : IAsync;
-		
-		
 		public var context : CleanedContext;
 
 		[Before]
@@ -80,24 +68,19 @@ package test.cases {
 			orphanAsync = new Async();
 			// serviceDispatcher2 = new EventDispatcher();
 			context = new CleanedContext();
-			
-			
-			
-			
+
 			mediator = new PlayListMediator();
 			view = new PlayListView();
 			proxy = new PlayerProxy();
-			
-			
-//			controller = new PlayClipItemCommand();
-			
-			
-//			var injector:Injector = new Injector();
-//			var reflector:Reflector = new Reflector();
-//			var commandMap:CommandMap = new CommandMap(serviceDispatcher,injector,reflector);
-//			controller.commandMap = commandMap;
-//			controller.commandMap.mapEvent(PlayerProxyEvent.PLAYING, PlayClipItemCommand);
-//			controller.injector.mapSingleton(Mp3PlayerProxy);
+
+			// controller = new PlayClipItemCommand();
+
+			// var injector:Injector = new Injector();
+			// var reflector:Reflector = new Reflector();
+			// var commandMap:CommandMap = new CommandMap(serviceDispatcher,injector,reflector);
+			// controller.commandMap = commandMap;
+			// controller.commandMap.mapEvent(PlayerProxyEvent.PLAYING, PlayClipItemCommand);
+			// controller.injector.mapSingleton(Mp3PlayerProxy);
 
 			mediator.view = view;
 			mediator.setViewComponent(view);

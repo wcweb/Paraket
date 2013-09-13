@@ -35,42 +35,11 @@ package us.wcweb.service {
 		public function BackEndService() {
 			// MonsterDebugger.initialize(this);
 			_default_config = {// base_url:'http://127.0.0.1:9292',
-			upload_url:'http://127.0.0.1:9292/uploadmp3', filename:'default' + (new Date()).toString(), fieldname:'Filedata2', pkid:"pkid", targetType:"mp3", username:'username'};
+			upload_url:'http://127.0.0.1:9292/uploadmp3_default', filename:'default' + (new Date()).toString(), fieldname:'Filedata2', pkid:"pkid", targetType:"mp3", username:'username'};
 			// loader = new URLLoader();
 			// configureListeners(loader);
 
 			// Tools.__extend(_config, localConfig.parameters);
-
-			mp3loader = new MultipartURLLoader();
-			mp3loader.dataFormat = URLLoaderDataFormat.VARIABLES;
-			MonsterDebugger.initialize(this);
-			MonsterDebugger.trace(this, _default_config);
-			// for (var key: Object in _config) {
-			// mp3loader.addVariable(key.toString(), _config[key]);
-			// }
-
-			// mp3loader.addVariable('username', 'test variable');
-			mp3loader.addEventListener(Event.COMPLETE, onReady);
-			mp3loader.addEventListener(MultipartURLLoaderEvent.DATA_PREPARE_PROGRESS, onWrite);
-			mp3loader.addEventListener(MultipartURLLoaderEvent.DATA_PREPARE_COMPLETE, onWriteEnd);
-			mp3loader.addEventListener(IOErrorEvent.IO_ERROR, IOError_Handler);
-			mp3loader.addEventListener(SecurityErrorEvent.SECURITY_ERROR, SecurityError_Handler);
-			mp3loader.addEventListener(HTTPStatusEvent.HTTP_STATUS, HTTPError_Handler);
-			function IOError_Handler(e : IOErrorEvent) : void {
-				MonsterDebugger.trace("IOError_Handler", e.text);
-			}
-			function SecurityError_Handler(e : SecurityErrorEvent) : void {
-				MonsterDebugger.trace("IOError_Handler", e.text);
-			}
-
-			function HTTPError_Handler(e : HTTPStatusEvent) : void {
-				MonsterDebugger.trace("HTTPError_Handler", e.status);
-			}
-
-			function Complete_Handler(e : Event) : void {
-				MonsterDebugger.trace("Complete_Handler", e.type);
-			}
-
 		}
 
 		private function onReady(e : Event) : void {
@@ -95,18 +64,62 @@ package us.wcweb.service {
 		}
 
 		public function uploadMp3(mp3 : ByteArray, config : Object) : void {
-			trace("uupload MP3"+config);
+			mp3loader = new MultipartURLLoader();
+			mp3loader.dataFormat = URLLoaderDataFormat.VARIABLES;
+			MonsterDebugger.initialize(this);
+			MonsterDebugger.trace(this, _default_config);
+			// for (var key: Object in _config) {
+			// mp3loader.addVariable(key.toString(), _config[key]);
+			// }
+
+			// mp3loader.addVariable('username', 'test variable');
+			mp3loader.addEventListener(Event.COMPLETE, onReady);
+			mp3loader.addEventListener(MultipartURLLoaderEvent.DATA_PREPARE_PROGRESS, onWrite);
+			mp3loader.addEventListener(MultipartURLLoaderEvent.DATA_PREPARE_COMPLETE, onWriteEnd);
+			mp3loader.addEventListener(IOErrorEvent.IO_ERROR, IOError_Handler);
+			mp3loader.addEventListener(SecurityErrorEvent.SECURITY_ERROR, SecurityError_Handler);
+			mp3loader.addEventListener(HTTPStatusEvent.HTTP_STATUS, HTTP_STATUS_Handler);
+			function IOError_Handler(e : IOErrorEvent) : void {
+				MonsterDebugger.trace("IOError_Handler", e.text);
+				dispatch(new SystemEvent(SystemEvent.POST_ERROR, 'SERVER RESPONSE: IOError '));
+			}
+			function SecurityError_Handler(e : SecurityErrorEvent) : void {
+				MonsterDebugger.trace("IOError_Handler", e.text);
+				dispatch(new SystemEvent(SystemEvent.POST_ERROR, 'SERVER RESPONSE: SecurityError '));
+			}
+
+			function HTTP_STATUS_Handler(e : HTTPStatusEvent) : void {
+				MonsterDebugger.trace("HTTPError_Handler", e.status);
+				if(e.status !== 200){
+					dispatch(new SystemEvent(SystemEvent.POST_ERROR, 'SERVER RESPONSE: e.status '));
+				}else{
+					dispatch(new SystemEvent(SystemEvent.POST_SUCCESS, 'SERVER RESPONSE: Success '));
+				}
+			}
+
+			function Complete_Handler(e : Event) : void {
+				MonsterDebugger.trace("Complete_Handler", e.type);
+				
+			}
+			// trace("uupload MP3"+config);
 			MonsterDebugger.trace(this, config);
-			mp3loader.addVariable("kill","motherfucker");
+			// mp3loader.addVariable("kill", "motherfucker");
 			for (var key:Object in _default_config) {
 				if (config.hasOwnProperty(key)) {
-					
 					mp3loader.addVariable(String(key), config[key]);
 				}
 			}
 			
+			//Tools.__extend(config, _default_config);
+
 			mp3loader.addFile(mp3, (new Date()).getTime() + '.mp3', config.filedname);
-			mp3loader.load(config.upload_url);
+			// try throw error
+			try{
+				mp3loader.load(config.upload_url);
+			}catch(e:Error){
+				dispatch(new SystemEvent(SystemEvent.POST_ERROR, 'SERVER RESPONSE: work at local. '));
+			}
+			
 
 			// var header : URLRequestHeader = new URLRequestHeader("Content-type", "application/octet-stream");
 			// var request : URLRequest = new URLRequest(_config.base_url + _config.upload_url + "?user=" + _config.username);

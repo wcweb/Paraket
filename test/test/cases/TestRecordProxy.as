@@ -103,7 +103,7 @@ package test.cases {
 		}
 
 		private function onConverCompleteUpload() : void {
-			backend.uploadMp3(proxy.mp3());
+			backend.uploadMp3(proxy.mp3(), {});
 		}
 
 		[Ignore("because it works")]

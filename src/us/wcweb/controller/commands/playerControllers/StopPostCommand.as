@@ -17,9 +17,9 @@ package us.wcweb.controller.commands.playerControllers {
 		}
 
 		override public function execute() : void {
-//			if (!proxy.empty()) {
-//				backend.stopUpload();
-//			}
+			if (!proxy.empty()) {
+				backend.stopUpload();
+			}
 		}
 	}
 }
