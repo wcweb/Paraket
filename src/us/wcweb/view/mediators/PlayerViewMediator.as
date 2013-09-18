@@ -121,6 +121,7 @@ package us.wcweb.view.mediators {
 			// dispatch(event)
 			eventDispatcher.dispatchEvent(event);
 			view.log("已经停止录音, 等待编码压缩...");
+			view.onComperssing();
 		}
 
 		private function handleRendering(event : RecordProxyEvent) : void {

@@ -149,6 +149,11 @@ package us.wcweb.view.components.content {
 			getButton(skin.uploadBtn).enabled = true;
 			getButton(skin.encordPlayBtn).enabled = true;
 		}
+		
+		public function onComperssing() :void{
+			getButton(skin.uploadBtn).selected = false;
+			getButton(skin.uploadBtn).enabled = false;
+		}
 
 		// --------------------------------------------------------------------------
 		//

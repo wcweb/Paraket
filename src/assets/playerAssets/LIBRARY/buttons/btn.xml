@@ -1,488 +1,435 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xmlns="http://ns.adobe.com/xfl/2008/" name="buttons/btn" itemID="5147cf8b-000002d0"
-	linkageExportForAS="true" linkageClassName="com.wcweb.UI.UploadBtn"
-	lastModified="1367031350" lastUniqueIdentifier="12">
-	<timeline>
-		<DOMTimeline name="btn" currentFrame="53"
-			guides='&lt;guidelines&gt;&lt;guideline direction="h"&gt;10&lt;/guideline&gt;&lt;guideline direction="h"&gt;25&lt;/guideline&gt;&lt;/guidelines&gt;'>
-			<layers>
-				<DOMLayer name="labels" color="#4FFF4F" locked="true"
-					autoNamed="false">
-					<frames>
-						<DOMFrame index="0" duration="9" name="normal" labelType="name"
-							keyMode="9728">
-							<elements />
-						</DOMFrame>
-						<DOMFrame index="9" duration="10" name="over" labelType="name"
-							keyMode="9728">
-							<elements />
-						</DOMFrame>
-						<DOMFrame index="19" duration="10" name="out" labelType="name"
-							keyMode="9728">
-							<elements />
-						</DOMFrame>
-						<DOMFrame index="29" duration="10" name="down" labelType="name"
-							keyMode="9728">
-							<elements />
-						</DOMFrame>
-						<DOMFrame index="39" duration="10" name="disabled"
-							labelType="name" keyMode="9728">
-							<elements />
-						</DOMFrame>
-						<DOMFrame index="49" duration="10" name="selected"
-							labelType="name" keyMode="9728">
-							<elements />
-						</DOMFrame>
-						<DOMFrame index="59" duration="10" name="selected over"
-							labelType="name" keyMode="9728">
-							<elements />
-						</DOMFrame>
-						<DOMFrame index="69" duration="10" name="selected out"
-							labelType="name" keyMode="9728">
-							<elements />
-						</DOMFrame>
-						<DOMFrame index="79" duration="10" name="selected down"
-							labelType="name" keyMode="9728">
-							<elements />
-						</DOMFrame>
-						<DOMFrame index="89" duration="12" name="selected disabled"
-							labelType="name" keyMode="9728">
-							<elements />
-						</DOMFrame>
-					</frames>
-				</DOMLayer>
-				<DOMLayer name="_hit" color="#4F80FF" autoNamed="false">
-					<frames>
-						<DOMFrame index="0" duration="101"
-							name='Place a MovieClip named "_hit" here, or leave it blank.'
-							labelType="comment" keyMode="9728">
-							<elements />
-						</DOMFrame>
-					</frames>
-				</DOMLayer>
-				<DOMLayer name="Layer 2" color="#9933CC" current="true"
-					isSelected="true">
-					<frames>
-						<DOMFrame index="0" duration="9" keyMode="9728">
-							<elements>
-								<DOMGroup>
-									<transformationPoint>
-										<Point x="18.25" y="18.1" />
-									</transformationPoint>
-									<members>
-										<DOMShape>
-											<transformationPoint>
-												<Point x="18.25" y="18.1" />
-											</transformationPoint>
-											<fills>
-												<FillStyle index="1">
-													<SolidColor color="#ECEEEE" />
-												</FillStyle>
-											</fills>
-											<strokes>
-												<StrokeStyle index="1">
-													<SolidStroke scaleMode="normal" weight="2">
-														<fill>
-															<SolidColor color="#ECEEEE" />
-														</fill>
-													</SolidStroke>
-												</StrokeStyle>
-												<StrokeStyle index="2">
-													<SolidStroke scaleMode="normal">
-														<fill>
-															<SolidColor color="#ECEEEE" />
-														</fill>
-													</SolidStroke>
-												</StrokeStyle>
-											</strokes>
-											<edges>
-												<Edge strokeStyle="1"
-													edges="!311 492|406 492!311 441|406 441!311 391|406 391" />
-												<Edge fillStyle0="1" strokeStyle="2"
-													edges="!484 376/400 268!400 268/362 218!362 218/321 271!321 271/236 376!236 376|484 376" />
-												<Edge cubics="!236 376(;236,376 484,376 484,376q236 376 484 376);" />
-												<Edge cubics="!484 376(;484,376 400,268 400,268q484 376 400 268);" />
-												<Edge cubics="!321 271(;321,271 236,376 236,376q321 271 236 376);" />
-												<Edge cubics="!400 268(;400,268 362,218 362,218q400 268 362 218);" />
-												<Edge cubics="!362 218(;362,218 321,271 321,271q362 218 321 271);" />
-											</edges>
-										</DOMShape>
-									</members>
-								</DOMGroup>
-							</elements>
-						</DOMFrame>
-						<DOMFrame index="9" duration="10" keyMode="9728">
-							<elements>
-								<DOMGroup selected="true">
-									<transformationPoint>
-										<Point x="18.25" y="18.1" />
-									</transformationPoint>
-									<members>
-										<DOMGroup selected="true">
-											<transformationPoint>
-												<Point x="17.95" y="14.75" />
-											</transformationPoint>
-											<members>
-												<DOMShape selected="true">
-													<transformationPoint>
-														<Point x="17.95" y="14.75" />
-													</transformationPoint>
-													<fills>
-														<FillStyle index="1">
-															<SolidColor color="#FFFFFF" />
-														</FillStyle>
-													</fills>
-													<strokes>
-														<StrokeStyle index="1">
-															<SolidStroke scaleMode="normal">
-																<fill>
-																	<SolidColor color="#FFFFFF" />
-																</fill>
-															</SolidStroke>
-														</StrokeStyle>
-													</strokes>
-													<edges>
-														<Edge fillStyle0="1" strokeStyle="1"
-															edges="!400 268S5/362 218!362 218/321 271!321 271/236 376!236 376|484 376!484 376/400 268" />
-														<Edge
-															cubics="!236 376(;236,376 484,376 484,376q236 376 484 376);" />
-														<Edge
-															cubics="!484 376(;484,376 400,268 400,268q484 376 400 268);" />
-														<Edge
-															cubics="!321 271(;321,271 236,376 236,376q321 271 236 376);" />
-														<Edge
-															cubics="!400 268(;400,268 362,218 362,218q400 268 362 218);" />
-														<Edge
-															cubics="!362 218(;362,218 321,271 321,271q362 218 321 271);" />
-													</edges>
-												</DOMShape>
-											</members>
-										</DOMGroup>
-										<DOMShape isDrawingObject="true">
-											<matrix>
-												<Matrix a="0.841522216796875" d="1.84458923339844"
-													tx="1.9" ty="-10.25" />
-											</matrix>
-											<transformationPoint>
-												<Point x="19.05" y="16.15" />
-											</transformationPoint>
-											<strokes>
-												<StrokeStyle index="1">
-													<SolidStroke scaleMode="normal" weight="2">
-														<fill>
-															<SolidColor color="#FFFFFF" />
-														</fill>
-													</SolidStroke>
-												</StrokeStyle>
-											</strokes>
-											<edges>
-												<Edge strokeStyle="1" edges="!325 323|437 323" />
-											</edges>
-										</DOMShape>
-										<DOMShape isDrawingObject="true">
-											<matrix>
-												<Matrix a="0.841522216796875" d="1.84458923339844"
-													tx="1.9" ty="-7.75" />
-											</matrix>
-											<transformationPoint>
-												<Point x="19.05" y="16.15" />
-											</transformationPoint>
-											<strokes>
-												<StrokeStyle index="1">
-													<SolidStroke scaleMode="normal" weight="2">
-														<fill>
-															<SolidColor color="#FFFFFF" />
-														</fill>
-													</SolidStroke>
-												</StrokeStyle>
-											</strokes>
-											<edges>
-												<Edge strokeStyle="1" edges="!325 323|437 323" />
-											</edges>
-										</DOMShape>
-										<DOMShape isDrawingObject="true">
-											<matrix>
-												<Matrix a="0.841522216796875" d="1.84458923339844"
-													tx="1.9" ty="-5.2" />
-											</matrix>
-											<transformationPoint>
-												<Point x="19.05" y="16.15" />
-											</transformationPoint>
-											<strokes>
-												<StrokeStyle index="1">
-													<SolidStroke scaleMode="normal" weight="2">
-														<fill>
-															<SolidColor color="#FFFFFF" />
-														</fill>
-													</SolidStroke>
-												</StrokeStyle>
-											</strokes>
-											<edges>
-												<Edge strokeStyle="1" edges="!325 323|437 323" />
-											</edges>
-										</DOMShape>
-									</members>
-								</DOMGroup>
-							</elements>
-						</DOMFrame>
-						<DOMFrame index="19" duration="20" keyMode="9728">
-							<elements>
-								<DOMGroup>
-									<transformationPoint>
-										<Point x="18.25" y="18.1" />
-									</transformationPoint>
-									<members>
-										<DOMGroup selected="true">
-											<transformationPoint>
-												<Point x="17.95" y="14.75" />
-											</transformationPoint>
-											<members>
-												<DOMShape selected="true">
-													<transformationPoint>
-														<Point x="17.95" y="14.75" />
-													</transformationPoint>
-													<fills>
-														<FillStyle index="1">
-															<SolidColor color="#FFFFFF" />
-														</FillStyle>
-													</fills>
-													<strokes>
-														<StrokeStyle index="1">
-															<SolidStroke scaleMode="normal">
-																<fill>
-																	<SolidColor color="#FFFFFF" />
-																</fill>
-															</SolidStroke>
-														</StrokeStyle>
-													</strokes>
-													<edges>
-														<Edge fillStyle0="1" strokeStyle="1"
-															edges="!400 268S5/362 218!362 218/321 271!321 271/236 376!236 376|484 376!484 376/400 268" />
-														<Edge
-															cubics="!236 376(;236,376 484,376 484,376q236 376 484 376);" />
-														<Edge
-															cubics="!484 376(;484,376 400,268 400,268q484 376 400 268);" />
-														<Edge
-															cubics="!321 271(;321,271 236,376 236,376q321 271 236 376);" />
-														<Edge
-															cubics="!400 268(;400,268 362,218 362,218q400 268 362 218);" />
-														<Edge
-															cubics="!362 218(;362,218 321,271 321,271q362 218 321 271);" />
-													</edges>
-												</DOMShape>
-											</members>
-										</DOMGroup>
-										<DOMShape isDrawingObject="true">
-											<matrix>
-												<Matrix a="0.841522216796875" d="1.84458923339844"
-													tx="1.9" ty="-10.25" />
-											</matrix>
-											<transformationPoint>
-												<Point x="19.05" y="16.15" />
-											</transformationPoint>
-											<strokes>
-												<StrokeStyle index="1">
-													<SolidStroke scaleMode="normal" weight="2">
-														<fill>
-															<SolidColor color="#FFFFFF" />
-														</fill>
-													</SolidStroke>
-												</StrokeStyle>
-											</strokes>
-											<edges>
-												<Edge strokeStyle="1" edges="!325 323|437 323" />
-											</edges>
-										</DOMShape>
-										<DOMShape isDrawingObject="true">
-											<matrix>
-												<Matrix a="0.841522216796875" d="1.84458923339844"
-													tx="1.9" ty="-7.75" />
-											</matrix>
-											<transformationPoint>
-												<Point x="19.05" y="16.15" />
-											</transformationPoint>
-											<strokes>
-												<StrokeStyle index="1">
-													<SolidStroke scaleMode="normal" weight="2">
-														<fill>
-															<SolidColor color="#FFFFFF" />
-														</fill>
-													</SolidStroke>
-												</StrokeStyle>
-											</strokes>
-											<edges>
-												<Edge strokeStyle="1" edges="!325 323|437 323" />
-											</edges>
-										</DOMShape>
-										<DOMShape isDrawingObject="true">
-											<matrix>
-												<Matrix a="0.841522216796875" d="1.84458923339844"
-													tx="1.9" ty="-5.2" />
-											</matrix>
-											<transformationPoint>
-												<Point x="19.05" y="16.15" />
-											</transformationPoint>
-											<strokes>
-												<StrokeStyle index="1">
-													<SolidStroke scaleMode="normal" weight="2">
-														<fill>
-															<SolidColor color="#FFFFFF" />
-														</fill>
-													</SolidStroke>
-												</StrokeStyle>
-											</strokes>
-											<edges>
-												<Edge strokeStyle="1" edges="!325 323|437 323" />
-											</edges>
-										</DOMShape>
-									</members>
-								</DOMGroup>
-							</elements>
-						</DOMFrame>
-						<DOMFrame index="39" duration="10" keyMode="9728">
-							<elements>
-								<DOMGroup>
-									<transformationPoint>
-										<Point x="18.25" y="18.1" />
-									</transformationPoint>
-									<members>
-										<DOMShape>
-											<transformationPoint>
-												<Point x="18.25" y="18.1" />
-											</transformationPoint>
-											<fills>
-												<FillStyle index="1">
-													<SolidColor color="#CCCCCC" />
-												</FillStyle>
-											</fills>
-											<strokes>
-												<StrokeStyle index="1">
-													<SolidStroke scaleMode="normal" weight="2">
-														<fill>
-															<SolidColor color="#CCCCCC" />
-														</fill>
-													</SolidStroke>
-												</StrokeStyle>
-												<StrokeStyle index="2">
-													<SolidStroke scaleMode="normal">
-														<fill>
-															<SolidColor color="#CCCCCC" />
-														</fill>
-													</SolidStroke>
-												</StrokeStyle>
-											</strokes>
-											<edges>
-												<Edge strokeStyle="1"
-													edges="!311 492|406 492!311 441|406 441!311 391|406 391" />
-												<Edge fillStyle0="1" strokeStyle="2"
-													edges="!236 376|484 376!484 376/400 268!400 268/362 218!362 218/321 271!321 271/236 376" />
-												<Edge cubics="!236 376(;236,376 484,376 484,376q236 376 484 376);" />
-												<Edge cubics="!484 376(;484,376 400,268 400,268q484 376 400 268);" />
-												<Edge cubics="!321 271(;321,271 236,376 236,376q321 271 236 376);" />
-												<Edge cubics="!400 268(;400,268 362,218 362,218q400 268 362 218);" />
-												<Edge cubics="!362 218(;362,218 321,271 321,271q362 218 321 271);" />
-											</edges>
-										</DOMShape>
-									</members>
-								</DOMGroup>
-							</elements>
-						</DOMFrame>
-						<DOMFrame index="49" duration="52" keyMode="9728">
-							<elements>
-								<DOMSymbolInstance libraryItemName="Animations/uploading_arrow"
-									centerPoint3DX="18" centerPoint3DY="17.75">
-									<matrix>
-										<Matrix tx="11.8" ty="10.9" />
-									</matrix>
-									<transformationPoint>
-										<Point x="6.2" y="7.1" />
-									</transformationPoint>
-								</DOMSymbolInstance>
-							</elements>
-						</DOMFrame>
-					</frames>
-				</DOMLayer>
-				<DOMLayer name="Layer 1" color="#4FFF4F">
-					<frames>
-						<DOMFrame index="0" duration="39" keyMode="9728">
-							<elements>
-								<DOMGroup>
-									<members>
-										<DOMRectangleObject objectWidth="36"
-											objectHeight="36" x="75.5" y="346.95" lockFlag="true"
-											topLeftRadius="5" topRightRadius="5" bottomLeftRadius="5"
-											bottomRightRadius="5">
-											<matrix>
-												<Matrix tx="-75.5" ty="-346.95" />
-											</matrix>
-											<fill>
-												<LinearGradient>
-													<matrix>
-														<Matrix a="0" b="0.02197265625" c="-0.02197265625"
-															d="0" tx="93.5" ty="364.95" />
-													</matrix>
-													<GradientEntry color="#1E8C3F" ratio="0" />
-													<GradientEntry color="#004D35" ratio="1" />
-												</LinearGradient>
-											</fill>
-										</DOMRectangleObject>
-									</members>
-								</DOMGroup>
-							</elements>
-						</DOMFrame>
-						<DOMFrame index="39" duration="10" keyMode="9728">
-							<elements>
-								<DOMGroup>
-									<members>
-										<DOMRectangleObject objectWidth="36"
-											objectHeight="36" x="75.5" y="346.95" lockFlag="true"
-											topLeftRadius="5" topRightRadius="5" bottomLeftRadius="5"
-											bottomRightRadius="5">
-											<matrix>
-												<Matrix tx="-75.5" ty="-346.95" />
-											</matrix>
-											<fill>
-												<LinearGradient>
-													<matrix>
-														<Matrix a="0" b="0.02197265625" c="-0.02197265625"
-															d="0" tx="93.5" ty="364.95" />
-													</matrix>
-													<GradientEntry color="#DDDDDD" ratio="0" />
-													<GradientEntry color="#8A8A8A" ratio="1" />
-												</LinearGradient>
-											</fill>
-										</DOMRectangleObject>
-									</members>
-								</DOMGroup>
-							</elements>
-						</DOMFrame>
-						<DOMFrame index="49" duration="52" keyMode="9728">
-							<elements>
-								<DOMSymbolInstance libraryItemName="Animations/playing"
-									centerPoint3DX="18" centerPoint3DY="18">
-									<transformationPoint>
-										<Point x="18" y="18" />
-									</transformationPoint>
-								</DOMSymbolInstance>
-							</elements>
-						</DOMFrame>
-					</frames>
-				</DOMLayer>
-				<DOMLayer name="_component" color="#FF4F4F" autoNamed="false">
-					<frames>
-						<DOMFrame index="0" duration="101"
-							name="Place KafeButton Component here." labelType="comment"
-							keyMode="9728">
-							<elements>
-								<DOMCompiledClipInstance
-									libraryItemName="buttons/KafeButton" name="kafeBtn" uniqueID="8">
-									<matrix>
-										<Matrix ty="4" />
-									</matrix>
-									<dataBindingXML><![CDATA[<component metaDataFetched='true' schemaUrl='' schemaOperation='' sceneRootLabel='Scene 1' oldCopiedComponentPath='1.19.8'>
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="buttons/btn" itemID="5147cf8b-000002d0" linkageExportForAS="true" linkageClassName="com.wcweb.UI.UploadBtn" lastModified="1367031350" lastUniqueIdentifier="12">
+  <timeline>
+    <DOMTimeline name="btn" currentFrame="53" guides='&lt;guidelines&gt;&lt;guideline direction="h"&gt;10&lt;/guideline&gt;&lt;guideline direction="h"&gt;25&lt;/guideline&gt;&lt;/guidelines&gt;'>
+      <layers>
+        <DOMLayer name="labels" color="#4FFF4F" locked="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="9" name="normal" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="9" duration="10" name="over" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="19" duration="10" name="out" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="29" duration="10" name="down" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="39" duration="10" name="disabled" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="49" duration="10" name="selected" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="59" duration="10" name="selected over" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="69" duration="10" name="selected out" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="79" duration="10" name="selected down" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="89" duration="12" name="selected disabled" labelType="name" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="_hit" color="#4F80FF" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="101" name='Place a MovieClip named "_hit" here, or leave it blank.' labelType="comment" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 2" color="#9933CC" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" duration="9" keyMode="9728">
+              <elements>
+                <DOMGroup>
+                  <transformationPoint>
+                    <Point x="18.25" y="18.1"/>
+                  </transformationPoint>
+                  <members>
+                    <DOMShape>
+                      <transformationPoint>
+                        <Point x="18.25" y="18.1"/>
+                      </transformationPoint>
+                      <fills>
+                        <FillStyle index="1">
+                          <SolidColor color="#ECEEEE"/>
+                        </FillStyle>
+                      </fills>
+                      <strokes>
+                        <StrokeStyle index="1">
+                          <SolidStroke scaleMode="normal">
+                            <fill>
+                              <SolidColor color="#ECEEEE"/>
+                            </fill>
+                          </SolidStroke>
+                        </StrokeStyle>
+                        <StrokeStyle index="2">
+                          <SolidStroke scaleMode="normal" weight="2">
+                            <fill>
+                              <SolidColor color="#ECEEEE"/>
+                            </fill>
+                          </SolidStroke>
+                        </StrokeStyle>
+                      </strokes>
+                      <edges>
+                        <Edge strokeStyle="2" edges="!311 492|406 492!311 441|406 441!311 391|406 391"/>
+                        <Edge fillStyle0="1" strokeStyle="1" edges="!400 268/362 218!362 218/321 271!321 271/236 376!236 376|484 376!484 376/400 268"/>
+                        <Edge cubics="!236 376(;236,376 484,376 484,376q236 376 484 376);"/>
+                        <Edge cubics="!484 376(;484,376 400,268 400,268q484 376 400 268);"/>
+                        <Edge cubics="!321 271(;321,271 236,376 236,376q321 271 236 376);"/>
+                        <Edge cubics="!400 268(;400,268 362,218 362,218q400 268 362 218);"/>
+                        <Edge cubics="!362 218(;362,218 321,271 321,271q362 218 321 271);"/>
+                      </edges>
+                    </DOMShape>
+                  </members>
+                </DOMGroup>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="9" duration="10" keyMode="9728">
+              <elements>
+                <DOMGroup selected="true">
+                  <transformationPoint>
+                    <Point x="18.25" y="18.1"/>
+                  </transformationPoint>
+                  <members>
+                    <DOMGroup selected="true">
+                      <transformationPoint>
+                        <Point x="17.95" y="14.75"/>
+                      </transformationPoint>
+                      <members>
+                        <DOMShape selected="true">
+                          <transformationPoint>
+                            <Point x="17.95" y="14.75"/>
+                          </transformationPoint>
+                          <fills>
+                            <FillStyle index="1">
+                              <SolidColor color="#FFFFFF"/>
+                            </FillStyle>
+                          </fills>
+                          <strokes>
+                            <StrokeStyle index="1">
+                              <SolidStroke scaleMode="normal">
+                                <fill>
+                                  <SolidColor color="#FFFFFF"/>
+                                </fill>
+                              </SolidStroke>
+                            </StrokeStyle>
+                          </strokes>
+                          <edges>
+                            <Edge fillStyle0="1" strokeStyle="1" edges="!362 218S5/321 271!321 271/236 376!236 376|484 376!484 376/400 268!400 268/362 218"/>
+                            <Edge cubics="!236 376(;236,376 484,376 484,376q236 376 484 376);"/>
+                            <Edge cubics="!484 376(;484,376 400,268 400,268q484 376 400 268);"/>
+                            <Edge cubics="!321 271(;321,271 236,376 236,376q321 271 236 376);"/>
+                            <Edge cubics="!400 268(;400,268 362,218 362,218q400 268 362 218);"/>
+                            <Edge cubics="!362 218(;362,218 321,271 321,271q362 218 321 271);"/>
+                          </edges>
+                        </DOMShape>
+                      </members>
+                    </DOMGroup>
+                    <DOMShape isDrawingObject="true">
+                      <matrix>
+                        <Matrix a="0.841522216796875" d="1.84458923339844" tx="1.9" ty="-10.25"/>
+                      </matrix>
+                      <transformationPoint>
+                        <Point x="19.05" y="16.15"/>
+                      </transformationPoint>
+                      <strokes>
+                        <StrokeStyle index="1">
+                          <SolidStroke scaleMode="normal" weight="2">
+                            <fill>
+                              <SolidColor color="#FFFFFF"/>
+                            </fill>
+                          </SolidStroke>
+                        </StrokeStyle>
+                      </strokes>
+                      <edges>
+                        <Edge strokeStyle="1" edges="!325 323|437 323"/>
+                      </edges>
+                    </DOMShape>
+                    <DOMShape isDrawingObject="true">
+                      <matrix>
+                        <Matrix a="0.841522216796875" d="1.84458923339844" tx="1.9" ty="-7.75"/>
+                      </matrix>
+                      <transformationPoint>
+                        <Point x="19.05" y="16.15"/>
+                      </transformationPoint>
+                      <strokes>
+                        <StrokeStyle index="1">
+                          <SolidStroke scaleMode="normal" weight="2">
+                            <fill>
+                              <SolidColor color="#FFFFFF"/>
+                            </fill>
+                          </SolidStroke>
+                        </StrokeStyle>
+                      </strokes>
+                      <edges>
+                        <Edge strokeStyle="1" edges="!325 323|437 323"/>
+                      </edges>
+                    </DOMShape>
+                    <DOMShape isDrawingObject="true">
+                      <matrix>
+                        <Matrix a="0.841522216796875" d="1.84458923339844" tx="1.9" ty="-5.2"/>
+                      </matrix>
+                      <transformationPoint>
+                        <Point x="19.05" y="16.15"/>
+                      </transformationPoint>
+                      <strokes>
+                        <StrokeStyle index="1">
+                          <SolidStroke scaleMode="normal" weight="2">
+                            <fill>
+                              <SolidColor color="#FFFFFF"/>
+                            </fill>
+                          </SolidStroke>
+                        </StrokeStyle>
+                      </strokes>
+                      <edges>
+                        <Edge strokeStyle="1" edges="!325 323|437 323"/>
+                      </edges>
+                    </DOMShape>
+                  </members>
+                </DOMGroup>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="19" duration="20" keyMode="9728">
+              <elements>
+                <DOMGroup>
+                  <transformationPoint>
+                    <Point x="18.25" y="18.1"/>
+                  </transformationPoint>
+                  <members>
+                    <DOMGroup selected="true">
+                      <transformationPoint>
+                        <Point x="17.95" y="14.75"/>
+                      </transformationPoint>
+                      <members>
+                        <DOMShape selected="true">
+                          <transformationPoint>
+                            <Point x="17.95" y="14.75"/>
+                          </transformationPoint>
+                          <fills>
+                            <FillStyle index="1">
+                              <SolidColor color="#FFFFFF"/>
+                            </FillStyle>
+                          </fills>
+                          <strokes>
+                            <StrokeStyle index="1">
+                              <SolidStroke scaleMode="normal">
+                                <fill>
+                                  <SolidColor color="#FFFFFF"/>
+                                </fill>
+                              </SolidStroke>
+                            </StrokeStyle>
+                          </strokes>
+                          <edges>
+                            <Edge fillStyle0="1" strokeStyle="1" edges="!362 218S5/321 271!321 271/236 376!236 376|484 376!484 376/400 268!400 268/362 218"/>
+                            <Edge cubics="!236 376(;236,376 484,376 484,376q236 376 484 376);"/>
+                            <Edge cubics="!484 376(;484,376 400,268 400,268q484 376 400 268);"/>
+                            <Edge cubics="!321 271(;321,271 236,376 236,376q321 271 236 376);"/>
+                            <Edge cubics="!400 268(;400,268 362,218 362,218q400 268 362 218);"/>
+                            <Edge cubics="!362 218(;362,218 321,271 321,271q362 218 321 271);"/>
+                          </edges>
+                        </DOMShape>
+                      </members>
+                    </DOMGroup>
+                    <DOMShape isDrawingObject="true">
+                      <matrix>
+                        <Matrix a="0.841522216796875" d="1.84458923339844" tx="1.9" ty="-10.25"/>
+                      </matrix>
+                      <transformationPoint>
+                        <Point x="19.05" y="16.15"/>
+                      </transformationPoint>
+                      <strokes>
+                        <StrokeStyle index="1">
+                          <SolidStroke scaleMode="normal" weight="2">
+                            <fill>
+                              <SolidColor color="#FFFFFF"/>
+                            </fill>
+                          </SolidStroke>
+                        </StrokeStyle>
+                      </strokes>
+                      <edges>
+                        <Edge strokeStyle="1" edges="!325 323|437 323"/>
+                      </edges>
+                    </DOMShape>
+                    <DOMShape isDrawingObject="true">
+                      <matrix>
+                        <Matrix a="0.841522216796875" d="1.84458923339844" tx="1.9" ty="-7.75"/>
+                      </matrix>
+                      <transformationPoint>
+                        <Point x="19.05" y="16.15"/>
+                      </transformationPoint>
+                      <strokes>
+                        <StrokeStyle index="1">
+                          <SolidStroke scaleMode="normal" weight="2">
+                            <fill>
+                              <SolidColor color="#FFFFFF"/>
+                            </fill>
+                          </SolidStroke>
+                        </StrokeStyle>
+                      </strokes>
+                      <edges>
+                        <Edge strokeStyle="1" edges="!325 323|437 323"/>
+                      </edges>
+                    </DOMShape>
+                    <DOMShape isDrawingObject="true">
+                      <matrix>
+                        <Matrix a="0.841522216796875" d="1.84458923339844" tx="1.9" ty="-5.2"/>
+                      </matrix>
+                      <transformationPoint>
+                        <Point x="19.05" y="16.15"/>
+                      </transformationPoint>
+                      <strokes>
+                        <StrokeStyle index="1">
+                          <SolidStroke scaleMode="normal" weight="2">
+                            <fill>
+                              <SolidColor color="#FFFFFF"/>
+                            </fill>
+                          </SolidStroke>
+                        </StrokeStyle>
+                      </strokes>
+                      <edges>
+                        <Edge strokeStyle="1" edges="!325 323|437 323"/>
+                      </edges>
+                    </DOMShape>
+                  </members>
+                </DOMGroup>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="39" duration="10" keyMode="9728">
+              <elements>
+                <DOMGroup>
+                  <transformationPoint>
+                    <Point x="18.25" y="18.1"/>
+                  </transformationPoint>
+                  <members>
+                    <DOMShape>
+                      <transformationPoint>
+                        <Point x="18.25" y="18.1"/>
+                      </transformationPoint>
+                      <fills>
+                        <FillStyle index="1">
+                          <SolidColor color="#CCCCCC"/>
+                        </FillStyle>
+                      </fills>
+                      <strokes>
+                        <StrokeStyle index="1">
+                          <SolidStroke scaleMode="normal">
+                            <fill>
+                              <SolidColor color="#CCCCCC"/>
+                            </fill>
+                          </SolidStroke>
+                        </StrokeStyle>
+                        <StrokeStyle index="2">
+                          <SolidStroke scaleMode="normal" weight="2">
+                            <fill>
+                              <SolidColor color="#CCCCCC"/>
+                            </fill>
+                          </SolidStroke>
+                        </StrokeStyle>
+                      </strokes>
+                      <edges>
+                        <Edge strokeStyle="2" edges="!311 492|406 492!311 441|406 441!311 391|406 391"/>
+                        <Edge fillStyle0="1" strokeStyle="1" edges="!484 376/400 268!400 268/362 218!362 218/321 271!321 271/236 376!236 376|484 376"/>
+                        <Edge cubics="!236 376(;236,376 484,376 484,376q236 376 484 376);"/>
+                        <Edge cubics="!484 376(;484,376 400,268 400,268q484 376 400 268);"/>
+                        <Edge cubics="!321 271(;321,271 236,376 236,376q321 271 236 376);"/>
+                        <Edge cubics="!400 268(;400,268 362,218 362,218q400 268 362 218);"/>
+                        <Edge cubics="!362 218(;362,218 321,271 321,271q362 218 321 271);"/>
+                      </edges>
+                    </DOMShape>
+                  </members>
+                </DOMGroup>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="49" duration="52" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Animations/uploading_arrow" centerPoint3DX="18" centerPoint3DY="17.75">
+                  <matrix>
+                    <Matrix tx="11.8" ty="10.9"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="6.2" y="7.1"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Layer 1" color="#4FFF4F">
+          <frames>
+            <DOMFrame index="0" duration="39" keyMode="9728">
+              <elements>
+                <DOMGroup>
+                  <members>
+                    <DOMRectangleObject objectWidth="36" objectHeight="36" x="75.5" y="346.95" lockFlag="true" topLeftRadius="5" topRightRadius="5" bottomLeftRadius="5" bottomRightRadius="5">
+                      <matrix>
+                        <Matrix tx="-75.5" ty="-346.95"/>
+                      </matrix>
+                      <fill>
+                        <LinearGradient>
+                          <matrix>
+                            <Matrix a="0" b="0.02197265625" c="-0.02197265625" d="0" tx="93.5" ty="364.95"/>
+                          </matrix>
+                          <GradientEntry color="#1E8C3F" ratio="0"/>
+                          <GradientEntry color="#004D35" ratio="1"/>
+                        </LinearGradient>
+                      </fill>
+                    </DOMRectangleObject>
+                  </members>
+                </DOMGroup>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="39" duration="10" keyMode="9728">
+              <elements>
+                <DOMGroup>
+                  <members>
+                    <DOMRectangleObject objectWidth="36" objectHeight="36" x="75.5" y="346.95" lockFlag="true" topLeftRadius="5" topRightRadius="5" bottomLeftRadius="5" bottomRightRadius="5">
+                      <matrix>
+                        <Matrix tx="-75.5" ty="-346.95"/>
+                      </matrix>
+                      <fill>
+                        <LinearGradient>
+                          <matrix>
+                            <Matrix a="0" b="0.02197265625" c="-0.02197265625" d="0" tx="93.5" ty="364.95"/>
+                          </matrix>
+                          <GradientEntry color="#DDDDDD" ratio="0"/>
+                          <GradientEntry color="#8A8A8A" ratio="1"/>
+                        </LinearGradient>
+                      </fill>
+                    </DOMRectangleObject>
+                  </members>
+                </DOMGroup>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="49" duration="52" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="Animations/playing" centerPoint3DX="18" centerPoint3DY="18">
+                  <transformationPoint>
+                    <Point x="18" y="18"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="_component" color="#FF4F4F" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" duration="101" name="Place KafeButton Component here." labelType="comment" keyMode="9728">
+              <elements>
+                <DOMCompiledClipInstance libraryItemName="buttons/KafeButton" name="kafeBtn" uniqueID="8">
+                  <matrix>
+                    <Matrix ty="4"/>
+                  </matrix>
+                  <dataBindingXML><![CDATA[<component metaDataFetched='true' schemaUrl='' schemaOperation='' sceneRootLabel='playing' oldCopiedComponentPath=''>
 </component>
 ]]></dataBindingXML>
-									<parametersAsXML><![CDATA[   <property id="enabled">
+                  <parametersAsXML><![CDATA[   <property id="enabled">
       <Inspectable name="enabled" variable="enabled" category="" verbose="1" defaultValue="true" type="Boolean"/>
    </property>
    <property id="href">
@@ -501,12 +448,12 @@
       <Inspectable name="window" variable="window" category="" verbose="0" defaultValue="_blank" type="String"/>
    </property>
 ]]></parametersAsXML>
-								</DOMCompiledClipInstance>
-							</elements>
-						</DOMFrame>
-					</frames>
-				</DOMLayer>
-			</layers>
-		</DOMTimeline>
-	</timeline>
+                </DOMCompiledClipInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
 </DOMSymbolItem>
