@@ -71,7 +71,7 @@ package us.wcweb.model.proxies {
 			wav_encorder = new WaveEncoder();
 			recorder = new MicRecorder(wav_encorder, Microphone.getEnhancedMicrophone());
 
-			recorder.microphone.setLoopBack(true);
+			recorder.microphone.setLoopBack(false);
 			recorder.microphone.setSilenceLevel(0, DELAY_LENGTH);
 			waveData = new ByteArray();
 			waveFile = new ByteArray();
@@ -137,7 +137,7 @@ package us.wcweb.model.proxies {
 			function finishRender() : void {
 				innerTimer.stop();
 				trace("finishing audio render") ;
-				WaveFile.writeBytesToWavFile(waveFile, waveData, 44100, 2, 16);
+				WaveFile.writeBytesToWavFile(waveFile, waveData, 22100, 2, 16);
 
 				if (convertToMp3) {
 					makeIntoMp3(waveFile);

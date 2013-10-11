@@ -60,7 +60,7 @@ class FileUpload < Sinatra::Base
       # 
       puts URI.encode_www_form([["result", URI.encode("File recived ")]])
       URI.encode_www_form([["result", URI.encode("File recived ")]])
-      # "result=filerecived"
+      "result=filerecived"
     else
       flash 'You have to choose a file'
       redirect '/up?'+URI.encode_www_form(["result", URI.encode("error")])
