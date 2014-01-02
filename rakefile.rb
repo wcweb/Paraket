@@ -7,6 +7,23 @@ library :robotlegs, :swc
 ##############################
 # Configure
 
+##
+# Set USE_FCSH to true in order to use FCSH for all compile tasks.
+#
+# You can also set this value by calling the :fcsh task 
+# manually like:
+#
+#   rake fcsh run
+#
+# These values can also be sent from the command line like:
+#
+#   rake run FCSH_PKG_NAME=flex3
+#
+# ENV['USE_FCSH']         = true
+# ENV['FCSH_PKG_NAME']    = 'flex4'
+# ENV['FCSH_PKG_VERSION'] = '1.0.14.pre'
+# ENV['FCSH_PORT']        = 12321
+
 def configure_mxmlc t
     # need by as not flex with static link runtime shared lib
   t.static_link_runtime_shared_libraries = true
@@ -25,7 +42,7 @@ end
 # Run
 
 # Compile the debug swf
-mxmlc "bin/Paraket.swf" do |t|
+mxmlc "Public/Paraket.swf" do |t|
   configure_mxmlc t
   t.input = "src/Paraket.as"
   # t.static_link_runtime_shared_libraries = true
@@ -58,7 +75,7 @@ flashplayer :debug => "Public/Paraket-debug.swf"
 library :asunit4
 
 # Compile the test swf
-mxmlc "Public/Paraket-test.swf" => :asunit4 do |t|
+mxmlc "Public/ParaketRunner.swf" => :asunit4 do |t|
   configure_mxmlc t
   t.input = "src/ParaketRunner.as"
   t.library_path << "lib/asunit4/AsUnit-4.2.3.pre.swc"
@@ -70,7 +87,7 @@ mxmlc "Public/Paraket-test.swf" => :asunit4 do |t|
 end
 
 desc "Compile and run the test swf"
-flashplayer :test => "Public/Paraket-test.swf"
+flashplayer :test => "Public/ParaketRunner.swf"
 
 ##############################
 # SWC

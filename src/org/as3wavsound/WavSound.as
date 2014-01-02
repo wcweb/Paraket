@@ -116,6 +116,7 @@ package org.as3wavsound {
 			this._samples = new Wav().decode(wavData);
 			this._playbackSettings = (audioSettings != null) ? audioSettings : new AudioSetting();
 			this._length = samples.length / samples.setting.sampleRate * 1000;
+			player.stopAll(this);
 		}
 
 		/**
@@ -149,8 +150,9 @@ package org.as3wavsound {
 			} else {
 				addEventListener(SampleDataEvent.SAMPLE_DATA, function():void{});
 				var channel:SoundChannel = super.play(0, loops, sndTransform);
-				player.playingWavSounds.push(new WavSoundChannel(this, startTime, loops, channel));
-				return channel;
+				var realchannel:WavSoundChannel =new WavSoundChannel(this, startTime, loops, channel);
+				player.playingWavSounds.push(realchannel);
+				return player.channel;
 			}
 		}
 		

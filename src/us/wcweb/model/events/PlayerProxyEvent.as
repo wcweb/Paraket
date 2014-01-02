@@ -10,9 +10,11 @@ package us.wcweb.model.events {
 		// Class Properties
 		//
 		// --------------------------------------------------------------------------
+		public static const BEGIN_PLAY : String = 'begin_play';
 		public static const PLAY_ITEM : String = 'play_item';
 		public static const PLAYING : String = "playing";
 		public static const PLAY_ERROR : String ='play_error';
+		public static const PLAY_COMPLETE: String = 'play_complete';
 		// --------------------------------------------------------------------------
 		//
 		// Instance Properties

@@ -1,10 +1,10 @@
 package test.cases {
+	import us.wcweb.model.proxies.RecorderServiceProxy;
 	import us.wcweb.ParaketContext;
 
 	import flash.events.EventDispatcher;
 
-	import us.wcweb.model.services.RecorderService;
-
+	
 	import asunit.asserts.*;
 	import asunit.framework.IAsync;
 
@@ -14,7 +14,7 @@ package test.cases {
 	 * @author macbookpro
 	 */
 	public class TestRecordService {
-		private var service : RecorderService;
+		private var service : RecorderServiceProxy;
 		private var serviceDispatcher : EventDispatcher = new EventDispatcher();
 		[Inject]
 		public var async : IAsync;
@@ -24,7 +24,7 @@ package test.cases {
 		[Before]
 		public function setUp() : void {
 			serviceDispatcher = new EventDispatcher();
-			service = new RecorderService();
+			service = new RecorderServiceProxy();
 			service.eventDispatcher = serviceDispatcher;
 		}
 
@@ -36,7 +36,7 @@ package test.cases {
 
 		[Test]
 		public function shouldBeInstantiated() : void {
-			assertTrue("instance is Recorder", service is RecorderService);
+			assertTrue("instance is Recorder", service is RecorderServiceProxy);
 		}
 		
 		[Test]

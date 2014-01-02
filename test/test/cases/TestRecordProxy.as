@@ -1,4 +1,5 @@
 package test.cases {
+	import us.wcweb.model.events.RecordProxyEvent;
 	import us.wcweb.service.BackEndService;
 
 	import flash.utils.ByteArray;
@@ -27,8 +28,6 @@ package test.cases {
 
 	import flash.events.EventDispatcher;
 
-	import us.wcweb.model.services.RecorderService;
-
 	import asunit.asserts.*;
 	import asunit.framework.IAsync;
 
@@ -53,6 +52,7 @@ package test.cases {
 		[Inject]
 		public var context : Sprite;
 		public var player : PlayerProxy;
+		public var repeatTime : int = 0;
 
 		[Before]
 		public function setUp() : void {
@@ -62,10 +62,10 @@ package test.cases {
 			player.eventDispatcher = serviceDispatcher;
 			proxy.player = player;
 			backend = new BackEndService();
-
+			orphanAsync = new Async();
 			proxy.eventDispatcher = serviceDispatcher;
 			dispatcher = new EventDispatcher();
-			orphanAsync = new Async();
+			repeatTime = 0;
 		}
 
 		[After]
@@ -85,7 +85,7 @@ package test.cases {
 			assertTrue("instance is Recorder", proxy is RecorderServiceProxy);
 		}
 
-		/*[Ignore("because it works")]*/
+		[Ignore("because it works")]
 		[Test]
 		public function shouldBeUploaded() : void {
 			var handler : Function = async.add(stopAndUpload, 20000);
@@ -95,6 +95,7 @@ package test.cases {
 
 		private function stopAndUpload() : void {
 			proxy.stop();
+			
 			proxy.makeIntoMp3(proxy.recorder.output);
 			var handler : Function = async.add(onConverCompleteUpload, 8000);
 
@@ -106,26 +107,41 @@ package test.cases {
 			backend.uploadMp3(proxy.mp3(), {});
 		}
 
-		[Ignore("because it works")]
+		// [Ignore("because it works")]
 		[Test]
 		public function shouldBeRecordAndPlay() : void {
-			orphanAsync.proceedOnEvent(player.eventDispatcher, Event.COMPLETE);
-			var handler : Function = async.add(stopAndplay, 8000);
-			proxy.record();
-			setTimeout(handler, 5000);
+			if (repeatTime > 1) {
+				assertTrue("proxy",proxy.player is PlayerProxy);
+			} else {
+				repeatTime += 1;
+				orphanAsync.timeout = 5000;
+				// orphanAsync.proceedOnEvent(player.eventDispatcher, Event.COMPLETE);
+				var handler : Function = async.add(stopAndplay, 4000*repeatTime);
+				proxy.record();
+				setTimeout(handler, 3000*repeatTime);
+			}
 		}
 
 		private function stopAndplay() : void {
 			// proxy.makeIntoMp3(proxy.recorder.output);
-			var handler : Function = async.add(onConverCompletePlay, 3000);
+
 			proxy.stop();
-			setTimeout(handler, 2000);
-			// proxy.eventDispatcher.addEventListener(Event.COMPLETE, async.add(onConverCompleteUpload, 3000));
+			var handler : Function = async.add(onConverCompletePlay, 5000*repeatTime);
+			setTimeout(handler, 500*repeatTime);
+			// orphanAsync.proceedOnEvent(serviceDispatcher, RecordProxyEvent.ENCORD_COMPLETE, 1000);
+
+			command = orphanAsync.getPending()[0];
+
+			
 		}
 
 		private function onConverCompletePlay() : void {
+			trace("before play!");
+			
+			var handler : Function = async.add(shouldBeRecordAndPlay, 20000*repeatTime);
 			proxy.play();
-			assertEquals(" pend end !", 0, orphanAsync.getPending().length);
+			setTimeout(handler, 5000*repeatTime);
+			// assertEquals(" pend end !", 0, orphanAsync.getPending().length);
 		}
 
 		[Ignore("because it works")]
@@ -155,7 +171,7 @@ package test.cases {
 			dispatcher.dispatchEvent(new Event(Event.COMPLETE));
 		}
 
-		public function stopandRender() : void {
+		private function stopandRender() : void {
 			trace('proxy', proxy.recorder);
 			proxy.stop();
 			// player = new WavSound(proxy.recorder.output);
@@ -178,7 +194,7 @@ package test.cases {
 			assertTrue("instance is mp3", proxy.mp3() is ByteArray);
 		}
 
-		public function handleComplete(e : Event) : void {
+		private function handleComplete(e : Event) : void {
 			trace(proxy.recorder.output);
 			// player = new WavSound(proxy.recorder.output);
 			// player.play();

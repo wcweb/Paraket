@@ -7,49 +7,52 @@ div.jwplayer id="player"
 div.flash id="flashcontent"
   p hellowrod
 
-javascript:
-	$(document).ready(function(){
-			jwplayer("player").setup({
-			    file: 'assets/video.mp4',
-			    flashplayer: 'assets/AvaPlayer.swf',
-			    height: 270,
-			    plugins: {
-			    	   'assets/cueboy.swf': {
-				      			dockname:'哇哈哈22',
-					      		heading: '我的小宇宙，我的兄弟们',
-					      		dimensions:'100x50',
-					     		file: 'assets/empty.xml',
-								repeatable:false,
-					        	onclick :'play'
-				    		}
-			        
-			    },
-			    width: 480
-			});
-	});
+/ javascript:
+/   $(document).ready(function(){
+/       jwplayer("player").setup({
+/           file: 'assets/video.mp4',
+/           flashplayer: 'assets/AvaPlayer.swf',
+/           height: 270,
+/           plugins: {
+/                'assets/cueboy.swf': {
+/                     dockname:'哇哈哈22',
+/                     heading: '我的小宇宙，我的兄弟们',
+/                     dimensions:'100x50',
+/                    file: 'assets/empty.xml',
+/                 repeatable:false,
+/                     onclick :'play'
+/                 }
+/               
+/           },
+/           width: 480
+/       });
+/   });
 
 javascript:
-  	var flashvars = {};
+  var flashvars = {};
 	flashvars.bridgeName = "example";
 	var params = {
 		wmode:"transparent"
 	};
 	var attributes = {};
 
-	flashvars.pkid="pkid";
-	flashvars.targettype="djdkk";
-	flashvars.filedname="Filedata2"
-	flashvars.upload_url ="http://127.0.0.1:9292/uploadmp3";
+  flashvars.pkid="pkid";
+  flashvars.targettype="djdkk";
+  flashvars.filedname="Filedata2";
+  flashvars.completeFunc="outfuck";
+  flashvars.upload_url ="http://127.0.0.1:9292/uploadmp3";
 
-	swfobject.embedSWF("Paraket.swf", "flashcontent", "214,", "137", "10.0.124", "", flashvars, params, attributes);
+	swfobject.embedSWF("ParaketRunner.swf", "flashcontent", "214,", "137", "10.0.124", "", flashvars, params, attributes);
 	// swfobject.embedSWF("Paraket-test.swf", "flashcontent", "500,", "300", "10.0.124", "", flashvars, params, attributes);
+  function outfuck(args){
+    console.log(args);
+  }
 
-
-form action='/upload' method='post' enctype='multipart/form-data'
-  p
-    input type='file' name='file'
-  p
-    input type='submit' value='Upload'
+/ form action='/upload' method='post' enctype='multipart/form-data'
+/   p
+/     input type='file' name='file'
+/   p
+/     input type='submit' value='Upload'
 h3 Files
 ul
   - @files.each do |file|

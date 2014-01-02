@@ -154,6 +154,11 @@ package us.wcweb.view.components.content {
 			getButton(skin.uploadBtn).selected = false;
 			getButton(skin.uploadBtn).enabled = false;
 		}
+		
+		public function onCompletePlayRecord():void{
+			getButton(skin.encordPlayBtn).selected=false;
+			//dispatchEvent(new RecordProxyEvent(RecordProxyEvent.STOP_CURRENT_PLAY, null));
+		}
 
 		// --------------------------------------------------------------------------
 		//

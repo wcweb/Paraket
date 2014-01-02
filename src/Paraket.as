@@ -1,16 +1,16 @@
 package {
 	import com.demonsters.debugger.MonsterDebugger;
-	import us.wcweb.model.events.JwplayerConnectProxyEvent;
-	import us.wcweb.utils.Tools;
-
 	import flash.display.LoaderInfo;
 	import flash.display.Sprite;
 	import flash.display.StageAlign;
 	import flash.display.StageScaleMode;
 	import flash.system.Security;
-
 	import us.wcweb.ParaketContext;
+	import us.wcweb.model.events.JwplayerConnectProxyEvent;
 	import us.wcweb.utils.Debug;
+	import us.wcweb.utils.Tools;
+
+
 
 	public class Paraket extends Sprite {
 		private var _context : ParaketContext;

@@ -44,7 +44,8 @@ package us.wcweb.view.mediators {
 			eventMap.mapListener(view, RecordProxyEvent.STOP_RECORD, handleStopRecord);
 			eventMap.mapListener(view, RecordProxyEvent.RENDERING, handleRendering);
 
-			eventMap.mapListener(view, RecordProxyEvent.PLAY_CURRENT_RECORDED, handlePlayCurrentRecorded);
+			eventMap.mapListener(view, RecordProxyEvent.PLAY_CURRENT_RECORDED, handlePlayCurrentRecorded);/// just click event
+			
 			eventMap.mapListener(view, RecordProxyEvent.STOP_CURRENT_PLAY, handleStopCurrentPlay);
 
 			eventMap.mapListener(view, RecordProxyEvent.NO_RECORD, handleNoRecord);
@@ -67,6 +68,7 @@ package us.wcweb.view.mediators {
 			eventMap.mapListener(eventDispatcher, RecordProxyEvent.RECORDING, handleRecordRecording);
 
 			eventMap.mapListener(eventDispatcher, PlayerProxyEvent.PLAYING, handlePlayerPlaying);
+			eventMap.mapListener(eventDispatcher, PlayerProxyEvent.PLAY_COMPLETE, handlePlayComplete);
 		}
 
 		override public function onRemove() : void {
@@ -129,19 +131,24 @@ package us.wcweb.view.mediators {
 		}
 
 		private function handlePlayCurrentRecorded(event : RecordProxyEvent) : void {
-			trace("handle event : " + event);
+			// trace("handle event : " + event);
 			eventDispatcher.dispatchEvent(event);
 			view.log("准备播放录音...");
 		}
 
 		private function handleStopCurrentPlay(event : RecordProxyEvent) : void {
-			trace("handle event : " + event);
+			// trace("handle event : " + event);
 			eventDispatcher.dispatchEvent(event);
 			view.log("停止播放。");
 		}
 
 		private function handlePlayerPlaying(event : PlayerProxyEvent) : void {
 			view.log("正在播放：");
+		}
+
+		private function handlePlayComplete(event : PlayerProxyEvent) : void {
+			view.log("播放完毕。");
+			view.onCompletePlayRecord();
 		}
 
 		// ---------------------------------------
@@ -159,7 +166,7 @@ package us.wcweb.view.mediators {
 
 		private function handleRecordRecording(event : RecordProxyEvent) : void {
 			view.log('麦克风活跃度:' + event.data);
-			trace('麦克风活跃度:' + event.data);
+			// trace('麦克风活跃度:' + event.data);
 			// MonsterDebugger.trace(this, 'active:' + event.data);
 		}
 

@@ -1,9 +1,11 @@
 # encoding: utf-8
 require 'uri'
 require 'sinatra/base'
+require 'sinatra/contrib/all'
 require 'slim'
 
 class FileUpload < Sinatra::Base
+  register Sinatra::Contrib
   configure do
     enable :static
     enable :sessions
@@ -39,7 +41,13 @@ class FileUpload < Sinatra::Base
   end
   
   get '/single' do
-    slim :single
+    #slim :single
+    respond_to do |f|
+        # f.xml { nokogiri :single }
+        f.on('application/custom') {} # custom_action }
+        f.on('text/*') { "sssss"}# data.to_s }
+        f.on('*/*') { "matches everything" }
+      end
   end
   
   get '/up' do
@@ -57,10 +65,19 @@ class FileUpload < Sinatra::Base
       File.open(File.join(settings.files, filename), 'wb') do |f|
         f.write file.read
       end
+      
+      filepath = File.join(settings.files,filename)
       # 
-      puts URI.encode_www_form([["result", URI.encode("File recived ")]])
-      URI.encode_www_form([["result", URI.encode("File recived ")]])
-      "result=filerecived"
+      #puts URI.encode_www_form([["result", URI.encode("File recived ")]])
+      
+      # "result=filerecived&file=#{filepath}"
+      
+      respond_with :index, :name=>'example' do |re|
+        
+        re.txt {URI.encode_www_form([["result", URI.encode("File recived ")],
+                            ["file",filepath]])}
+      end
+      
     else
       flash 'You have to choose a file'
       redirect '/up?'+URI.encode_www_form(["result", URI.encode("error")])

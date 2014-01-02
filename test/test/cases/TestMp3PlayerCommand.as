@@ -36,7 +36,7 @@ package test.cases {
 	import us.wcweb.controller.commands.playerControllers.PlayClipItemCommand;
 	import us.wcweb.model.events.PlayerProxyEvent;
 	import us.wcweb.model.proxies.PlayerProxy;
-	import us.wcweb.model.services.RecorderService;
+
 	import us.wcweb.view.components.content.PlayListView;
 	import us.wcweb.view.mediators.PlayListMediator;
 

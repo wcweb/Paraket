@@ -1,4 +1,5 @@
 package org.as3wavsound {
+	import flash.media.SoundChannel;
 	import flash.events.SampleDataEvent;
 	import flash.media.Sound;
 	import flash.utils.ByteArray;
@@ -71,6 +72,8 @@ package org.as3wavsound {
 		// the singular playback SOund with which all other WavSounds are played back
 		private const player:Sound = configurePlayer();
 		
+		public var channel:SoundChannel;
+		
 		/**
 		 * Static initializer: creates, configures and run the singular sound player. 
 		 * Until play() has been called on a WavSound, nothing is audible.
@@ -78,7 +81,7 @@ package org.as3wavsound {
 		private function configurePlayer():Sound {
 			var player:Sound = new Sound();
 			player.addEventListener(SampleDataEvent.SAMPLE_DATA, onSamplesCallback);
-			player.play();
+			channel = player.play();
 			return player;
 		}
 		

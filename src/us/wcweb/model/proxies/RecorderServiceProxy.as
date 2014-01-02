@@ -108,7 +108,7 @@ package us.wcweb.model.proxies {
 			// trace(waveData);
 			// sequence.addSourceAt(0, src);
 			// audio = new AudioPerformer(sequence, new AudioDescriptor());
-
+			trace("onREcordComplete");
 			status = ENCORDED;
 			dispatch(new RecordProxyEvent(RecordProxyEvent.ENCORD_COMPLETE, waveData));
 		}
@@ -201,7 +201,7 @@ package us.wcweb.model.proxies {
 		}
 
 		public function empty() : Boolean {
-			return recorder.output == null;
+			return recorder.output.length == 0;
 		}
 
 		public function stopPlaying() : void {

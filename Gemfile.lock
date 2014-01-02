@@ -3,12 +3,16 @@ GEM
   specs:
     archive-tar-minitar (0.5.2)
     asunit4 (4.2.3.pre)
+    backports (3.3.5)
     flashsdk (1.1.36.pre)
       sprout (>= 1.1.18.pre)
+    multi_json (1.8.1)
     open4 (1.3.0)
     rack (1.5.2)
     rack-protection (1.5.0)
       rack
+    rack-test (0.6.2)
+      rack (>= 1.0)
     rake (10.0.4)
     robotlegs (1.3.0.6.pre)
       flashsdk (>= 1.0.21.pre)
@@ -17,6 +21,13 @@ GEM
       rack (~> 1.5, >= 1.5.2)
       rack-protection (~> 1.4)
       tilt (~> 1.3, >= 1.3.4)
+    sinatra-contrib (1.4.1)
+      backports (>= 2.0)
+      multi_json
+      rack-protection
+      rack-test
+      sinatra (~> 1.4.0)
+      tilt (~> 1.3)
     slim (1.3.8)
       temple (~> 0.6.3)
       tilt (~> 1.3.3)
@@ -37,4 +48,5 @@ DEPENDENCIES
   flashsdk (>= 1.0.13.pre)
   robotlegs (>= 1.3.0.5.pre)
   sinatra (~> 1.3)
+  sinatra-contrib
   slim (~> 1.3)
