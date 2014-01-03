@@ -22,7 +22,8 @@ package {
 			stage.align = StageAlign.TOP_LEFT;
 
 			// Security.allowDomain("maps.googleapis.com");
-
+			Security.allowDomain('*');
+			Security.allowInsecureDomain('*');
 			_context = new ParaketContext(this);
 
 		}

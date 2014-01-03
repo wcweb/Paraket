@@ -58,7 +58,7 @@ package us.wcweb.service {
 
 		public function uploadMp3(mp3 : ByteArray, config : Object) : void {
 			mp3loader = new MultipartURLLoader();
-			mp3loader.dataFormat = URLLoaderDataFormat.VARIABLES;
+			mp3loader.dataFormat = URLLoaderDataFormat.TEXT;
 			MonsterDebugger.initialize(this);
 			MonsterDebugger.trace(this, _default_config);
 			for (var key:Object in _default_config) {
@@ -88,7 +88,7 @@ package us.wcweb.service {
 				} else {
 					MonsterDebugger.trace("HTTP_STATUS_Handler", e.status);
 					MonsterDebugger.trace(this, "this time wait fuck complete");
-					// MonsterDebugger.trace(this,e.status);
+                    
 					// mp3loader.dispatchEvent(new Event(Event.COMPLETE));
 					dispatch(new SystemEvent(SystemEvent.POST_SUCCESS, 'SERVER RESPONSE: Success '));
 				}
@@ -99,8 +99,8 @@ package us.wcweb.service {
 				// You can access loader returned data:
 				var loader : URLLoader = MultipartURLLoader(e.currentTarget).loader;
 				MonsterDebugger.trace(this, loader);
-				var data : URLVariables = new URLVariables(loader.data);
-				
+				//var data : URLVariables = new URLVariables(loader.data);
+				var data:String = new String(loader.data);
 				//
 				MonsterDebugger.trace(this, '\nSERVER RESPONSE: ' + data);
 				if (ExternalInterface.available) {
